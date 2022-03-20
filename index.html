@@ -5,265 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windows 12 Emulator</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="https://img.icons8.com/fluent/10/000000/windows-10.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/000000/windows-11.png" type="image/x-icon">
 </head>
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loading">
-          <div class="windlogo">
-              <img src="https://img.icons8.com/fluent/150/000000/windows-10.png"/>
+    <div class="navbar">
+        <div class="leftbar">
+          <ul>
+           <a onclick="startmenutoggle()"><li><img src="https://img.icons8.com/color/37/000000/windows-11.png" style="border-radius: 3rem;"/></li></a> 
+            <li style="padding: 8.5px;"><img src="./images/search.png" width="30" height="30"></img></li>
+          </ul>
+        </div>
+        <div class="midbar">
+          <ul>
+            <li><img src="https://img.icons8.com/color/37/000000/ms-edge-new.png"/></li>
+            <li><img src="https://img.icons8.com/color/37/adobe-photoshop.png"/></li>
+            <li><img src="https://img.icons8.com/color/37/000000/visual-studio-code-2019.png"/></li>
+          </ul>
+        </div>
+        <div class="rightbar">
+          <ul>
+            <li><img style="transform:rotate(180deg);" src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/22/external-arrow-arrows-those-icons-lineal-color-those-icons-1.png" /></li>
+           <a onclick="volumehubtoggle()"><li><img src="https://img.icons8.com/fluency-systems-regular/22/000000/speaker.png"/></li></a>
+            <li><img src="https://img.icons8.com/material-outlined/22/000000/topic--v1.png"/></li>
+          </ul>
+        </div>
+    </div>
+
+    <!-- Startmenu -->
+    <div id="startmenu">
+        <div class="leftmenu">
+          <div class="searchapps">
+            <input type="text" placeholder="Search for anything">
           </div>
-          <div class="windloading">
-              <div class="c-loading__anim2">
-                <div class="a-loading__anim2__dot
-                            a-loading__anim2__dot1">
-                </div>
-                <div class="a-loading__anim2__dot
-                            a-loading__anim2__dot2">
-                </div>
-                <div class="a-loading__anim2__dot
-                            a-loading__anim2__dot3">
-                </div>
-                <div class="a-loading__anim2__dot
-                            a-loading__anim2__dot4">
-                </div>
-                <div class="a-loading__anim2__dot
-                            a-loading__anim2__dot5">
-                </div>
-                </div>
+          <div class="listofapps">
+            <div class="firstbar">
+              <span style="font-weight: bolder;">Most used </span>
+              <button class="appsbtn">All apps <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg></button>
+            </div>
+            <div class="liapp">
+              <div class="liapps"><img src="https://img.icons8.com/color/33/000000/windows-explorer.png"/>&nbsp;&nbsp;&nbsp;File Explorer</div>
+              <div class="liapps"><img src="https://img.icons8.com/fluency/33/000000/settings.png"/>&nbsp;&nbsp;&nbsp;Settings</div>
+              <div class="liapps"><img src="https://img.icons8.com/fluency/33/000000/photos.png"/>&nbsp;&nbsp;&nbsp;Photos</div>
+              <div class="liapps"><img src="./images/cloud.png"/>&nbsp;&nbsp;&nbsp;Weather</div>
+            </div>
+            <div class="firstbar"><span style="font-weight: bolder;">Recent</span></div>
+            <div class="liapp">
+              <div class="liapps"><img src="https://img.icons8.com/windows/33/000000/github.png"/>&nbsp;&nbsp;&nbsp;Github</div>
+              <div class="liapps"><img src="https://img.icons8.com/fluency/33/000000/ms-edge-new.png"/>&nbsp;&nbsp;&nbsp;Edge</div>
+              <div class="liapps"><img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/33/000000/external-buy-me-a-coffee-help-creators-receive-support-from-their-audience-logo-filled-tal-revivo.png"/>&nbsp;&nbsp;&nbsp;Buy me a coffee</div>
+            </div>
           </div>
-      </div>
-      </div>
-
-
-    <div class="centertaskbar">
-        <div class="roundtaskbar">
-            <ul>
-                <li style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;"><a title="Start" href="#startmewnu" class="taskicon"><img src="https://img.icons8.com/fluent/33/000000/windows-10.png"/></a></li>
-                <li><a title="Microsoft Edge" href="#msedge" class="taskicon"><img src="https://img.icons8.com/fluent/33/000000/ms-edge-new.png"/></a></li>
-                <li><a title="Paint" href="#mspaint" class="taskicon"><img src="./images/paint.png" width="33px"/></a></li>
-                <li><a title="Explorer" href="#explorer" class="taskicon"><img src="https://img.icons8.com/clr-gls/33/000000/windows-explorer.png"/></a></li>
-                <li><a title="Photoshop" href="#photoshop" class="taskicon"><img src="https://img.icons8.com/color/33/000000/adobe-photoshop--v1.png"/></a></li>
-                <li style="border-bottom-right-radius: 10px; border-top-right-radius: 10px;"><a title="Visual Studio Code" href="#vscode" onclick="reloadFrame()" class="taskicon"><img src="https://img.icons8.com/fluent/33/000000/visual-studio-code-2019.png"/></a></li>
-            </ul>        
         </div>
-    </div>
-    <div class="otherico">
-        <ul>
-            <li><a href="#"><img style="transform: rotate(180deg);" src="https://img.icons8.com/material-outlined/20/000000/expand-arrow--v1.png"/></a></li>
-            <li><a href="#"><img src="https://img.icons8.com/ios-glyphs/20/000000/wifi.png"/></a></li>
-            <li><a href="#volume"><img src="https://img.icons8.com/material-rounded/20/000000/speaker.png"/></a></li>
-            <li><a href="#mesgcentre"><img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/30/000000/external-chat-ui-dreamstale-lineal-dreamstale-2.png"/></a></li>
-        </ul>
-    </div>
-    <div class="sidenavbar">
-        <ul>
-            <li><a href="#thispc" class="link2"><img src="./images/this pc.png" width="40px"/><br> This PC</a></li>
-            <li><a href="#recyclebin" class="link2"><img src="https://img.icons8.com/fluency/40/000000/recycle-bin.png"/><br> Recycle Bin</a></li>
-            <li><a href="#patatap" class="link2"><img src="./images/patatap.png" width="40px"/><br> Patatap</a></li>
-            <li><a href="#bench" class="link2"><img src="./images/Blockbench_icon.png" width="40px"/><br> Block Bench</a></li>
-            <li><a href="#whiteboard" class="link2" style="font-size: 13px;"><img src="https://img.icons8.com/fluency/40/000000/whiteboard.png"/><br> Microsoft Whiteboard</a></li>
-        </ul>
-    </div>
-    <!-- Start Menu  -->
-    <div id="startmewnu">
-        <div class="startmenuin">
-            <div class="leftapplist">
-                <div class="suggestion">Suggestion</div>
-                <div class="applists"><img src="./images/Powerpoint.png" width="32px" alt="Powerpoint">&nbsp; Microsoft Powerpoint</div>
-                <div class="applists"><img src="./images/Word.png" width="30px" alt="Word">&nbsp; Microsoft Word</div>
-                <div class="applists"><img src="./images/Excel.png" width="30px" alt="Excel">&nbsp; Microsoft Excel</div>
-                <a href="#whiteboard" class="linkref"><div class="applists"><img src="https://img.icons8.com/fluency/30/000000/whiteboard.png"/>&nbsp; Microsft Whiteboard</div></a>
-                <div class="suggestion"><div class="letterapps">A</div></div>
-                <div class="applists"><img src="https://img.icons8.com/color/36/000000/microsoft-access-2019.png"/>&nbsp; Access</div>
-                <div class="suggestion"><div class="letterapps">E</div></div>
-                <a href="#msedge" class="linkref"><div class="applists"><img src="https://img.icons8.com/fluency/33/000000/ms-edge-new.png"/>&nbsp; Edge</div></a>
-                <div class="suggestion"><div class="letterapps">P</div></div>
-                <a href="#mspaint" class="linkref"><div class="applists"><img src="./images/paint.png" width="33px"/>&nbsp; Paint</div></a>
-                <div class="suggestion"><div class="letterapps">V</div></div>
-                <a href="#vscode" class="linkref"><div class="applists"><img src="./images/code.png" width="33px"/>&nbsp; Visual Studio Code </div></a>
-               
+        <div class="rightmenu">
+          <div class="userinfo">
+            <div class="userimg"><img src="./images/Logo.png" width="70px"></div>
+            <div class="userdata"><span>Webjeet</span>  <p>webjit45@gmail.com</p>  </div>
+            <div class="userbtn">
+              <button><svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 21c4.411 0 8-3.589 8-8 0-3.35-2.072-6.221-5-7.411v2.223A6 6 0 0 1 18 13c0 3.309-2.691 6-6 6s-6-2.691-6-6a5.999 5.999 0 0 1 3-5.188V5.589C6.072 6.779 4 9.65 4 13c0 4.411 3.589 8 8 8z"></path><path d="M11 2h2v10h-2z"></path></svg></button>
+            <button><img src="https://img.icons8.com/fluency-systems-regular/31/000000/settings.png"/></button>  
+            <button><img src="https://img.icons8.com/windows/31/000000/windows-explorer.png"/></button>  
             </div>
-            <div class="pinned">
-                <div class="suggestio">Pinned</div>
-                <div class="lines">
-                    <a href="#msedge"><div class="rows"><img src="https://img.icons8.com/fluency/40/000000/ms-edge-new.png"/> Edge</div></a>
-                    <a href="#mspaint"><div class="rows"><img src="./images/paint.png" width="40px"/> Paint</div></a>
-                    <a href="#"><div class="rows"><img src="./images/Excel.png" width="30px"/> Excel</div></a>
-                    <a href="#"><div class="rows"><img src="./images/Word.png" width="30px"/> Word</div></a>
+            <div class="widgets">
+              <div class="weather">
+                <div class="logfo"><img src="./images/cloud.png" width="20px"> Weather</div>
+                <div class="celcius">64&deg;</div>
+                <div class="wcondition">Clear</div>
+                <div class="warea">Los Angles, Carlifonia</div>
+              </div>
+              <div class="todos">
+                <div class="todotop"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 47, 173, 1);"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>&nbsp; To-Do</div>
+                <div class="todo"><input type="checkbox">Change in Code</div>
+                <div class="todo"><input type="checkbox">Do Dinner</div>
+                <div class="todo"><input type="checkbox">Go to bed</div>
+              </div>
+            </div>
+            <div class="widgets">
+              <div class="officeapps">
+                <div class="offdown">
+                  <div class="officeapp"><img src="https://img.icons8.com/fluency/33/000000/microsoft-word-2019.png"/></div>
+                  <div class="officeapp"><img src="https://img.icons8.com/color/33/000000/microsoft-excel-2019--v1.png"/></div>
                 </div>
-                <div class="lines">
-                    <a href="#"><div class="rows"><img src="https://img.icons8.com/color/40/000000/microsoft-access-2019.png"/> Access</div></a>
-                    <a href="#bench"><div class="rows" style="font-size: 13px;"><img src="./images/Blockbench_icon.png" width="35px"/> Block Bench</div></a>
-                    <a href="#patatap"><div class="rows"><img src="./images/patatap.png" width="40px"/> Patatap</div></a>
+                <div class="offdown">
+                  <div class="officeapp"><img src="https://img.icons8.com/color/33/000000/microsoft-powerpoint-2019--v1.png"/></div>
+                  <div class="officeapp"><img src="https://img.icons8.com/fluency/33/000000/microsoft-onedrive-2019.png"/></div>
                 </div>
-                
+              </div>
+              <div class="revil">
+                Village Resident Evil
+              </div>
             </div>
-        </div>
-        <a href="#" class="windowclosdebtn"></a>
-    </div>
-    <!-- Microsoft Edge  -->
-    <div id="msedge" class="window">
-        <div class="msedgein">
-            <div class="windonav">
-                <p class="windowname">Microsoft Edge</p>
-                <div class="closebtns">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/></svg></a> 
-                    <a href="#"><img src="https://img.icons8.com/windows/22/000000/minimize-window.png"/></a> 
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></a> 
-                </div>
-            </div>
-            <iframe src="https://bing.com/" class="inframes" ></iframe>
-        </div>
-    </div>
-    <!-- message center  -->
-    <div id="mesgcentre">
-        <div class="msgin">
-No Notification
-        </div>
-        <a href="#" class="windowclosdebtn"></a>
-    </div>
-    <!-- Volume Controller -->
-    <div id="volume">
-        <div class="volumein">
-   <input type="range" id="volcome" value="100">
-   <p id="out"></p>
-        </div>
-        <a href="#" class="windowclosdebtn"></a>
-    </div>
-
-    <!-- Paint  -->
-    <div id="mspaint" class="window">
-        <div class="painin">
-            <div class="windonav">
-                <p class="windowname">Paint</p>
-                <div class="closebtns">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/></svg></a> 
-                    <a href="#"><img src="https://img.icons8.com/windows/22/000000/minimize-window.png"/></a> 
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></a> 
-                </div>
-            </div>
-            <iframe src="https://jspaint.app/" style="width: 100%; height: 95vh;" frameborder="0"></iframe>
-        </div>
-    </div>
-<!-- Visual Studio Code -->
-    <div id="vscode" class="window">
-        <div class="vodein">
-            <div class="windonav">
-                <p style="color: white;" class="windowname">Visual Studio Code</p>
-                <div class="closebtns">
-                    <a style="color: white;" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/></svg></a> 
-                    <a style="color: white;" href="#"><img src="https://img.icons8.com/windows/22/ffffff/minimize-window.png"/></a> 
-                    <a style="color: white;" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></a> 
-                </div>
-            </div>
-            <iframe id="vsdev" src="https://vscode.dev/" style="width: 100%; height: 95vh;" frameborder="0"></iframe>
-
-        </div>
-    </div>
-    <div id="explorer" class="window">
-        <div class="explorerin">
-            <div class="windonav">
-                <p class="windowname">Explorer</p>
-                <div class="closebtns">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/></svg></a> 
-                    <a href="#"><img src="https://img.icons8.com/windows/22/000000/minimize-window.png"/></a> 
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></a> 
-                </div>
-            </div>
-            <div class="soon">
-                Coming Soon
-            </div>
-        </div>
-    </div>
-    <div id="thispc" class="window">
-        <div class="pcin">
-            <div class="windonav">
-                <p class="windowname"><img src="./images/this pc.png" width="30px"/>&nbsp; This PC</p>
-                <div class="closebtns">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/></svg></a> 
-                    <a href="#"><img src="https://img.icons8.com/windows/22/000000/minimize-window.png"/></a> 
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></a> 
-                </div>
-            </div>
-            <div class="soon">
-                Coming Soon
-            </div>
-        </div>
-    </div>
-    <div id="recyclebin" class="window">
-        <div class="pcin">
-            <div class="windonav">
-                <p class="windowname"><img src="https://img.icons8.com/fluency/30/000000/recycle-bin.png" /> &nbsp; Recycle Bin</p>
-                <div class="closebtns">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/></svg></a> 
-                    <a href="#"><img src="https://img.icons8.com/windows/22/000000/minimize-window.png"/></a> 
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></a> 
-                </div>
-            </div>
-            <div class="soon">
-                Coming Soon
-            </div>
-        </div>
-    </div>
-    <div id="patatap" class="window">
-        <div class="pcin">
-            <div class="windonav">
-                <p class="windowname"><img src="./images/patatap.png" width="30px" /> &nbsp; Patatap</p>
-                <div class="closebtns">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/></svg></a> 
-                    <a href="#"><img src="https://img.icons8.com/windows/22/000000/minimize-window.png"/></a> 
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></a> 
-                </div>
-            </div>
-            <iframe id="vsdev" src="https://patatap.com/" style="width: 100%; height: 95vh;" frameborder="0"></iframe>
-        </div>
-    </div>
-    <div id="bench" class="window">
-        <div class="pcin">
-            <div class="windonav">
-                <p class="windowname" style="color: white;"><img src="./images/Blockbench_icon.png" width="20px" /> &nbsp; Block Bench</p>
-                <div class="closebtns">
-                    <a href="#"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/></svg></a> 
-                    <a href="#"><img src="https://img.icons8.com/windows/22/ffffff/minimize-window.png"/></a> 
-                    <a href="#"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></a> 
-                </div>
-            </div>
-            <iframe id="vsdev" src="https://web.blockbench.net/" style="width: 100%; height: 95vh;" frameborder="0"></iframe>
+          </div>
         </div>
     </div>
 
-
-    <div id="photoshop" class="window">
-        <div class="pcin">
-            <div class="windonav">
-                <p class="windowname" style="color: white;"><img src="https://img.icons8.com/color/20/000000/adobe-photoshop--v1.png" /> &nbsp; Photoshop</p>
-                <div class="closebtns">
-                    <a href="#"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/></svg></a> 
-                    <a href="#"><img src="https://img.icons8.com/windows/22/ffffff/minimize-window.png"/></a> 
-                    <a href="#"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></a> 
-                </div>
-            </div>
-            <iframe src="https://www.photopea.com/" style="width: 100%; height: 95vh;" frameborder="0"></iframe>
-        </div>
-    </div>
-
-    <div id="whiteboard" class="window">
-        <div class="pcin">
-            <div class="windonav">
-                <p class="windowname"><img src="https://img.icons8.com/fluency/20/000000/whiteboard.png" /> &nbsp; Microsoft Whiteboard</p>
-                <div class="closebtns">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/></svg></a> 
-                    <a href="#"><img src="https://img.icons8.com/windows/22/000000/minimize-window.png"/></a> 
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></a> 
-                </div>
-            </div>
-            <iframe src="https://witeboard.com/" style="width: 100%; height: 95vh;" frameborder="0"></iframe>
-        </div>
+    <!-- Volume HUD  -->
+    <div id="volumehud">
+      <div class="vlmapp"><img src="./images/spotify.png" width="32px" >&nbsp;&nbsp;&nbsp; <input id="sliderone" class="vlmvlmslider" type="range" min="0" max="100" value="95"></div>
+      <div class="vlmapp"><img src="./images/minecraft_logo.png" width="32px" >&nbsp;&nbsp;&nbsp; <input class="vlmvlmslider" type="range" min="0" max="100" value="95"></div>
+      <div class="mastervlm"><span>&nbsp;&nbsp;&nbsp;&nbsp;Master Volume</span><div style="display: flex;align-items: center;justify-content: center;"><img src="https://img.icons8.com/windows/32/000000/speaker.png"/>&nbsp;&nbsp;&nbsp; <input class="vlmvlmslider" type="range" min="0" max="100" value="95"></div></div>
     </div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="./js/script.js"></script>
 </html>
