@@ -18,19 +18,28 @@
         </div>
         <div class="midbar">
           <ul>
-            <li><img src="https://img.icons8.com/color/37/000000/ms-edge-new.png"/></li>
-            <li><img src="https://img.icons8.com/color/37/adobe-photoshop.png"/></li>
-            <li><img src="https://img.icons8.com/color/37/000000/visual-studio-code-2019.png"/></li>
+          <a onclick="edgetoggle()"><li><img src="https://img.icons8.com/color/37/000000/ms-edge-new.png"/></li></a>  
+          <a onclick="pshoptoggle()"><li><img src="https://img.icons8.com/color/37/adobe-photoshop.png"/></li></a> 
+          <a onclick="vscodetoggle()"> <li><img src="https://img.icons8.com/color/37/000000/visual-studio-code-2019.png"/></li></a>
           </ul>
         </div>
         <div class="rightbar">
           <ul>
             <li><img style="transform:rotate(180deg);" src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/22/external-arrow-arrows-those-icons-lineal-color-those-icons-1.png" /></li>
-           <a onclick="volumehubtoggle()"><li><img src="https://img.icons8.com/fluency-systems-regular/22/000000/speaker.png"/></li></a>
+            <li><img src="https://img.icons8.com/external-neu-royyan-wijaya/22/000000/external-connection-neu-interface-neu-royyan-wijaya-2.png"/></li>
+            <a onclick="volumehubtoggle()"><li><img src="https://img.icons8.com/fluency-systems-regular/22/000000/speaker.png"/></li></a>
             <li><img src="https://img.icons8.com/material-outlined/22/000000/topic--v1.png"/></li>
           </ul>
         </div>
     </div>
+
+<!-- Sidebar -->
+<!-- <div class="sidebar">
+  <ul>
+    <li>This PC</li>
+    <li>Recycle Bin</li>
+  </ul>
+</div> -->
 
     <!-- Startmenu -->
     <div id="startmenu">
@@ -68,8 +77,10 @@
             <button><img src="https://img.icons8.com/fluency-systems-regular/31/000000/settings.png"/></button>  
             <button><img src="https://img.icons8.com/windows/31/000000/windows-explorer.png"/></button>  
             </div>
-            <div class="widgets">
-              <div class="weather">
+            <div class="scrwidget">
+
+              <div class="widgets">
+                <div class="weather">
                 <div class="logfo"><img src="./images/cloud.png" width="20px"> Weather</div>
                 <div class="celcius">64&deg;</div>
                 <div class="wcondition">Clear</div>
@@ -93,9 +104,27 @@
                   <div class="officeapp"><img src="https://img.icons8.com/fluency/33/000000/microsoft-onedrive-2019.png"/></div>
                 </div>
               </div>
-              <div class="revil">
-                Village Resident Evil
+              <div class="revil"></div>
+            </div>
+            
+      
+              <div class="tomorrow"
+                 data-location-id="058000"
+                 data-language="EN"
+                 data-unit-system="METRIC"
+                 data-skin="light"
+                 data-widget-type="aqiMini"
+                 style="padding-bottom:22px;position:relative;"
+                 >
+                 <a
+                 href="https://www.tomorrow.io/weather/"
+                 rel="nofollow noopener noreferrer"
+                 target="_blank"
+                 style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
+                 >
+                </a>
               </div>
+              <div id="coinmarketcap-widget-marquee" coins="1,1027,825" currency="USD" theme="light" transparent="false" show-symbol-logo="true"></div>
             </div>
           </div>
         </div>
@@ -107,6 +136,31 @@
       <div class="vlmapp"><img src="./images/minecraft_logo.png" width="32px" >&nbsp;&nbsp;&nbsp; <input class="vlmvlmslider" type="range" min="0" max="100" value="95"></div>
       <div class="mastervlm"><span>&nbsp;&nbsp;&nbsp;&nbsp;Master Volume</span><div style="display: flex;align-items: center;justify-content: center;"><img src="https://img.icons8.com/windows/32/000000/speaker.png"/>&nbsp;&nbsp;&nbsp; <input class="vlmvlmslider" type="range" min="0" max="100" value="95"></div></div>
     </div>
+
+    <!-- Edge  -->
+    <div id="edge">
+      <div class="winheader"><svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M5 11h14v2H5z"></path></svg>
+        <svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M7 5c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2H7zm0 12V7h10l.002 10H7z"></path></svg>
+        <svg class="cbtn" onclick="edgetoggle()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+      </div>
+      <iframe class="windowframe" src="https://www.bing.com/" frameborder="0"></iframe>
+    </div>
+
+    <div id="photoshop">
+      <div class="winheader"><svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M5 11h14v2H5z"></path></svg>
+        <svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M7 5c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2H7zm0 12V7h10l.002 10H7z"></path></svg>
+        <svg class="cbtn" onclick="pshoptoggle()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+      </div>
+      <iframe class="windowframe" src="https://www.photopea.com/" frameborder="0"></iframe>
+    </div>
+    <div id="vscode">
+      <div class="winheader"><svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M5 11h14v2H5z"></path></svg>
+        <svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M7 5c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2H7zm0 12V7h10l.002 10H7z"></path></svg>
+        <svg class="cbtn" onclick="vscodetoggle()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+      </div>
+      <iframe class="windowframe" src="https://www.vscode.dev/" frameborder="0"></iframe>
+    </div>
 </body>
 <script src="./js/script.js"></script>
+<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
 </html>

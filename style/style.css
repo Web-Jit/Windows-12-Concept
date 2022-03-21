@@ -253,8 +253,6 @@ p{
     background-color: rgba(255, 255, 255, 0.39);
 }
 .widgets{
-    position: relative;
-    bottom: 45px;
     padding: 8px;
     display: flex;
     gap: 13px;
@@ -333,11 +331,29 @@ p{
 }
 
 .revil{
-    width: 10rem;
+    width: 11rem;
     height: 9rem;
-    
+    border-radius: 10px;
+    background-image: url(../images/re_village.jpg);
+    background-position: center;
+    background-size: cover;
+    display: block;
+    color: rgb(255, 255, 255);
 }
 
+.scrwidget{
+    overflow: scroll;
+    bottom: 45px;
+    position: relative;
+    height: 23.4rem;
+    overflow-x: hidden;
+}
+.scrwidget::-webkit-scrollbar{
+    width: 0px;
+}
+.tomorrow{
+    padding: 10px;
+}
 
 /* Volume HUD  */
 #volumehud{
@@ -397,3 +413,58 @@ p{
     visibility: visible !important;
 }
 
+/* Window settings Start */
+.winheader{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.winheader svg{
+    padding: 4px;
+}
+.cbtn{
+    margin-left: 3px;
+}
+.cbtn:hover{
+    background-color: rgb(255, 0, 0);
+}
+.obtn{
+    margin: 0px 3px;
+}
+.obtn:hover{
+    background-color: rgba(255, 255, 255, 0.65);
+}
+.windowframe{
+    width: 100%;
+    height: inherit;
+}
+.windowshow{
+    visibility: visible !important;
+}
+
+/* Window settings End */
+
+#edge, #vscode, #photoshop{
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    visibility: hidden;
+    background-color: #eeeeee;
+    transition: all 0.6s ease-in-out;
+}
+
+
+/* Side Bar  */
+
+/* .sidebar{
+    position:absolute;
+    top: 0;
+    left: 0;
+    
+}
+.sidebar ul li{
+    list-style: none;
+    padding: 6px;
+
+} */
