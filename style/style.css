@@ -258,25 +258,31 @@ p{
     gap: 13px;
 }
 .weather{
-    background-image: url(../images/x-xtgONQzGgOE-unsplash.jpg);
+    background-image: url(../images/pexels-hendrik-b-744318.jpg);
+    background-position: center;
+    background-size: cover;
     width: 9rem;
     height: 9rem;
     border-radius: 10px;
     color: white;
     padding: 10px;
 }
-.celcius{
-    width: 100%;
-    font-size: 3rem;
-    font-weight: 800;
+.weather h4{
+    text-align: center;
 }
-.wcondition{
-    width: 100%;
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.warea{
-    margin-top: 13px;
-    font-size: 14px;
+.control svg{
+    padding: 3px;
+    border-radius: 10px;
 }
+.control svg:hover{
+    background-color: rgb(225, 225, 225,0.4);
+}
+
 .todos{
     width: 10rem;
     height: 9rem;
@@ -457,7 +463,7 @@ p{
 
 /* Side Bar  */
 
-/* .sidebar{
+.sidebar{
     position:absolute;
     top: 0;
     left: 0;
@@ -467,4 +473,4 @@ p{
     list-style: none;
     padding: 6px;
 
-} */
+}

@@ -39,3 +39,46 @@ function vscodetoggle() {
               })(document, 'script', 'tomorrow-sdk');
 
             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+
+// Music Player 
+
+const title = document.querySelector('.name');
+const prev = document.querySelector('#prev');
+const play = document.querySelector('#play');
+const next = document.querySelector('#next');
+const audio = document.querySelector('audio');
+
+// List 
+const songList = [
+    {
+        path: "/music/M-1.mp3",
+        songName: "Cold"
+    }
+]
+ let song_Playing = false;
+
+ function playSong(){
+    song_Playing = true;
+    audio.play();
+    play.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Pause</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M176 96h16v320h-16zM320 96h16v320h-16z"/></svg>';
+ }
+
+ function pauseSong(){
+    song_Playing = false;
+    audio.pause();
+    play.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Play</title><path d="M112 111v290c0 17.44 17 28.52 31 20.16l247.9-148.37c12.12-7.25 12.12-26.33 0-33.58L143 90.84c-14-8.36-31 2.72-31 20.16z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>';
+ }
+
+ play.addEventListener("click", () => (song_Playing ? pauseSong() : playSong()));
+
+
+    function loadSong(songList){
+        title.textContent = songList.songName;
+        audio.src = songList.path;
+    }
+
+    let i = 0;
+    loadSong(songList[i])
+
+
+
