@@ -22,6 +22,22 @@ function vscodetoggle() {
     const code = document.getElementById('vscode');
     code.classList.toggle('windowshow');
 }
+function pctoggle() {
+    const pc = document.getElementById('pc');
+    pc.classList.toggle('windowshow');
+}
+function bbenchtoggle() {
+    const bench = document.getElementById('bbench');
+    bench.classList.toggle('windowshow');
+}
+function patataptoggle() {
+    const patatap = document.getElementById('patatap');
+    patatap.classList.toggle('windowshow');
+}
+// function pokitoggle() {
+//     const poki = document.getElementById('poki');
+//     poki.classList.toggle('windowshow');
+// }
 
               (function(d, s, id) {
                   if (d.getElementById(id)) {

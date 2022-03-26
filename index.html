@@ -34,12 +34,13 @@
     </div>
 
 <!-- Sidebar -->
-<!-- <div class="sidebar">
+<div class="sidebar">
   <ul>
-    <li>This PC</li>
-    <li>Recycle Bin</li>
+   <a onclick="pctoggle()"><li><div class="sideimg"><img src="https://img.icons8.com/stickers/40/000000/my-computer.png"/></div>This PC</li></a> 
+   <a onclick="patataptoggle()"><li><div class="sideimg"><img src="./images/patatap.png" width="40px"/></div>Patatap</li></a> 
+   <a onclick="bbenchtoggle()"><li><div class="sideimg"><img src="./images/blockbench_logo.png" width="40px"/></div>BlockBench</li></a> 
   </ul>
-</div> -->
+</div>
 
     <!-- Startmenu -->
     <div id="startmenu">
@@ -59,12 +60,13 @@
               <div class="liapps"><img src="https://img.icons8.com/fluency/33/000000/settings.png"/>&nbsp;&nbsp;&nbsp;Settings</div>
               <div class="liapps"><img src="https://img.icons8.com/fluency/33/000000/photos.png"/>&nbsp;&nbsp;&nbsp;Photos</div>
               <div class="liapps"><img src="./images/cloud.png"/>&nbsp;&nbsp;&nbsp;Weather</div>
+              <div class="liapps"><img src="./images/patatap.png" width="33px"/>&nbsp;&nbsp;&nbsp;Patatap</div>
             </div>
             <div class="firstbar"><span style="font-weight: bolder;">Recent</span></div>
             <div class="liapp">
-              <div class="liapps"><img src="https://img.icons8.com/windows/33/000000/github.png"/>&nbsp;&nbsp;&nbsp;Github</div>
+             <a target="_blank" href="https://github.com/Web-Jit"><div class="liapps"><img src="https://img.icons8.com/windows/33/000000/github.png"/>&nbsp;&nbsp;&nbsp;Github</div></a> 
               <div class="liapps"><img src="https://img.icons8.com/fluency/33/000000/ms-edge-new.png"/>&nbsp;&nbsp;&nbsp;Edge</div>
-              <div class="liapps"><img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/33/000000/external-buy-me-a-coffee-help-creators-receive-support-from-their-audience-logo-filled-tal-revivo.png"/>&nbsp;&nbsp;&nbsp;Buy me a coffee</div>
+             <a target="_blank" href="https://www.buymeacoffee.com/webjeet"><div class="liapps"><img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/33/000000/external-buy-me-a-coffee-help-creators-receive-support-from-their-audience-logo-filled-tal-revivo.png"/>&nbsp;&nbsp;&nbsp;Buy me a coffee</div></a> 
             </div>
           </div>
         </div>
@@ -78,7 +80,6 @@
             <button><img src="https://img.icons8.com/windows/31/000000/windows-explorer.png"/></button>  
             </div>
             <div class="scrwidget">
-
               <div class="widgets">
                 <div class="weather">
                   <h4 class="name">Song Name</h4>
@@ -137,7 +138,7 @@
     <div id="volumehud">
       <div class="vlmapp"><img src="./images/spotify.png" width="32px" >&nbsp;&nbsp;&nbsp; <input id="sliderone" class="vlmvlmslider" type="range" min="0" max="100" value="95"></div>
       <div class="vlmapp"><img src="./images/minecraft_logo.png" width="32px" >&nbsp;&nbsp;&nbsp; <input class="vlmvlmslider" type="range" min="0" max="100" value="95"></div>
-      <div class="mastervlm"><span>&nbsp;&nbsp;&nbsp;&nbsp;Master Volume</span><div style="display: flex;align-items: center;justify-content: center;"><img src="https://img.icons8.com/windows/32/000000/speaker.png"/>&nbsp;&nbsp;&nbsp; <input class="vlmvlmslider" type="range" min="0" max="100" value="95"></div></div>
+      <div class="mastervlm"><span>&nbsp;&nbsp;&nbsp;&nbsp;Master Volume</span><div style="display: flex;align-items: center;justify-content: center;"><img src="https://img.icons8.com/windows/32/000000/speaker.png"/>&nbsp;&nbsp;&nbsp; <input class="vlmvlmslider" type="range" min="0" max="100" value="100"></div></div>
     </div>
 
     <!-- Edge  -->
@@ -163,7 +164,35 @@
       </div>
       <iframe class="windowframe" src="https://www.vscode.dev/" frameborder="0"></iframe>
     </div>
+
+    <div id="pc">
+      <div class="winheader"><svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M5 11h14v2H5z"></path></svg>
+        <svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M7 5c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2H7zm0 12V7h10l.002 10H7z"></path></svg>
+        <svg class="cbtn" onclick="pctoggle()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+      </div>
+      <div class="soon">
+        Coming Soon...
+      </div>
+    </div>
+
+    <div id="bbench">
+      <div class="winheader"><svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M5 11h14v2H5z"></path></svg>
+        <svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M7 5c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2H7zm0 12V7h10l.002 10H7z"></path></svg>
+        <svg class="cbtn" onclick="bbenchtoggle()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+      </div>
+      <iframe class="windowframe" src="https://web.blockbench.net/" frameborder="0"></iframe>
+    </div>
+
+    <div id="patatap">
+      <div class="winheader"><svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M5 11h14v2H5z"></path></svg>
+        <svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M7 5c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2H7zm0 12V7h10l.002 10H7z"></path></svg>
+        <svg class="cbtn" onclick="patataptoggle()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+      </div>
+      <iframe class="windowframe" src="https://www.patatap.com/" frameborder="0"></iframe>
+    </div>
+
+    
 </body>
 <script src="./js/script.js"></script>
-<!-- <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script> -->
+<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
 </html>
