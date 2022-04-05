@@ -34,6 +34,10 @@ function patataptoggle() {
     const patatap = document.getElementById('patatap');
     patatap.classList.toggle('windowshow');
 }
+function searchmenutoogle() {
+    const searchmenu = document.getElementById('searchmenu');
+    searchmenu.classList.toggle('taskshow');
+}
 // function pokitoggle() {
 //     const poki = document.getElementById('poki');
 //     poki.classList.toggle('windowshow');

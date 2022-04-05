@@ -192,7 +192,7 @@ p{
     border-radius: 3px;
 }
 
-.liapps{
+.liapps, .liappss{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -203,7 +203,7 @@ p{
     text-decoration: none;
     color: black;
 }
-.liapps:hover{
+.liapps:hover, .liappss:hover{
     background-color: rgba(255, 255, 255, 0.3);
 }
 /* User data  */
@@ -499,3 +499,47 @@ p{
     font-size: 3rem;
 }
 
+#searchmenu{
+    position: fixed;
+    left: 20px;
+    bottom: -500px;
+    width: 20rem;
+    height: 20rem;
+    background-color: #cfcccc;
+    visibility: hidden;
+    transition: all 0.4s ease-in;
+    border-radius: 9px;
+}
+.searcharea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searcharea input{
+    margin: 10px;
+    width: 17rem;
+    height: 2rem;
+    border-bottom: 3px solid blue;
+    outline: none;
+    border: 3px solid transparent;
+    padding: 5px;
+    font-size: 17px;
+}
+.myul{
+    margin: 0;
+    padding: 0;
+}
+.apparea{
+    overflow-y: scroll;
+    height: 15.8rem;
+}
+.apparea::-webkit-scrollbar{
+    width: 1px;
+    background-color: transparent;
+}
+.apparea::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.apparea::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
