@@ -38,6 +38,10 @@ function searchmenutoogle() {
     const searchmenu = document.getElementById('searchmenu');
     searchmenu.classList.toggle('taskshow');
 }
+function revillagetoggle() {
+    const village = document.getElementById('revillage');
+    village.classList.toggle('windowshow');
+}
 // function pokitoggle() {
 //     const poki = document.getElementById('poki');
 //     poki.classList.toggle('windowshow');
@@ -72,7 +76,7 @@ const audio = document.querySelector('audio');
 const songList = [
     {
         path: "/music/M-1.mp3",
-        songName: "Cold"
+        songName: "Imagine Dragons - Believer"
     }
 ]
  let song_Playing = false;
@@ -99,6 +103,5 @@ const songList = [
 
     let i = 0;
     loadSong(songList[i])
-
 
 

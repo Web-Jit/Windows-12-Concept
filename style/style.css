@@ -447,7 +447,7 @@ p{
 }
 .windowframe{
     width: 100%;
-    height: inherit;
+    height: 100vh;
 }
 .windowshow{
     visibility: visible !important;
@@ -487,7 +487,8 @@ p{
     background-color: rgb(225, 225, 225,0.2);
 }
 .sidebar ul a{
-    word-break:break-all;
+    font-size: 12px;
+    cursor: pointer;
 }
 
 .soon{
@@ -543,3 +544,50 @@ p{
 .apparea::-webkit-scrollbar-thumb{
     background-color: gray;
 }
+
+#revillage{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    visibility: hidden;
+    background: transparent;
+    transition: all 0.2s ease-in;
+}
+.revdo{
+    width: 100%;
+}
+.revdo video{
+    width: 100%;
+}
+
+.vilback{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    height: inherit;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.vilmenu{
+    text-align: center;
+    display: grid;
+}
+.vilimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vilbtn{
+    outline: none;
+    border: 0px solid transparent;
+    background: transparent;
+    padding: 1rem;
+    margin: 0px;
+    color: white;
+    font-size: 1rem;
+}
+
