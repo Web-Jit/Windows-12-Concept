@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Windows 12 Emulator</title>
+    <title>Windows 12 Concept</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/000000/windows-11.png" type="image/x-icon">
 </head>
@@ -76,7 +76,7 @@
             <div class="userimg"><img src="./images/Logo.png" width="70px"></div>
             <div class="userdata"><span>Webjeet</span>  <p>webjit45@gmail.com</p>  </div>
             <div class="userbtn">
-              <button><svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 21c4.411 0 8-3.589 8-8 0-3.35-2.072-6.221-5-7.411v2.223A6 6 0 0 1 18 13c0 3.309-2.691 6-6 6s-6-2.691-6-6a5.999 5.999 0 0 1 3-5.188V5.589C6.072 6.779 4 9.65 4 13c0 4.411 3.589 8 8 8z"></path><path d="M11 2h2v10h-2z"></path></svg></button>
+              <button onclick="shutDown()"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 21c4.411 0 8-3.589 8-8 0-3.35-2.072-6.221-5-7.411v2.223A6 6 0 0 1 18 13c0 3.309-2.691 6-6 6s-6-2.691-6-6a5.999 5.999 0 0 1 3-5.188V5.589C6.072 6.779 4 9.65 4 13c0 4.411 3.589 8 8 8z"></path><path d="M11 2h2v10h-2z"></path></svg></button>
             <button><img src="https://img.icons8.com/fluency-systems-regular/31/000000/settings.png"/></button>  
             <button><img src="https://img.icons8.com/windows/31/000000/windows-explorer.png"/></button>  
             </div>
@@ -129,7 +129,6 @@
                  >
                 </a>
               </div>
-              <div id="coinmarketcap-widget-marquee" coins="1,1027,825" currency="USD" theme="light" transparent="false" show-symbol-logo="true"></div>
             </div>
           </div>
         </div>
@@ -226,19 +225,22 @@
           <img src="./images/revillage.png" alt="Viilage" width="450px">
         </div>
         <div class="vilmenu">
-          <button class="vilbtn">New Game</button>
+          <button class="vilbtn" onclick="revillagemainscreentoggle()">New Game</button>
           <button class="vilbtn">Load Game</button>
           <button class="vilbtn">Continue</button>
           <button class="vilbtn">Option</button>
           <button class="vilbtn">Bonuses</button>
           <button class="vilbtn">Online Store</button>
-          <button onclick="revillagetoggle()" class="vilbtn">Quit</button>
+          <button onclick="revillagetoggle()" id="exit" class="vilbtn">Quit</button>
         </div>
+      </div>
+      <div id="gamescreen" class="maingamescreen">
+        <button title="Close Game" class="gameclsbtn" onclick="revillagemainscreentoggle()">	&#10060;</button>
+        <iframe src="https://www.youtube.com/embed/lJ_-_T05SOE"   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
       </div>
     </div>
 
     
 </body>
 <script src="./js/script.js"></script>
-<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
 </html>

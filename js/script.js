@@ -42,10 +42,15 @@ function revillagetoggle() {
     const village = document.getElementById('revillage');
     village.classList.toggle('windowshow');
 }
-// function pokitoggle() {
-//     const poki = document.getElementById('poki');
-//     poki.classList.toggle('windowshow');
-// }
+function revillagemainscreentoggle() {
+    const game = document.getElementById('gamescreen');
+    game.classList.toggle('windowshow');
+}
+function shutDown() {
+    window.close()
+}
+
+// 
 
               (function(d, s, id) {
                   if (d.getElementById(id)) {
