@@ -619,3 +619,31 @@ p{
     outline: none;
     border: 0px solid transparent;
 }
+
+#contextmenu{
+	background-color:rgb(224, 221, 221);
+	width:210px;
+	display:none;
+	position: fixed;
+    border-radius: 7px;
+    padding: 7px;
+}
+.menusa{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+.menusa:hover{
+    background-color: rgb(225, 225, 225);
+    opacity: 10;
+}
+.menuhr{
+    margin: 2px 0px;
+    padding: 0;
+}
+.minimize{
+    width: 30rem !important;
+    height: 20rem !important;
+}

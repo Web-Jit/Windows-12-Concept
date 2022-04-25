@@ -46,10 +46,14 @@ function revillagemainscreentoggle() {
     const game = document.getElementById('gamescreen');
     game.classList.toggle('windowshow');
 }
-function shutDown() {
-    window.close()
+function thispcminimize() {
+    const thispc = document.getElementById('pc')  ;
+    thispc.classList.toggle('minimize');
 }
-
+function patatapminimize() {
+    const thispc = document.getElementById('patatap')  ;
+    thispc.classList.toggle('minimize');
+}
 // 
 
               (function(d, s, id) {
@@ -108,5 +112,17 @@ const songList = [
 
     let i = 0;
     loadSong(songList[i])
+
+
+    $(document).ready(function(){
+        $(document).bind('contextmenu', function(event){
+            $("#contextmenu").css({"top": event.pageY + "px", "left": event.pageX + "px"}).show();
+            event.preventDefault();
+        });
+        $(document).bind('click', function(){
+            $("#contextmenu").hide();
+        })
+    });
+
 
 
