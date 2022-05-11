@@ -54,6 +54,10 @@ function patatapminimize() {
     const thispc = document.getElementById('patatap')  ;
     thispc.classList.toggle('minimize');
 }
+function filexplorer() {
+    const file = document.getElementById('files')  ;
+    file.classList.toggle('windowshow');
+}
 // 
 
               (function(d, s, id) {
@@ -124,5 +128,5 @@ const songList = [
         })
     });
 
-
+    
 

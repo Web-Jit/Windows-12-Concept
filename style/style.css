@@ -455,7 +455,7 @@ p{
 
 /* Window settings End */
 
-#edge, #vscode, #photoshop, #pc, #poki, #bbench, #patatap{
+#edge, #vscode, #photoshop, #pc, #poki, #bbench, #patatap,#files{
     width: 100%;
     height: inherit;
     position: absolute;
@@ -646,4 +646,192 @@ p{
 .minimize{
     width: 30rem !important;
     height: 20rem !important;
+}
+ /* File Explorer */
+
+.head{
+    background-color: white;
+    height: 4rem;
+    border-bottom: 1px solid rgb(197, 192, 192);
+    margin-top: 1rem;
+}
+.lefthead{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.headinfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min-content;
+    padding: 6px;
+    position: absolute;
+    top: -2px;
+    left: 3px;
+}
+.tabs{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    width: 10em;
+    padding: 1px 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+    line-height: 48px;
+}
+.addtabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.addtabs:hover{
+    box-shadow: 4px 6px 31px 0px rgba(0,0,0,0.1);
+}
+.downsearchping{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pingnation svg{
+    padding: 7px;
+    border-radius: 9px;
+}
+.pingnation svg:hover{
+    box-shadow: 4px 6px 71px 0px whitesmoke;
+}
+.searchphotos input{
+    width: 28rem;
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgb(197, 192, 192);
+    border-radius: 10px;
+    height: 1.3rem;
+}
+.more svg{
+    padding: 7px;
+    margin-top: 9px;
+    border-radius: 9px;
+    margin-right: 8px;
+}
+.more svg:hover{
+    box-shadow: 4px 6px 71px 0px whitesmoke;
+}
+.leftsidebar{
+    width: 20%;
+    height: 90vh;
+    background-color: white; 
+    padding: 12px;
+    float: left;
+    border-right: 1px solid rgb(197, 192, 192);
+}
+.dropdowns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+.dropdownicons{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.dropdowns div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 10rem;
+}
+.dropdowns svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6px 35px;
+    margin-top: 12px;
+    gap: 3px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.dropdown:hover{
+    background-color: #e8ebf3;
+}
+.folderlocation{
+    border: 0.1px solid rgb(190, 190, 190);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30rem;
+    padding: 7px;
+    border-radius: 10px;
+}
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 19px;
+}
+.filefolder{
+    background-color: white;
+
+}
+.headfolder{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-bottom: 1px solid rgb(197, 192, 192);
+
+}
+.tollbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.tools{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: min-content;
+    padding: 10px;
+    cursor: pointer;
+}
+#files{
+background: rgba(94, 154, 228, 0.64) !important;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.3px);
+-webkit-backdrop-filter: blur(4.3px);
+}
+.filess{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    gap: 20px;
+}
+
+.files{
+    padding: 10px;
+    gap: 7px;
+    text-align: center;
+    cursor: pointer;
+}
+.files img{
+    border-radius: 9px;
 }
