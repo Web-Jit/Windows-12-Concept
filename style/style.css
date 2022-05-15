@@ -455,7 +455,7 @@ p{
 
 /* Window settings End */
 
-#edge, #vscode, #photoshop, #pc, #poki, #bbench, #patatap,#files{
+#edge, #vscode, #photoshop, #pc, #poki, #bbench, #patatap,#files,#minecraft{
     width: 100%;
     height: inherit;
     position: absolute;
@@ -834,4 +834,107 @@ backdrop-filter: blur(4.3px);
 }
 .files img{
     border-radius: 9px;
+}
+
+/* Minecraft  */
+.launcher{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    color: white;
+}
+.blackback{
+    background-color: #202020;
+    width: 20%;
+    height: 100vh;
+    float: left;
+}
+.updowna{
+    display: grid;
+    align-items: center;
+}
+.dropdn{
+    width: 100%;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 5px solid transparent;
+}
+.drpdn:hover{
+    background-color: rgb(225, 225, 225,0.7);
+}
+.dropdn div{
+    margin-left: 10px;
+}
+.settings{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: min-content;
+}
+.activedor{
+    border-left: 5px solid green;
+}
+.gameheader{
+    width: 100%;
+    height: 6.7rem;
+    background-color: #202020;
+    
+}
+.gameheader h5{
+    margin-left: 19rem;
+    padding-top: 1.4rem;
+}
+.gameheader ul{
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.gameheader ul li{
+    list-style: none;
+    padding: 8px;
+}
+.activetab{
+    border-bottom: 3px solid green;
+}
+.startgame{
+    width: 100%;
+    height: 4rem;
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.gamewallpaper{
+    height: 30rem;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-color: #080808;
+}
+.version{
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 3px;
+}
+.playbtn{
+    padding: 14px;
+    background: green;
+    outline: none;
+    border: 0px solid transparent;
+    border-radius: 8px;
+    width: 10rem;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    bottom: 25px;
+    
 }

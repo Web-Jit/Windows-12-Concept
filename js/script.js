@@ -58,6 +58,10 @@ function filexplorer() {
     const file = document.getElementById('files')  ;
     file.classList.toggle('windowshow');
 }
+function minecrafttoggle() {
+    const file = document.getElementById('minecraft')  ;
+    file.classList.toggle('windowshow');
+}
 // 
 
               (function(d, s, id) {
