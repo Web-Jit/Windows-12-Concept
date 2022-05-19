@@ -445,29 +445,500 @@
 
     <!-- Resident Evil Village  -->
     <div id="revillage">
-      <div class="revdo">
-        <video autoplay loop muted>
-          <source src="./video/revillage.mp4">
+      <div id="preloader">
+        <div class="flex-img">
+          <video autoplay muted id="status1">
+            <source src="./video/engine_logo.mp4" type="video/mp4"  >
+          </video>
+          <img id="status2" src="./images/capcom.svg" style="display: none;" >&nbsp;</img>
+          
+        </div>
+      </div>
+      
+    
+        <!-- bg video -->
+        <video autoplay muted loop id="myVideo">
+          <source src="./video/bg.mp4" type="video/mp4">
         </video>
-      </div>
-      <div class="vilback">
-        <div class="vilimg">
-          <img src="./images/revillage.png" alt="Viilage" width="450px">
+    
+        <!-- start -->
+        <section  class="tabcontent" style="display: block;">
+          <div class="main-container" >
+            <div class="main-menu">
+              <div class="logo" id="img_logo" style="display:none">
+                <img src="./images/re-logo.png" alt="" />
+              </div>
+              <div class="menu" id="menu" style="display:none">
+                <div class="a-link" onclick="openTab(event, 'home'),playSound();">
+                  <li>Start Game.</li>
+                  <audio id="audio" src="./audio/btn.wav"  ></audio>
+                  <!-- <audio id="beep-two"  preload="auto">
+                    <source src="./audio/beep.wav" ></source>
+                  </audio> -->
+                  <span class="border-bottom"></span>
+                </div>
+                <span class="copyright">©CAPCOM CO. LTD. 2021 ALL RIGHT RESERVED.</span>
+                <span class="credit">Credit to <a style="color: white; text-decoration: none;" href="https://github.com/kasim393/Resident-Evil-Village-UI-Clone">@kasim393</a> </span>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- menu -->
+        <section id="home" class="tabcontent" style="display: none;">
+          <div class="main-container" >
+            <div class="main-menu">
+              <div class="logo">
+                <img src="./images/re-logo.png" alt="" />
+              </div>
+              <div class="menu" id="nav-two">
+                <div class="a-link"  onclick="openTab(event, 'new_game')">
+                  <li>New Game</li>
+                  <audio id="audio" src="./audio/btn.wav"  ></audio>
+                  <audio id="beep-two"  preload="auto">
+                    <source src="./audio/beep.wav" ></source>
+                  </audio>
+                  <span class="border-bottom"></span>
+                  <span class="bottom-text">Start a new game.</span>
+                </div>
+                <div class="a-link" href="#" onclick="openTab(event, 'load'),playSound();">
+                  <li>Load Game</li>
+                  <span class="border-bottom"></span>
+                  <span class="bottom-text">Load saved game.</span>
+                </div>
+                <div class="a-link" href="#" id="btn" >
+                  <li onclick="playSound();">Continue</li>
+                  <span class="border-bottom"></span>
+                  <span class="bottom-text">Continue the game from your latest save.</span>
+                </div>
+                <div class="a-link" href="#" onclick="openTab(event, 'options'),playSound();">
+                  <li>Options</li>
+                  <span class="border-bottom"></span>
+                  <span class="bottom-text">Change game setting.</span>
+                </div>
+                <div class="a-link" href="#" onclick="openTab(event, 'bonuses'),playSound();">
+                  <li>Bonuses</li>
+                  <span class="border-bottom"></span>
+                  <span class="bottom-text">View bonus content</span>
+                </div>
+                <div class="a-link" href="#" onclick="revillagetoggle()">
+                  <li>Quit</li>
+                  <span class="border-bottom"></span>
+                  <span class="bottom-text">Quit Game</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+       
+    
+        <!-- new game  -->
+        <div class="tabcontent" id="new_game" style="display: none;">
+        <section class="new-game-container">
+          <div class="main-menu">
+          <div class="menu" id="nav-two">
+            <h2>Difficulty</h2>
+            <div class="a-link btn" href="#" id="but1">
+              <li>Casual</li>
+              <audio id="beep-two" src="./audio/beep.wav" preload="auto">
+              </audio>
+              <span class="border"></span>
+              <span class="bottom-text">We'll take it easy on you.</span>
+            </div>
+            <div class="a-link btn" href="#" id="but2">
+              <li>Standard</li>
+              <span class="border"></span>
+              <span class="bottom-text">Just your average difficulty.</span>
+            </div>
+            <div class="a-link btn" href="#" id="but3">
+              <li>Hardcore</li>
+              <span class="border"></span>
+              <span class="bottom-text">Only for experience player</span>
+            </div>
+            <div class="a-link btn" href="#" id="but4" >
+              <li>Village of Shadows</li>
+              <span class="border"></span>
+              <span class="bottom-text">Survive the unsurvivable</span>
+            </div>
+          </div>
         </div>
-        <div class="vilmenu">
-          <button class="vilbtn" onclick="revillagemainscreentoggle()">New Game</button>
-          <button class="vilbtn">Load Game</button>
-          <button class="vilbtn">Continue</button>
-          <button class="vilbtn">Option</button>
-          <button class="vilbtn">Bonuses</button>
-          <button class="vilbtn">Online Store</button>
-          <button onclick="revillagetoggle()" id="exit" class="vilbtn">Quit</button>
+        <div class="two-col">
+          <div class="ok" onclick="playError();">
+            <img src="./images/a.png" alt="">
+            <h2>OK</h2>
+          </div>
+          <div class="back" onclick="openTab(event, 'home'), playSound();" >
+            <img src="./images/b.png" alt="">
+            <h2 >Back</h2>
+          </div>
         </div>
-      </div>
-      <div id="gamescreen" class="maingamescreen">
-        <button title="Close Game" class="gameclsbtn" onclick="revillagemainscreentoggle()">	&#10060;</button>
-        <iframe src="https://www.youtube.com/embed/lJ_-_T05SOE"   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-      </div>
+        </section>
+        <div class="continue-container" id="modal2" style="display: none;">
+          <div class="modal">
+            <p>This is just a Demo</p>
+            <div class="two-row">
+              <li id="close1" onclick="playSound();">Ok</li>
+            </div>
+          </div>
+        </div>
+        </div>
+    
+      <!-- continue game -->
+      <section class="continue">
+          <div class="continue-container" id="modal">
+            <div class="modal">
+              <p>Load most recent saved data?</p>
+              <div class="two-row">
+                <audio id="audio2" src="./audio/error.mp3"  ></audio>
+                <li onclick="playError();">Yes</li>
+                <li id="close" onclick="playSound();">No</li>
+              </div>
+            </div>
+          </div>
+      </section>
+    
+      <!-- bonuses -->
+      <section class="bonuses tabcontent" id="bonuses" style="display: none;" >
+        <div class="bonuses-container">
+          <div class="two-cols" >
+            <div class="left-col" id="nav-two">
+              <h1>Bonuses</h1>
+              <li id = "home1">Movies</li>
+              <li id = "home2">Extra Content Shop</li>
+              <li id = "home3">The Mercenaries</li>
+              <audio id="beep-two"  preload="auto">
+                 <source src="./audio/beep.wav" ></source>
+              </audio>
+            </div>
+            <div class="right-col">
+              <img src="./images/book.jpg" id="img" alt="">
+            </div>
+          </div>
+          <div class="two-col">
+            <div class="ok" onclick="playError();">
+              <img src="./images/a.png" alt="">
+              <h2>OK</h2>
+            </div>
+            <div class="back" onclick="openTab(event, 'home'), playSound();">
+              <img src="./images/b.png" alt="" >
+              <h2>Back</h2>
+            </div>
+          </div>
+        </div>
+       
+      </section>
+    
+      <!-- options -->
+      <section class="options tabcontent" id="options" style="display: none;">
+        <div class="option-container">
+          <div class="two-cols" >
+            <div class="left-col" id="nav-two">
+              <h1>Bonuses</h1>
+              <div href="#" class="a-link">
+                <li id="control">Controls</li>
+                <span class="bottom-text">Adjust control settings.</span>
+              </div>
+              <div href="#" class="a-link">
+                <li id="camera">Camera</li>
+                <span class="bottom-text">Adjust camera settings.</span>
+              </div>
+              <div href="#" class="a-link">
+               <li id = "game-setting">Game Settings</li>
+               <span class="bottom-text">Adjust gameplay and UI settings.</span>
+              </div>
+              <div href="#" class="a-link">
+                <li id = "display">Display</li>
+                <span class="bottom-text">Adjust display settings.</span>
+              </div>
+              <div href="#" class="a-link">
+                <li id = "audio1">Audio</li>
+                <span class="bottom-text">Adjust audio settings.</span>
+              </div>
+              <div href="#" class="a-link">
+               <li id = "language">Language</li>
+               <span class="bottom-text">Change language settings.</span>
+              </div>
+              <audio id="beep-two"  preload="auto">
+                 <source src="./audio/beep.wav" ></source>
+              </audio>
+            </div>
+            <div class="right-col">
+              <div class="control" id="con-table" style="display: block;">
+                <table>
+                  <tbody>
+                  <tr>
+                  <td width="500px">Controller Vibration Function</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On&nbsp;&nbsp;&nbsp;</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Control Type</td>
+                  <td width="50px"></td>
+                  <td class="mid-text" width="200px"></td>
+                  <td width="50px" style="text-align: right;"></td>
+                  </tr>
+                  </tbody>
+                  </table>
+              </div>
+              <div class="Camera" style="display: none;" id="cam-table">
+                <table>
+                  <tbody>
+                  <tr>
+                  <td width="500px">Movement Camera Invesion</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">Normal</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Aiming Camera Invesion</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">Normal</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Menu / Non-Movement Camera</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">Normal</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Movement Camera Speed</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">5</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Aiming Camera Speed</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">2</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Movement Camera Acceleration</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">Mid</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Aiming Camera Acceleration</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">Mid</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Camera Wobble</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">On</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  
+                  </tbody>
+                  </table>
+              </div>
+              <div  style="display: none;" id="game-table">
+                <table>
+                  <tbody>
+                  <tr>
+                  <td width="500px">Aim Assist</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">On</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Damage Display</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">Normal</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Display Tutorial</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">On</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">HUD</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">On</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Reticle</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">2</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Reticle Color</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">White</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  </tbody>
+                  </table>
+              </div>
+              <div  id="display-table" style="display: none;">
+                <table>
+                  <tbody>
+                  <tr>
+                  <td width="500px">Action / Visuals Priority</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">Prioritize Frame Rate</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Brightness</td>
+                  <td width="50px"></td>
+                  <td class="mid-text" width="200px"></td>
+                  <td width="50px" style="text-align: right;"></td>
+                  </tr>
+                  </tbody>
+                  </table>
+              </div>
+              <div  style="display: none;" id="audio-table">
+                <table>
+                  <tbody>
+                  <tr>
+                  <td width="500px">Voice Volume</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">10</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">BGM Volume</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">10</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Sound Effect Volume</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">10</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Menu Volume</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">10</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Dynamic Range</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">Small</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Audio Output Device</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">TV</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Virtual Surround</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">Off</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  </tbody>
+                  </table>
+              </div>
+              <div  style="display: none;" id="lan-table">
+                <table>
+                  <tbody>
+                  <tr>
+                  <td width="500px">Voice Language</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">Japanese</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Display Language</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">English</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  <tr>
+                  <td width="500px">Subtitles</td>
+                  <td width="50px">&lsaquo;</td>
+                  <td class="mid-text" width="200px">On</td>
+                  <td width="50px" style="text-align: right;">&rsaquo;</td>
+                  </tr>
+                  </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>
+          <div class="two-col">
+            
+            <div class="ok" onclick="playError();">
+              <img src="./images/a.png">
+              <h2>OK</h2>
+            </div>
+            <div class="back" onclick="openTab(event, 'home'), playSound();"  >
+              <img src="./images/b.png" alt="">
+              <h2>Back</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- load game -->
+      <section class="load-game tabcontent" id="load" style="display: none;">
+        <div class="load-container" id="nav-two">
+          <div class="load-header" >
+            <h1>Traveler Records</h1>
+            <p>Lumber from Otis and Pebbles, O, to Rumsford.</p>
+            <p style="font-style: italic; font-weight: 600; padding-top: 0.4rem;">Save Slots</p>
+            <audio id="beep-two"  preload="auto">
+              <source src="./audio/beep.wav" ></source>
+            </audio>
+          </div>
+          <div class="save-slot" id="save">
+            <p style="font-size: 1.5rem;">1</p>
+            <img src="./images/saveimg.png" alt="">
+            <div class="three-row">
+              <p>Village - Church</p>
+              <p>Find a way to open the castle gate</p>
+              <p>Difficulty: Standard</p>
+            </div>
+            <div class="two-rows">
+              <p>05/06/2021 14:33:19</p>
+              <p>0:59'57"</p>
+            </div>
+          </div>
+          <hr class="style-two">
+          <div class="save-slot" id="save">
+            <p style="font-size: 1.5rem;">2</p>
+            <img src="./images/factory.png" alt="">
+            <div class="three-row">
+              <p>Heisenberg's Factory - Scrapheap</p>
+              <p>Escape the Factory</p>
+              <p>Difficulty: Casual</p>
+            </div>
+            <div class="two-rows">
+              <p>05/11/2021 17:22:08</p>
+              <p>6:37'08"</p>
+            </div>
+          </div>
+          <hr class="style-two">
+          
+        </div>
+        <div class="two-col">
+          <div class="ok" onclick="playError();">
+            <img src="./images/a.png" alt="" >
+            <h2>OK</h2>
+          </div>
+          <div class="back"  onclick="openTab(event, 'home'), playSound();">
+            <img src="./images/b.png" alt="">
+            <h2>Back</h2>
+          </div>
+        </div>
+      </section>
+    
+    
+     
     </div>
 
     

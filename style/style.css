@@ -938,3 +938,674 @@ backdrop-filter: blur(4.3px);
     bottom: 25px;
     
 }
+
+
+
+  li {
+    list-style-type: none;
+  }
+  
+  .a-link {
+    text-decoration: none;
+    color: gray;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .logo img {
+    width: 100%;
+  }
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .main-menu {
+    position: relative;
+  }
+  .main-menu .logo {
+    width: 500px;
+    margin-bottom: 2rem;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .a-link {
+    cursor: pointer;
+  }
+  .menu .a-link {
+    position: relative;
+  }
+  
+  .a-link .border-bottom {
+    visibility: hidden;
+    width: 250px;
+    padding: 0;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1),
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0)
+    );
+    /* Position the tooltip */
+    position: absolute;
+    left: -4rem;
+    bottom: 0.5rem;
+    z-index: 1;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.8);
+  }
+  
+  .a-link:hover .border-bottom {
+    visibility: visible;
+  }
+  .a-link li {
+    color: rgb(187, 187, 187);
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    position: relative;
+  }
+  .a-link li:hover {
+    color: white;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.8);
+  }
+  .bottom-text {
+    position: fixed;
+    bottom: 1rem;
+    width: max-content;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: rgb(214, 214, 214);
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+  }
+  .a-link:hover .bottom-text {
+    visibility: visible;
+  }
+  
+  .copyright {
+    color: rgb(172, 172, 172);
+    position: fixed;
+    bottom: 2rem;
+  }
+  .credit{
+    color: rgb(172, 172, 172);
+    position: fixed;
+    bottom: 1rem;
+  }
+  /* new game */
+  .new-game-container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .new-game-container h2:first-child {
+    color: white;
+    margin-bottom: 4rem;
+    font-weight: 400;
+  }
+  .new-game-container .a-link:hover {
+    width: max-content;
+    text-align: center;
+    width: 300px;
+    border-inline: 0.5px solid rgba(224, 224, 224, 1);
+    background: rgb(224, 224, 224);
+    background: -moz-linear-gradient(
+      top,
+      rgba(224, 224, 224, 1) 0%,
+      rgba(54, 56, 60, 1) 5%,
+      rgba(25, 25, 25, 1) 33%,
+      rgba(10, 10, 10, 1) 46%,
+      rgba(0, 0, 0, 1) 55%,
+      rgba(33, 33, 33, 1) 76%,
+      rgba(54, 56, 60, 1) 95%,
+      rgba(224, 224, 224, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(224, 224, 224, 1) 0%,
+      rgba(54, 56, 60, 1) 5%,
+      rgba(25, 25, 25, 1) 33%,
+      rgba(10, 10, 10, 1) 46%,
+      rgba(0, 0, 0, 1) 55%,
+      rgba(33, 33, 33, 1) 76%,
+      rgba(54, 56, 60, 1) 95%,
+      rgba(224, 224, 224, 1) 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(224, 224, 224, 1) 0%,
+      rgba(54, 56, 60, 1) 5%,
+      rgba(25, 25, 25, 1) 33%,
+      rgba(10, 10, 10, 1) 46%,
+      rgba(0, 0, 0, 1) 55%,
+      rgba(33, 33, 33, 1) 76%,
+      rgba(54, 56, 60, 1) 95%,
+      rgba(224, 224, 224, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#e0e0e0',GradientType=0 );
+  }
+  
+  .new-game-container .bottom-text {
+    position: fixed;
+    width: max-content;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 20%;
+    color: rgb(214, 214, 214);
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+  }
+  .a-link:hover .bottom-text {
+    visibility: visible;
+  }
+  
+  .two-col {
+    display: flex;
+    background: rgb(33, 39, 44);
+    background: linear-gradient(
+      90deg,
+      rgba(33, 39, 44, 0) 0%,
+      rgba(33, 39, 44, 1) 49%,
+      rgba(33, 39, 44, 0) 100%
+    );
+    padding: 1rem;
+    width: 700px;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+  }
+  .two-col h2 {
+    font-weight: 200;
+    margin-left: 0.5rem;
+  }
+  .two-col .ok,
+  .back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 1rem;
+    color: rgb(223, 223, 223);
+    cursor: pointer;
+  }
+  .two-col img {
+    width: 35px;
+  }
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    /* min-height: 100%; */
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+  }
+  
+  /* Preloader */
+  
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: 99;
+  }
+  
+  .flex-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: rgb(190, 190, 190);
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  #status1 {
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+  }
+  .flex-img img {
+    width: 500px;
+  }
+  #status {
+    animation: fadeInAnimation ease-in-out 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  /* continue game */
+  
+  .continue-container {
+    position: absolute;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .modal {
+    background-color: rgb(15, 15, 15);
+    padding: 2rem;
+    width: 500px;
+    text-align: center;
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.8);
+  }
+  .modal p {
+    color: rgb(187, 187, 187);
+    font-size: 1.4rem;
+  }
+  .two-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(187, 187, 187);
+    margin-top: 5rem;
+  }
+  .two-row li {
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .two-row li:hover {
+    width: max-content;
+    text-align: center;
+    width: 200px;
+    border-inline: 0.5px solid rgba(224, 224, 224, 1);
+    background: rgb(224, 224, 224);
+    background: -moz-linear-gradient(
+      top,
+      rgba(224, 224, 224, 1) 0%,
+      rgba(54, 56, 60, 1) 5%,
+      rgba(25, 25, 25, 1) 33%,
+      rgba(10, 10, 10, 1) 46%,
+      rgba(0, 0, 0, 1) 55%,
+      rgba(33, 33, 33, 1) 76%,
+      rgba(54, 56, 60, 1) 95%,
+      rgba(224, 224, 224, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(224, 224, 224, 1) 0%,
+      rgba(54, 56, 60, 1) 5%,
+      rgba(25, 25, 25, 1) 33%,
+      rgba(10, 10, 10, 1) 46%,
+      rgba(0, 0, 0, 1) 55%,
+      rgba(33, 33, 33, 1) 76%,
+      rgba(54, 56, 60, 1) 95%,
+      rgba(224, 224, 224, 1) 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(224, 224, 224, 1) 0%,
+      rgba(54, 56, 60, 1) 5%,
+      rgba(25, 25, 25, 1) 33%,
+      rgba(10, 10, 10, 1) 46%,
+      rgba(0, 0, 0, 1) 55%,
+      rgba(33, 33, 33, 1) 76%,
+      rgba(54, 56, 60, 1) 95%,
+      rgba(224, 224, 224, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#e0e0e0',GradientType=0 );
+  }
+  
+  /* bonuses */
+  .bonuses-container {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .bonuses-container .two-col {
+    padding-top: 1.2rem;
+  }
+  .two-cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5rem;
+    gap: 200px;
+  }
+  .left-col h1 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
+  }
+  .left-col li {
+    padding: 0.5rem;
+    color: rgb(187, 187, 187);
+    width: 300px;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  .left-col li:hover {
+    width: max-content;
+    width: 300px;
+    color: rgb(248, 248, 248);
+    border-inline: 0.5px solid rgb(167, 167, 167);
+    background: rgb(224, 224, 224);
+    background: -moz-linear-gradient(
+      top,
+      rgba(224, 224, 224, 1) 0%,
+      rgba(54, 56, 60, 1) 5%,
+      rgba(25, 25, 25, 0.8) 33%,
+      rgba(10, 10, 10, 0.7) 46%,
+      rgba(0, 0, 0, 0.7) 55%,
+      rgba(33, 33, 33, 0.8) 76%,
+      rgba(54, 56, 60, 1) 95%,
+      rgba(245, 245, 245, 0.5) 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(224, 224, 224, 1) 0%,
+      rgba(54, 56, 60, 1) 5%,
+      rgba(25, 25, 25, 0.8) 33%,
+      rgba(10, 10, 10, 0.7) 46%,
+      rgba(0, 0, 0, 0.7) 55%,
+      rgba(33, 33, 33, 0.8) 76%,
+      rgba(54, 56, 60, 1) 95%,
+      rgba(245, 245, 245, 0.5) 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(224, 224, 224, 1) 0%,
+      rgba(54, 56, 60, 1) 5%,
+      rgba(25, 25, 25, 0.8) 33%,
+      rgba(10, 10, 10, 0.7) 46%,
+      rgba(0, 0, 0, 0.7) 55%,
+      rgba(33, 33, 33, 0.8) 76%,
+      rgba(54, 56, 60, 1) 95%,
+      rgba(245, 245, 245, 0.5) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#e0e0e0',GradientType=0 );
+  }
+  .right-col img {
+    width: 75%;
+    opacity: 0.8;
+  }
+  /* option */
+  .option-container {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .option-container .two-col {
+    padding-top: 3rem;
+  }
+  .option-container .two-cols {
+    gap: 400px;
+  }
+  .option-container .left-col li {
+    width: 300px;
+  }
+  .option-container .left-col li:hover {
+    border-inline: 0.5px solid rgba(224, 224, 224, 0.6);
+    background: rgb(224, 224, 224);
+    background: -moz-linear-gradient(
+      top,
+      rgba(224, 224, 224, 1) 0%,
+      rgba(54, 56, 60, 1) 5%,
+      rgba(25, 25, 25, 1) 33%,
+      rgba(10, 10, 10, 1) 46%,
+      rgba(0, 0, 0, 1) 55%,
+      rgba(33, 33, 33, 1) 76%,
+      rgba(54, 56, 60, 1) 95%,
+      rgba(224, 224, 224, 0.5) 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(224, 224, 224, 1) 0%,
+      rgba(54, 56, 60, 1) 5%,
+      rgba(25, 25, 25, 1) 33%,
+      rgba(10, 10, 10, 1) 46%,
+      rgba(0, 0, 0, 1) 55%,
+      rgba(33, 33, 33, 1) 76%,
+      rgba(54, 56, 60, 1) 95%,
+      rgba(224, 224, 224, 0.5) 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(224, 224, 224, 1) 0%,
+      rgba(54, 56, 60, 1) 5%,
+      rgba(25, 25, 25, 1) 33%,
+      rgba(10, 10, 10, 1) 46%,
+      rgba(0, 0, 0, 1) 55%,
+      rgba(33, 33, 33, 1) 76%,
+      rgba(54, 56, 60, 1) 95%,
+      rgba(224, 224, 224, 0.5) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#e0e0e0',GradientType=0 );
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table td {
+    color: rgb(207, 207, 207);
+    font-size: 1.2rem;
+    padding: 0.6rem;
+  }
+  table tr {
+    border-bottom: 2px solid rgba(199, 199, 199, 0.2);
+  }
+  .mid-text {
+    text-align: center;
+  }
+  table tr:hover {
+    cursor: pointer;
+  
+    border-inline: 0.5px solid rgba(224, 224, 224, 1);
+    background: rgb(224, 224, 224);
+    background: -moz-linear-gradient(
+      top,
+      rgba(224, 224, 224, 1) 0%,
+      rgba(54, 56, 60, 1) 5%,
+      rgba(25, 25, 25, 1) 33%,
+      rgba(10, 10, 10, 1) 46%,
+      rgba(0, 0, 0, 1) 55%,
+      rgba(33, 33, 33, 1) 76%,
+      rgba(54, 56, 60, 1) 95%,
+      rgba(224, 224, 224, 0.5) 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(224, 224, 224, 1) 0%,
+      rgba(54, 56, 60, 1) 5%,
+      rgba(25, 25, 25, 1) 33%,
+      rgba(10, 10, 10, 1) 46%,
+      rgba(0, 0, 0, 1) 55%,
+      rgba(33, 33, 33, 1) 76%,
+      rgba(54, 56, 60, 1) 95%,
+      rgba(224, 224, 224, 0.5) 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(224, 224, 224, 1) 0%,
+      rgba(54, 56, 60, 1) 5%,
+      rgba(25, 25, 25, 1) 33%,
+      rgba(10, 10, 10, 1) 46%,
+      rgba(0, 0, 0, 1) 55%,
+      rgba(33, 33, 33, 1) 76%,
+      rgba(54, 56, 60, 1) 95%,
+      rgba(224, 224, 224, 0.5) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#e0e0e0',GradientType=0 );
+  }
+  .option-container .bottom-text {
+    position: fixed;
+    bottom: 3.7rem;
+    width: max-content;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: rgb(214, 214, 214);
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    z-index: 99;
+  }
+  #nav-two li:hover .bottom-text2 {
+    visibility: visible !important;
+  }
+  /* load game */
+  .load-game {
+    background-color: #101213;
+    position: relative;
+    z-index: 1111;
+    width: 100%;
+    height: 100vh;
+  }
+  .load-container {
+    background-image: url(../images/loadgame.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 2.5rem;
+    width: 60%;
+    opacity: 0.8;
+    margin: auto;
+    height: 90%;
+    font-family: "Playfair Display", serif;
+    color: #413a30;
+  }
+  .load-header {
+    text-align: center;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .save-slot {
+    display: flex;
+    /* border-top: 1px groove #413a30;
+    border-bottom: 1px groove #413a30; */
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .save-slot:hover {
+    background-color: #dfd4b8;
+  }
+  .save-slot img {
+    border-radius: 7px;
+    width: 100px;
+  }
+  .three-row {
+    font-weight: bold;
+  }
+  .two-rows {
+    font-weight: bold;
+  }
+  hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0)
+    );
+  }
+  .load-game .two-col {
+    margin: auto;
+    right: 0;
+    left: 0%;
+    padding: 0.6rem;
+    bottom: 0;
+  }
+  
+  /* media query */
+  @media (min-aspect-ratio: 16/9) {
+    .video-foreground {
+      height: 300%;
+      top: -100%;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .video-foreground {
+      width: 300%;
+      left: -100%;
+    }
+  }
+  /* media query */
+  @media screen and (max-width: 1800px) {
+    .option-container .two-cols {
+      gap: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 1700px) {
+    .bonuses-container .two-cols {
+      gap: 0px;
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    .bonuses-container .right-col {
+      width: 65%;
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    .load-container .save-slot {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .load-container {
+      width: 80%;
+    }
+  }
+  
