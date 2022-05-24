@@ -62,6 +62,7 @@ function minecrafttoggle() {
     const file = document.getElementById('minecraft')  ;
     file.classList.toggle('windowshow');
 }
+
 // 
 
               (function(d, s, id) {

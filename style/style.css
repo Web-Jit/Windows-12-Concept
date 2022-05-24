@@ -390,16 +390,7 @@ p{
     outline: none;
     border-radius: 13px;
 }
-.vlmvlmslider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 5px;
-    height: 5px;
-    position: relative;
-    cursor: pointer;
-    border: 9px solid rgb(30, 79, 236);
-    border-radius: 13px;
 
-}
 .mastervlm{
     height: 2rem;
     border-bottom-left-radius: 13px;
@@ -410,6 +401,21 @@ p{
     flex-direction: column;
     padding: 13px 3px;
     background-color: rgba(165, 202, 216, 0.85);
+}
+input[type="range" i]::-webkit-slider-runnable-track{
+  background: rgb(13, 144, 196) !important;
+  height: 7px;
+  border-radius: 8px;
+}
+
+input[type="range" i]::-webkit-slider-thumb{
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+  border: 4px solid white !important;
+  background-color: skyblue;
+  border-radius: 12px;
+  margin-top: -7px;
 }
 .mastervlm span{
     display: flex;
@@ -455,7 +461,7 @@ p{
 
 /* Window settings End */
 
-#edge, #vscode, #photoshop, #pc, #poki, #bbench, #patatap,#files,#minecraft{
+#edge, #vscode, #photoshop, #pc, #poki, #bbench, #patatap,#files,#minecraft,#pinball{
     width: 100%;
     height: inherit;
     position: absolute;
@@ -1608,4 +1614,38 @@ backdrop-filter: blur(4.3px);
       width: 80%;
     }
   }
-  
+
+
+ 
+ 
+@media screen and (max-width: 769px){
+  body{
+    background-image: none;
+    background-color: #202020;
+  }
+  .desktop{
+    display: none;
+  }
+  .phone{
+    display: block;
+  }
+  .phone h2{
+    text-align: center;
+    color: whitesmoke;
+  }
+  .restext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: auto;
+  }
+}
+@media screen and (min-width: 770px){
+  .desktop{
+    display: block;
+  }
+  .phone{
+    display: none;
+  }
+}
