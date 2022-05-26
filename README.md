@@ -6,7 +6,7 @@
 
 
 
-#### It is app based on HTML, CSS & Javascript use to take a look of Windows 12 (Concept) in your PC/Laptop's Browser
+#### Take a look of Microsoft's future Operating System (Windows 12) in Laptop/Desktop Browser. 
 
 ###  Note: This is not a real software & I don't have any connection with Microsoft.
 
