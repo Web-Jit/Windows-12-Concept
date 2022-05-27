@@ -3,6 +3,7 @@
 ![picture alt](https://img.shields.io/badge/HTML-red)
 ![picture alt](https://img.shields.io/badge/CSS-red)
 ![picture alt](https://img.shields.io/badge/JAVASCRIPT-red)
+![picture alt](https://img.shields.io/badge/Status-Online-green)
 
 
 
@@ -18,8 +19,11 @@
 + [x]  Edge
 + [x]  Visual Studio Code
 + [x]  Adobe Photoshop
++ [x]  Minecraft
++ [x]  Resident Evil Village
++ [x]  File Explorer
 
-## Screenshots
+## Screenshots 
 ![picture alt](./images/ss-1.png "Screenshot-1")
 - - - -
 ![picture alt](./images/ss-2.png "Screenshot-2")
@@ -32,6 +36,7 @@
 ![](https://img.shields.io/twitter/url?label=Support%20Here&logo=buy%20me%20a%20coffee&logoColor=red&url=https%3A%2F%2Fwww.buymeacoffee.com%2Fwebjeet)
 ![](https://img.shields.io/twitter/url?label=Subscribe%20Here&logo=youtube&url=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCKeynDZdfCEpAGjnpb6qlTQ)
 ![](https://img.shields.io/twitter/url?label=Follow%20Here&logo=Github&url=https%3A%2F%2Fgithub.com%2FWeb-Jit)
+
 <h2>Thanks for Reading 😄</h2> 
 
 
