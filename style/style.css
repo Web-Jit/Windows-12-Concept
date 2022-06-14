@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 body{
   padding: 0;
   margin: 0;
@@ -8,7 +7,7 @@ body{
   height: 100vh;
   width: auto;
   overflow: hidden;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 p{
     margin: 0;
@@ -113,7 +112,10 @@ p{
     bottom: -500px;
     width: 46rem;
     height: 33rem;
-    background-color: #cfcccc;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
     visibility: hidden;
     transition: all 0.4s ease-in;
     border-radius: 9px;
@@ -134,9 +136,6 @@ p{
 .rightmenu{
     width: 50%;
     float: left;
-    background: rgba(165, 202, 216, 0.85);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10.5px);
     height: 33rem;
     border-top-right-radius: 9px;
     border-bottom-right-radius: 9px;
@@ -373,7 +372,7 @@ p{
     visibility: hidden;
     width: 21rem;
     height: 10.2rem;
-    background: #cbd1d7;
+    background: rgb(211, 212, 212);
     border-radius: 13px;
     transition: all 0.6s ease-in;
 }
@@ -400,7 +399,7 @@ p{
     align-items: center;
     flex-direction: column;
     padding: 13px 3px;
-    background-color: rgba(165, 202, 216, 0.85);
+    background-color: rgb(175, 211, 223);
 }
 input[type="range" i]::-webkit-slider-runnable-track{
   background: rgb(13, 144, 196) !important;
@@ -412,8 +411,8 @@ input[type="range" i]::-webkit-slider-thumb{
   height: 20px;
   width: 20px;
   -webkit-appearance: none;
-  border: 4px solid white !important;
-  background-color: skyblue;
+  border: 4px solid black !important;
+  background-color: rgb(35, 171, 224);
   border-radius: 12px;
   margin-top: -7px;
 }
@@ -425,7 +424,7 @@ input[type="range" i]::-webkit-slider-thumb{
     
 }
 .volumeshow{
-    right: 30px !important;
+    right: 25px !important;
     visibility: visible !important;
 }
 
@@ -435,6 +434,7 @@ input[type="range" i]::-webkit-slider-thumb{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
 }
 .winheader svg{
     padding: 4px;
@@ -453,7 +453,7 @@ input[type="range" i]::-webkit-slider-thumb{
 }
 .windowframe{
     width: 100%;
-    height: 100vh;
+    height: 95.5vh;
 }
 .windowshow{
     visibility: visible !important;
@@ -461,14 +461,18 @@ input[type="range" i]::-webkit-slider-thumb{
 
 /* Window settings End */
 
-#edge, #vscode, #photoshop, #pc, #poki, #bbench, #patatap,#files,#minecraft,#pinball{
+#edge, #vscode, #photoshop, #pc, #poki, #bbench, #patatap,#files,#minecraft,#ylight{
     width: 100%;
-    height: inherit;
+    height: 100vh;
     position: absolute;
     visibility: hidden;
     background-color: #eeeeee;
     transition: all 0.4s ease-in-out;
-}
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 
 /* Side Bar  */
@@ -488,6 +492,7 @@ input[type="range" i]::-webkit-slider-thumb{
     align-items: center;
     text-align: center;
     word-wrap: break-word;
+    border-radius: 13px;
 }
 .sidebar ul li:hover{
     background-color: rgb(225, 225, 225,0.2);
@@ -498,7 +503,7 @@ input[type="range" i]::-webkit-slider-thumb{
 }
 
 .soon{
-    height: inherit;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -512,7 +517,10 @@ input[type="range" i]::-webkit-slider-thumb{
     bottom: -500px;
     width: 20rem;
     height: 20rem;
-    background-color: #cfcccc;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
     visibility: hidden;
     transition: all 0.4s ease-in;
     border-radius: 9px;
@@ -531,6 +539,7 @@ input[type="range" i]::-webkit-slider-thumb{
     border: 3px solid transparent;
     padding: 5px;
     font-size: 17px;
+    border-radius: 14px;
 }
 .myul{
     margin: 0;
@@ -627,7 +636,9 @@ input[type="range" i]::-webkit-slider-thumb{
 }
 
 #contextmenu{
-	background-color:rgb(224, 221, 221);
+	-webkit-border-radius: 27px;
+  border-radius: 27px;
+  background: #ffffff;
 	width:210px;
 	display:none;
 	position: fixed;
@@ -650,8 +661,8 @@ input[type="range" i]::-webkit-slider-thumb{
     padding: 0;
 }
 .minimize{
-    width: 30rem !important;
-    height: 20rem !important;
+    width: 40rem !important;
+    height: 30rem !important;
 }
  /* File Explorer */
 
@@ -659,7 +670,12 @@ input[type="range" i]::-webkit-slider-thumb{
     background-color: white;
     height: 4rem;
     border-bottom: 1px solid rgb(197, 192, 192);
-    margin-top: 1rem;
+    margin-top: 10px;
+}
+.sline{
+  border-right: 3px solid blue;
+  height: 1rem;
+  border-radius: 14px;
 }
 .lefthead{
     width: 100%;
@@ -686,7 +702,6 @@ input[type="range" i]::-webkit-slider-thumb{
     padding: 1px 5px;
     border-top-left-radius: 10px;
     border-top-right-radius:10px;
-    line-height: 48px;
 }
 .addtabs{
     display: flex;
@@ -731,12 +746,10 @@ input[type="range" i]::-webkit-slider-thumb{
     box-shadow: 4px 6px 71px 0px whitesmoke;
 }
 .leftsidebar{
-    width: 20%;
+    width: 15rem;
     height: 90vh;
-    background-color: white; 
     padding: 12px;
     float: left;
-    border-right: 1px solid rgb(197, 192, 192);
 }
 .dropdowns{
     width: 100%;
@@ -791,16 +804,12 @@ input[type="range" i]::-webkit-slider-thumb{
     gap: 10px;
     font-size: 19px;
 }
-.filefolder{
-    background-color: white;
 
-}
 .headfolder{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    border-bottom: 1px solid rgb(197, 192, 192);
 
 }
 .tollbar{
@@ -809,6 +818,27 @@ input[type="range" i]::-webkit-slider-thumb{
     align-items: center;
     gap: 10px;
     padding: 10px;
+    position: absolute;
+    left: 0;
+    width: 87%;
+}
+.tollsearch{
+  outline: none;
+  border: 0px solid transparent;
+  padding: 14px;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 14px;
+}
+.filesminimize{
+  width: 60rem !important;
+  top: 30px !important;
+  height: 35rem !important;
+  border-radius: 12px;
+  
+}
+.filessmini{
+  height: 62.5vh !important;
 }
 .tools{
     display: flex;
@@ -820,16 +850,18 @@ input[type="range" i]::-webkit-slider-thumb{
     cursor: pointer;
 }
 #files{
-background: rgba(94, 154, 228, 0.64) !important;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(4.3px);
--webkit-backdrop-filter: blur(4.3px);
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 8px );
+  -webkit-backdrop-filter: blur( 8px );
 }
 .filess{
     height: 100vh;
     background-color: white;
     display: flex;
-    gap: 20px;
+    gap: 40px;
+    padding: 1.4rem;
+    border-top-left-radius: 13px;
 }
 
 .files{
@@ -1648,4 +1680,19 @@ backdrop-filter: blur(4.3px);
   .phone{
     display: none;
   }
+}
+
+.coinPriceBlock{
+  width: 11rem !important;
+    height: 9rem !important;
+    margin: 0 !important;
+    text-align: center;
+    padding: 9px !important;
+}
+.coinPriceBlock-footer{
+  display: none;
+}
+.coinPriceBlock-container{
+  overflow: hidden !important;
+  padding: 0 !important;
 }

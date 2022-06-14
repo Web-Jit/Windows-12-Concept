@@ -54,13 +54,23 @@ function patatapminimize() {
     const thispc = document.getElementById('patatap')  ;
     thispc.classList.toggle('minimize');
 }
+function filesminimize() {
+    const files = document.getElementById('files');
+    files.classList.toggle('filesminimize');
+    const filess = document.getElementById('fils');
+    filess.classList.toggle('filessmini');
+}
 function filexplorer() {
     const file = document.getElementById('files')  ;
     file.classList.toggle('windowshow');
 }
 function minecrafttoggle() {
-    const file = document.getElementById('minecraft')  ;
-    file.classList.toggle('windowshow');
+    const mine = document.getElementById('minecraft')  ;
+    mine.classList.toggle('windowshow');
+}
+function musictoggle() {
+    const music = document.getElementById('ylight')  ;
+    music.classList.toggle('windowshow');
 }
 
 // 
