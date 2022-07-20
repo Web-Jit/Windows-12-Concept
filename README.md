@@ -15,27 +15,21 @@
 ## Features
 
 + [x]  Start Menu with Search & Widgets
-+ [x]  Volume Controller
++ [ ]  Volume Controller
 + [x]  Edge
-+ [x]  Visual Studio Code
 + [x]  Adobe Photoshop
-+ [x]  Minecraft
++ [ ]  Minecraft
 + [x]  Resident Evil Village
-+ [x]  File Explorer
++ [ ]  File Explorer
 
 ## Screenshots 
 ![picture alt](./images/ss-1.png "Screenshot-1")
 - - - -
 ![picture alt](./images/ss-2.png "Screenshot-2")
-- - - -
-![picture alt](./images/ss-3.png "Screenshot-3")
-- - - -
-![picture alt](./images/ss-4.png "Screenshot-4")
 ## Support Here
 
-![](https://img.shields.io/twitter/url?label=Support%20Here&logo=buy%20me%20a%20coffee&logoColor=red&url=https%3A%2F%2Fwww.buymeacoffee.com%2Fwebjeet)
-![](https://img.shields.io/twitter/url?label=Subscribe%20Here&logo=youtube&url=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCKeynDZdfCEpAGjnpb6qlTQ)
-![](https://img.shields.io/twitter/url?label=Follow%20Here&logo=Github&url=https%3A%2F%2Fgithub.com%2FWeb-Jit)
+<a href="https://www.buymeacoffee.com/webjeet" target="_blank"><img src="https://skinmc.net/en/achievement/31/Buy+me+a+Cofffee/Support+Me" alt="Minecraft Achievement" /></a>
+<a href="https://github.com/Web-Jit" target="_blank"><img src="https://skinmc.net/en/achievement/27/Follow+Me/on+Github" alt="Minecraft Achievement" /></a>
 
 <h2>Thanks for Reading 😄</h2> 
 

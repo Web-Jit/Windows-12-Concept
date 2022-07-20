@@ -1,926 +1,696 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Windows 12 Concept</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/000000/windows-11.png" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<title>Windows 12 Concept</title>
-<meta name="title" content="Windows 12 Concept">
-<meta name="description" content="Take a look of  Microsoft's Future Operating System (Windows 12) in your browser. This is not a original Software. I have no connection with Microsoft.">
-</head>
-<body>
-  <div class="desktop">
-  <div id="contextmenu">
-    <div class="menusa">View <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></div>
-    <div class="menusa">Sort by <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></div>
-    <div class="menusa">Refresh </div>
-    <hr class="menuhr">
-    <div class="menusa">Paste </div>
-    <hr class="menuhr">
-    <div class="menusa">New <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></div>
-
-  </div>
-    <div class="navbar">
-        <div class="leftbar">
-          <ul>
-           <a onclick="startmenutoggle()"><li><img src="https://img.icons8.com/color/37/000000/windows-11.png" style="border-radius: 3rem;"/></li></a> 
-           <a onclick="searchmenutoogle()"> <li style="padding: 8.5px;"><img src="./images/search.png" width="30" height="30"></li></a>
-           <a onclick="filexplorer()"> <li><img src="https://img.icons8.com/color/37/000000/windows-explorer.png"/></li></a>
-          </ul>
-        </div>
-        <div class="midbar">
-          <ul>
-          <a onclick="edgetoggle()"><li><img src="https://img.icons8.com/color/37/000000/ms-edge-new.png"/></li></a>  
-          <a onclick="pshoptoggle()"><li><img src="https://img.icons8.com/color/37/adobe-photoshop.png"/></li></a> 
-          <a onclick="vscodetoggle()"> <li><img src="https://img.icons8.com/fluency/37/undefined/paint-palette.png"/></li></a>
-          <a onclick="musictoggle()"> <li><img src="./images/ylight-logo.png" width="37px"/></li></a>
-          </ul>
-        </div>
-        <div class="rightbar">
-          <ul>
-            <li><img style="transform:rotate(180deg);" src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/22/external-arrow-arrows-those-icons-lineal-color-those-icons-1.png" /></li>
-            <li><img src="https://img.icons8.com/external-neu-royyan-wijaya/22/000000/external-connection-neu-interface-neu-royyan-wijaya-2.png"/></li>
-            <a onclick="volumehubtoggle()"><li><img src="https://img.icons8.com/fluency-systems-regular/22/000000/speaker.png"/></li></a>
-            <li><img src="https://img.icons8.com/material-outlined/22/000000/topic--v1.png"/></li>
-          </ul>
-        </div>
-    </div>
-
-<!-- Sidebar -->
-<div class="sidebar">
-  <ul>
-   <a onclick="pctoggle()"><li><div class="sideimg"><img src="https://img.icons8.com/stickers/40/000000/my-computer.png"/></div>This PC</li></a> 
-   <a onclick="patataptoggle()"><li><div class="sideimg"><img src="./images/patatap.png" width="40px"/></div>Patatap</li></a> 
-   <a onclick="bbenchtoggle()"><li><div class="sideimg"><img src="./images/blockbench_logo.png" width="40px"/></div>Block Bench</li></a> 
-   <a onclick="revillagetoggle()"><li><div class="sideimg"><img src="./images/revillage.png" width="40px"/></div>Resident Evil Village</li></a> 
-   <!-- <a onclick="minecrafttoggle()"><li><div class="sideimg"><img src="./images/minecraft logo.png" width="40px"/></div>Minecraft</li></a>  -->
-  </ul>
-</div>
-
-    <!-- Startmenu -->
-    <div id="startmenu">
-        <div class="leftmenu">
-          <div class="searchapps">
-            <input type="text" placeholder="Search for anything">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows 12 Concept | Web Jeet</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/color/27/000000/windows-11.png"
+      type="image/x-icon"
+    />
+    <meta name="title" content="Windows 12 Concept | Web Jeet" />
+    <meta
+      name="description"
+      content="Windows 12 Concept is a project to show the upcoming operating system of Microsoft (i.e Windows 12)."
+    />
+  </head>
+  <body>
+    <div id="desktop">
+      <div class="taskbar">
+        <img
+          src="https://img.icons8.com/color/27/000000/windows-11.png"
+          onclick="startmenutoggle()"
+        />
+        <img src="https://img.icons8.com/windows/27/000000/search--v1.png" />
+        <img
+          src="https://img.icons8.com/fluency/27/000000/ms-edge-new.png"
+          onclick="edgetoggle()"
+        />
+        <img
+          src="https://img.icons8.com/fluency/27/000000/windows-explorer.png"
+          onclick="explorertoggle()"
+        />
+        <img
+          src="https://img.icons8.com/color/27/000000/adobe-photoshop--v1.png"
+          onclick="photoshoptoggle()"
+        />
+        <img
+          src="https://play-lh.googleusercontent.com/bquiDSLaQ57YLHLbZ-3-1bFo1X7MWGTjspf-mWk4j4Ip1gfkyQ8wTAETszEflT2ODds"
+          width="27px"
+          onclick="ylighttoggle()"
+        />
+        <div class="rtaskbar">
+          <img
+            class="rtaskicon"
+            src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/17/000000/external-arrows-arrows-those-icons-lineal-color-those-icons-15.png"
+          />
+          <div id="status">
+            <svg
+              id="charge"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 318.29 176.83"
+            >
+              <title>battery</title>
+              <rect
+                id="charge-status"
+                x="17"
+                y="17"
+                data-full=""
+                width="0"
+                height="142"
+                fill=""
+              >
+                <animate
+                  id="charge-status-ani"
+                  attributeName="width"
+                  from="0"
+                  to=""
+                  dur="2s"
+                  repeatCount="1"
+                />
+              </rect>
+              <g id="battery-path">
+                <path
+                  d="M443.2,310.95a17.69,17.69,0,0,1,17.68,17.68v53a17.69,17.69,0,0,1-17.68,17.68v22.1a22.17,22.17,0,0,1-22.1,22.1H164.69a22.17,22.17,0,0,1-22.1-22.1V288.85a22.17,22.17,0,0,1,22.1-22.1h256.4a22.17,22.17,0,0,1,22.1,22.1v22.1Zm-2.7,70.73v-53h-15V288.85a4.26,4.26,0,0,0-4.42-4.42H164.69a4.26,4.26,0,0,0-4.42,4.42V421.47a4.26,4.26,0,0,0,4.42,4.42h256.4a4.26,4.26,0,0,0,4.42-4.42V381.68h15Z"
+                  transform="translate(-142.59 -266.74)"
+                  fill="#231f20"
+                />
+              </g>
+              <polygon
+                class="hidden"
+                id="charge-path"
+                points="129.64 37.69 189.71 37.69 165.26 80.27 191.19 80.27 127.74 146.66 136.81 96.07 111.94 96.5 129.64 37.69"
+                fill="#f1c40f"
+              >
+                <animate
+                  attributeName="fill"
+                  from="#f1c40f"
+                  to="#fcd536"
+                  dur="2s"
+                  repeatCount="indefinite"
+                />
+              </polygon>
+            </svg>
           </div>
-          <div class="listofapps">
-            <div class="firstbar">
-              <span style="font-weight: bolder;">Most used </span>
-              <button class="appsbtn">All apps <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-              </svg></button>
-            </div>
-            <div class="liapp">
-              <div class="liapps"><img src="https://img.icons8.com/color/33/000000/windows-explorer.png"/>&nbsp;&nbsp;&nbsp;File Explorer</div>
-              <div class="liapps"><img src="https://img.icons8.com/fluency/33/000000/settings.png"/>&nbsp;&nbsp;&nbsp;Settings</div>
-              <div class="liapps"><img src="https://img.icons8.com/fluency/33/000000/photos.png"/>&nbsp;&nbsp;&nbsp;Photos</div>
-              <div class="liapps"><img src="./images/cloud.png"/>&nbsp;&nbsp;&nbsp;Weather</div>
-              <div class="liapps"><img src="./images/patatap.png" width="33px"/>&nbsp;&nbsp;&nbsp;Patatap</div>
-            </div>
-            <div class="firstbar"><span style="font-weight: bolder;">Recent</span></div>
-            <div class="liapp">
-             <a target="_blank" href="https://github.com/Web-Jit"><div class="liapps"><img src="https://img.icons8.com/windows/33/000000/github.png"/>&nbsp;&nbsp;&nbsp;Github</div></a> 
-              <div class="liapps"><img src="https://img.icons8.com/fluency/33/000000/ms-edge-new.png"/>&nbsp;&nbsp;&nbsp;Edge</div>
-             <a target="_blank" href="https://www.buymeacoffee.com/webjeet"><div class="liapps"><img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/33/000000/external-buy-me-a-coffee-help-creators-receive-support-from-their-audience-logo-filled-tal-revivo.png"/>&nbsp;&nbsp;&nbsp;Buy me a coffee</div></a> 
-            </div>
-          </div>
+          <img
+            src="https://img.icons8.com/fluency-systems-filled/17/000000/wifi.png"
+          />
+          <p
+            id="MyClockDisplay"
+            class="rtaskiconp clock"
+            onload="showTime()"
+          ></p>
+          <p class="rtaskiconp">
+            <span id="current_day"></span>
+            <span id="current_month"></span>
+            <span id="current_year"></span>
+          </p>
         </div>
-        <div class="rightmenu">
-          <div class="userinfo">
-            <div class="userimg"><img src="./images/Logo.png" width="70px"></div>
-            <div class="userdata"><span>Webjeet</span>  <p>webjit45@gmail.com</p>  </div>
-            <div class="userbtn">
-              <button onclick="window.close()"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 21c4.411 0 8-3.589 8-8 0-3.35-2.072-6.221-5-7.411v2.223A6 6 0 0 1 18 13c0 3.309-2.691 6-6 6s-6-2.691-6-6a5.999 5.999 0 0 1 3-5.188V5.589C6.072 6.779 4 9.65 4 13c0 4.411 3.589 8 8 8z"></path><path d="M11 2h2v10h-2z"></path></svg></button>
-            <button><img src="https://img.icons8.com/fluency-systems-regular/31/000000/settings.png"/></button>  
-            <button><img src="https://img.icons8.com/windows/31/000000/windows-explorer.png"/></button>  
-            </div>
-            <div class="scrwidget">
-              <div class="widgets">
-                <div class="weather">
-                  <h4 class="name">Song Name</h4>
-                  <audio src=""></audio>
-                  <div class="control">
-                    <svg id="prev" xmlns="http://www.w3.org/2000/svg" width="38" height="38" class="ionicon" viewBox="0 0 512 512"><title>Play Skip Back</title><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M 400 111 v 290 c 0 17.44 -17 28.52 -31 20.16 L 121.09 272.79 c -12.12 -7.25 -12.12 -26.33 0 -33.58 L 369 90.84 c 14 -8.36 31 2.72 31 20.16 Z" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M 112 80 v 352" /></svg>
-                    <svg id="play" xmlns="http://www.w3.org/2000/svg" width="38" height="38" class="ionicon" viewBox="0 0 512 512"><title>Play</title><path d="M112 111v290c0 17.44 17 28.52 31 20.16l247.9-148.37c12.12-7.25 12.12-26.33 0-33.58L143 90.84c-14-8.36-31 2.72-31 20.16z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="20"/></svg>
-                    <svg id="next" xmlns="http://www.w3.org/2000/svg" width="38" height="38" class="ionicon" viewBox="0 0 512 512"><title>Play Skip Forward</title><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M 112 111 v 290 c 0 17.44 17 28.52 31 20.16 l 247.9 -148.37 c 12.12 -7.25 12.12 -26.33 0 -33.58 L 143 90.84 c -14 -8.36 -31 2.72 -31 20.16 Z" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M 400 80 v 352" /></svg>
+      </div>
+      <div class="sidebar">
+        <div class="sideapps" onclick="settingstoggle()">
+          <img
+            src="https://img.icons8.com/stickers/30/000000/my-computer.png"
+          />
+          <br />
+          This Pc
+        </div>
+        <div class="sideapps" onclick="revillagetoggle()">
+          <img
+            src="./images/revillage.png"
+            width="30px"
+          />
+          <br />
+          Resident Evil Village
+        </div>
+      </div>
+      <div id="startmenu">
+        <div class="search">
+          <input
+            type="text"
+            placeholder="Search apps, files, settings & more."
+          />
+        </div>
+        <div class="dashboard">
+          <div class="updashboard">
+            <h3>Dashboard</h3>
+            <button>
+              Dashboard &nbsp;
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="downdashboard">
+            <div class="ldashboard">
+              <div class="wheather">
+                <div class="upwheather">
+                  <div>
+                    Wheather
+                    <img
+                      src="https://img.icons8.com/emoji/20/000000/sun-behind-small-cloud.png"
+                    />
                   </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-three-dots"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                    />
+                  </svg>
+                </div>
+                <div class="wheatherarea">
+                  <p>USA</p>
+                  <p>Cloudy</p>
+                </div>
+                <div class="wheathertemp">20°C</div>
               </div>
-              <div class="todos">
-                <div class="todotop"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 47, 173, 1);"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>&nbsp; To-Do</div>
-                <div class="todo"><input type="checkbox">Change in Code</div>
-                <div class="todo"><input type="checkbox">Do Dinner</div>
-                <div class="todo"><input type="checkbox">Go to bed</div>
+              <div class="stickynote">
+                <div class="upwheather">
+                  <div>Sticky Notes</div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-three-dots"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                    />
+                  </svg>
+                </div>
+                <div class="notes">
+                  <div class="noteshead">Build PC</div>
+                  <div class="note"><input type="radio" />Buy Processor</div>
+                  <div class="note"><input type="radio" />Buy Motherboard</div>
+                  <div class="note"><input type="radio" />Buy AIU</div>
+                </div>
+                <div class="newnotes">New Sticky Notes</div>
               </div>
             </div>
-            <div class="widgets">
-              <div class="officeapps">
-                <div class="offdown">
-                  <div class="officeapp"><img src="https://img.icons8.com/fluency/33/000000/microsoft-word-2019.png"/></div>
-                  <div class="officeapp"><img src="https://img.icons8.com/color/33/000000/microsoft-excel-2019--v1.png"/></div>
+            <div class="rdashboard">
+              <div class="eventscalender">
+                <div class="upwheather">
+                  <div>Upcoming Events</div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-three-dots"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                    />
+                  </svg>
                 </div>
-                <div class="offdown">
-                  <div class="officeapp"><img src="https://img.icons8.com/color/33/000000/microsoft-powerpoint-2019--v1.png"/></div>
-                  <div class="officeapp"><img src="https://img.icons8.com/fluency/33/000000/microsoft-onedrive-2019.png"/></div>
+                <div class="dateday">
+                  <div class="dates">
+                    <p>S</p>
+                    <p>1</p>
+                  </div>
+                  <div class="dates">
+                    <p>M</p>
+                    <p style="background-color: lightgreen">2</p>
+                  </div>
+                  <div class="dates">
+                    <p>T</p>
+                    <p style="background-color: skyblue">3</p>
+                  </div>
+                  <div class="dates">
+                    <p>W</p>
+                    <p>4</p>
+                  </div>
+                  <div class="dates">
+                    <p>T</p>
+                    <p>5</p>
+                  </div>
+                  <div class="dates">
+                    <p>F</p>
+                    <p>6</p>
+                  </div>
+                  <div class="dates">
+                    <p>S</p>
+                    <p>7</p>
+                  </div>
                 </div>
-              </div>
-              <div id="coinmarketcap-widget-coin-price-block" coins="1" currency="USD" theme="light" transparent="false" show-symbol-logo="true"></div>
-            </div>
-            
-      
-              <div class="tomorrow"
-                 data-location-id="058000"
-                 data-language="EN"
-                 data-unit-system="METRIC"
-                 data-skin="light"
-                 data-widget-type="aqiMini"
-                 style="padding-bottom:22px;position:relative;"
-                 >
-                 <a
-                 href="https://www.tomorrow.io/weather/"
-                 rel="nofollow noopener noreferrer"
-                 target="_blank"
-                 style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
-                 >
-                </a>
+                <div class="listevents">
+                  <div class="events">
+                    <div></div>
+                    Father's Day <br />All day
+                  </div>
+                  <div class="events">
+                    <div style="border-left: 2px solid skyblue;"></div>
+                    Mother's Day <br />All day
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-    </div>
-
-
-    <!-- Search Menu  -->
-    <div id="searchmenu">
-      <div class="searcharea">
-        <input id="searchinput" type="text" placeholder="Search Anything">
-      </div>
-      <div class="apparea">
-        <div class="firstbar"><span style="font-weight: bolder;">E</span></div>
-        <div class="liappss"><img src="https://img.icons8.com/color/33/000000/ms-edge-new.png"/>&nbsp;&nbsp;&nbsp;Edge</div>
-        <div class="firstbar"><span style="font-weight: bolder;">F</span></div>
-        <div class="liappss"><img src="https://img.icons8.com/color/33/000000/windows-explorer.png"/>&nbsp;&nbsp;&nbsp;File Explorer</div>
-        <div class="firstbar"><span style="font-weight: bolder;">P</span></div>
-          <div class="liappss"><img src="https://img.icons8.com/fluency/33/000000/photos.png"/>&nbsp;&nbsp;&nbsp;Photos</div>
-          <div class="liappss"><img src="https://img.icons8.com/color/33/adobe-photoshop.png"/>&nbsp;&nbsp;&nbsp;Photoshop</div>
-      </div>
-    </div>
-
-
-
-
-    <!-- Volume HUD  -->
-    <div id="volumehud">
-      <div class="vlmapp"><img src="./images/spotify.png" width="32px" >&nbsp;&nbsp;&nbsp; <input id="sliderone" class="vlmvlmslider" type="range" min="0" max="100" value="50"></div>
-      <div class="vlmapp"><img src="./images/minecraft_logo.png" width="32px" >&nbsp;&nbsp;&nbsp; <input class="vlmvlmslider" type="range" min="0" max="100" value="50"></div>
-      <div class="mastervlm"><div style="display: flex;align-items: center;justify-content: center;"><img src="https://img.icons8.com/fluency-systems-filled/32/000000/speaker.png"/>&nbsp;&nbsp;&nbsp; <input class="vlmvlmslider" type="range" min="0" max="100" value="100"></div></div>
-    </div>
-
-    <!-- Edge  -->
-    <div id="edge">
-      <div class="winheader"><svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M5 11h14v2H5z"></path></svg>
-        <svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M7 5c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2H7zm0 12V7h10l.002 10H7z"></path></svg>
-        <svg class="cbtn" onclick="edgetoggle()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
-      </div>
-      <iframe class="windowframe" src="https://www.bing.com/" frameborder="0"></iframe>
-    </div>
-
-    <div id="photoshop">
-      <div class="winheader"><svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M5 11h14v2H5z"></path></svg>
-        <svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M7 5c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2H7zm0 12V7h10l.002 10H7z"></path></svg>
-        <svg class="cbtn" onclick="pshoptoggle()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
-      </div>
-      <iframe class="windowframe" src="https://www.photopea.com/" frameborder="0"></iframe>
-    </div>
-    <div id="vscode">
-      <div class="winheader"><svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M5 11h14v2H5z"></path></svg>
-        <svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M7 5c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2H7zm0 12V7h10l.002 10H7z"></path></svg>
-        <svg class="cbtn" onclick="vscodetoggle()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
-      </div>
-      <iframe class="windowframe" src="https://paint.js.org/" frameborder="0"></iframe>
-    </div>
-    <div id="ylight">
-      <div class="winheader"><svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M5 11h14v2H5z"></path></svg>
-        <svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M7 5c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2H7zm0 12V7h10l.002 10H7z"></path></svg>
-        <svg class="cbtn" onclick="musictoggle()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
-      </div>
-      <iframe class="windowframe" src="https://ylight.xyz/home" frameborder="0"></iframe>
-    </div>
-
-    <div id="pc">
-      <div class="winheader"><svg onclick="pctoggle()" class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M5 11h14v2H5z"></path></svg>
-        <svg class="obtn" onclick="thispcminimize()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M7 5c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2H7zm0 12V7h10l.002 10H7z"></path></svg>
-        <svg class="cbtn" onclick="pctoggle()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
-      </div>
-      <div class="soon">
-        Coming Soon...
-      </div>
-    </div>
-    
-    <div id="files">
-      <div class="winheader" style="height: 3rem; margin-bottom: 2rem; align-items: baseline;">
-        <div class="tollbar">
-            <div class="tools">
-              <img src="./images/add.png" width="22px" alt="">
-              <p>New</p>
+        <div class="apps">
+          <div class="updashboard">
+            <h3>Apps</h3>
+            <button>
+              Apps &nbsp;
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="appspinned">
+            <div class="pinned">Pinned</div>
+            <div class="pinnedapps">
+              <div class="pinnedapp">
+                <div>
+                  <img
+                    src="https://img.icons8.com/fluency/25/000000/microsoft-word-2019.png"
+                  />
+                </div>
+                Word
+              </div>
+              <div class="pinnedapp">
+                <div>
+                  <img
+                    src="https://img.icons8.com/fluency/25/000000/microsoft-excel-2019.png"
+                  />
+                </div>
+                Excel
+              </div>
+              <div class="pinnedapp">
+                <div>
+                  <img
+                    src="https://img.icons8.com/fluency/25/000000/microsoft-outlook-2019.png"
+                  />
+                </div>
+                Outlook
+              </div>
+              <div class="pinnedapp">
+                <div>
+                  <img
+                    src="https://img.icons8.com/color/25/000000/microsoft-to-do-app.png"
+                  />
+                </div>
+                To Do
+              </div>
             </div>
-            
-            <p>|</p>
-            <div class="tools">
-              <img src="./images/cut.png" width="22px" alt="">
+          </div>
+          <div class="appspinned" style="margin-top: 1.5rem">
+            <div class="pinned">A</div>
+            <div class="pinnedapps" style="gap: 36px">
+              <div class="pinnedapp">
+                <div>
+                  <img
+                    src="https://img.icons8.com/color/25/000000/adobe-photoshop--v1.png"
+                  />
+                </div>
+                Photoshop
+              </div>
+              <div class="pinnedapp">
+                <div>
+                  <img
+                    src="https://img.icons8.com/color/25/1A1A1A/adobe-illustrator--v1.png"
+                  />
+                </div>
+                Illustrator
+              </div>
+              <div class="pinnedapp">
+                <div>
+                  <img
+                    src="https://img.icons8.com/color/25/000000/adobe-after-effects--v1.png"
+                  />
+                </div>
+                Effects
+              </div>
+              <div class="pinnedapp">
+                <div>
+                  <img
+                    src="https://img.icons8.com/color/25/000000/adobe-xd--v1.png"
+                  />
+                </div>
+                Xd
+              </div>
+            </div>
+          </div>
+          <div class="appspinned" style="margin-top: 1.5rem">
+            <div class="pinned">C</div>
+            <div class="pinnedapps">
+              <div class="pinnedapp">
+                <div>
+                  <img
+                    src="https://img.icons8.com/fluency/25/000000/calendar.png"
+                  />
+                </div>
+                Calender
+              </div>
+              <div class="pinnedapp">
+                <div>
+                  <img
+                    src="https://img.icons8.com/fluency/25/000000/alarm-clock--v1.png"
+                  />
+                </div>
+                Clock
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="tools">
-          <img src="./images/copy.png" width="22px">
-        </div>
-        <div class="tools">
-          <img src="./images/paste.png" width="22px">
-        </div>
-        <div class="tools">
-          <img src="./images/trash.png" width="22px">
-        </div>
-          <div class="tools">
-        <img src="./images/arrows.png" width="22px" alt="">
-      </div>
-      <p>|</p>
-       
-          <input type="text" placeholder="Enter path or Location" class="tollsearch">
-      </div>
-        <svg onclick="filexplorer()" class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M5 11h14v2H5z"></path></svg>
-        <svg class="obtn" onclick="filesminimize()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M7 5c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2H7zm0 12V7h10l.002 10H7z"></path></svg>
-        <svg class="cbtn" onclick="filexplorer()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
-      </div>
-      
-      <div class="leftsidebar">
-<div class="dropdowns">
-  <div>
-    <img src="https://img.icons8.com/emoji/34/000000/star-emoji.png"/>
-    <p>Favorites</p>
-  </div>
-  <p class="dropdownicons">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path></svg>
-  </p>
-</div>
-<div class="dropdown">
-  <img src="https://img.icons8.com/fluency/34/000000/desktop.png"/>
-  <p>Desktop</p>
-</div>
-<div class="dropdown">
-  <img src="https://img.icons8.com/fluency/34/000000/documents.png"/>
-  <p>Documents</p>
-</div>
-<div class="dropdown">
-  <img src="https://img.icons8.com/fluency/34/000000/downloads-folder--v1.png"/>
-  <p>Downloads</p>
-</div>
-<div class="dropdown"> <div class="sline"></div>
-  <img src="https://img.icons8.com/color/34/000000/picture--v1.png"/>
-  <p>Pictures</p>
-</div>
-<div class="dropdowns">
-  <div>
-    <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/34/000000/external-desktop-100-most-used-icons-flaticons-lineal-color-flat-icons.png"/>
-    <p>This PC </p>
-  </div>
-  <p class="dropdownicons">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path></svg>
-  </p>
-</div>
-<div class="dropdown">
-  <img src="https://img.icons8.com/fluency/34/000000/hdd.png"/>
-  <p>Local Disk (C:)</p>
-</div>
-      </div>
-      <div class="filefolder">
-        <div class="headfolder">
-          
-          
-    </div>
-    <!-- files here  -->
-    <div class="filess" id="fils">
-      <div class="files">
-        <img src="./images/food.jpg" width="150px">
-        <p>My Favorite Food.jpg</p>
-      </div>
-      <div class="files">
-        <img src="./images/windows.jpg" width="150px">
-        <p>Windows.jpg</p>
-      </div>
-      <div class="files">
-        <img src="./images/greenry.jpg" width="150px">
-        <p>Waterfall.jpg</p>
-      </div>
-    </div>
-  </div>
-    </div>
-
-    <div id="bbench">
-      <div class="winheader"><svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M5 11h14v2H5z"></path></svg>
-        <svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M7 5c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2H7zm0 12V7h10l.002 10H7z"></path></svg>
-        <svg class="cbtn" onclick="bbenchtoggle()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
-      </div>
-      <iframe class="windowframe" src="https://web.blockbench.net/" frameborder="0"></iframe>
-    </div>
-
-    <div id="patatap">
-      <div class="winheader"><svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M5 11h14v2H5z"></path></svg>
-        <svg class="obtn" onclick="patatapminimize()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M7 5c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2H7zm0 12V7h10l.002 10H7z"></path></svg>
-        <svg class="cbtn" onclick="patataptoggle()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
-      </div>
-      <iframe class="windowframe" src="https://www.patatap.com/" frameborder="0"></iframe>
-    </div>
-    
-    <div id="minecraft" style="background-color: #202020;">
-      <div class="winheader"><svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgb(255, 255, 255);"><path d="M5 11h14v2H5z"></path></svg>
-        <svg class="obtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgb(255, 255, 255);"><path d="M7 5c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2H7zm0 12V7h10l.002 10H7z"></path></svg>
-        <svg class="cbtn" onclick="minecrafttoggle()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgb(255, 255, 255);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
-      </div>
-      <div class="launcher">
-        <div class="blackback">
-          <div class="updowna">
-            <div class="playerinfo dropdn">
-              <img src="./images/player.png" width="37px">
+        <div class="userinfo">
+          <div class="user">
+            <img src="./images/Logo.png" width="33px" /> Web Jeet
+          </div>
+          <div class="userbtn">
+            <div class="ubtn">
               <div>
-                <p>Player</p>
-                <p>Microsoft Account</p>
+                <img
+                  src="https://img.icons8.com/fluency-systems-regular/20/000000/shutdown.png"
+                />
               </div>
+              Power
             </div>
-            <div class="minenews dropdn">
-              <img src="https://img.icons8.com/plasticine/37/000000/news.png"/> 
+            <div class="ubtn">
               <div>
-
-                <p>News</p> 
+                <img
+                  src="https://img.icons8.com/ios/20/000000/windows-explorer.png"
+                />
               </div>
+              Files
             </div>
-            <div class="javaedition dropdn activedor">
-              <img src="./images/minecraft_logo.png" width="37px">
+            <div class="ubtn">
               <div>
-                <p>MINECRAFT</p>
-                <p>Java Edition</p>
+                <img
+                  src="https://img.icons8.com/windows/20/000000/settings--v1.png"
+                />
               </div>
-              
-            </div>
-            <div class="javaedition dropdn">
-              <img src="./images/Minecraft_bedrock.png" width="37px">
-              <div>
-
-                <p>MINECRAFT</p>
-                <p>for Windows</p>
-              </div>
-            </div>
-            <div class="javaedition dropdn">
-              <img src="./images/Minecraft_dungen.png" width="37px">
-              <div>
-                <p>MINECRAFT</p>
-                <p>Dungenous</p>
-              </div>
+              Settings
             </div>
           </div>
-          
-          <div class="settings dropdn">
-            <img src="./images/settingsminecraft.png" width="37px">
-           <div>
-            <p>Settings</p> 
-           </div> 
-          </div>
-        </div>
-          
-        <div class="gameheader">
-          <h5>
-            MINECRAFT: JAVA EDITION
-          </h5>
-          <ul>
-            <li class="activetab">Play</li>
-            <li>Installation</li>
-            <li>Skins</li>
-            <li>Pacth Notes</li>
-          </ul>
-        </div>
-          <div class="gamewallpaper">
-            <img src="https://cdn.mos.cms.futurecdn.net/6Di69wBziu5SDtHQZvkfdg.jpg" style="display: flex;">
-          </div>
-          <div class="startgame">
-            <div class="version">
-              <div>
-                <p>Latest Release</p>
-                <p>1.18.2</p>
-              </div>
-              <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg></div>
-            </div>
-            <button class="playbtn">Play</button>
-            <div>
-              <p>Player</p>
-            </div>
-          </div>
-      </div>
-    </div>
-
-
-
-    <!-- Resident Evil Village  -->
-    <div id="revillage">
-      <div id="preloader">
-        <div class="flex-img">
-          <video autoplay muted id="status1">
-            <source src="./video/engine_logo.mp4" type="video/mp4"  >
-          </video>
-          <img id="status2" src="./images/capcom.svg" style="display: none;" >&nbsp;</img>
-          
         </div>
       </div>
-      
-    
-        <!-- bg video -->
-        <video autoplay muted loop id="myVideo">
-          <source src="./video/bg.mp4" type="video/mp4">
-        </video>
-    
-        <!-- start -->
-        <section  class="tabcontent" style="display: block;">
-          <div class="main-container" >
-            <div class="main-menu">
-              <div class="logo" id="img_logo" style="display:none">
-                <img src="./images/re-logo.png" alt="" />
-              </div>
-              <div class="menu" id="menu" style="display:none">
-                <div class="a-link" onclick="openTab(event, 'home'),playSound();">
-                  <li>Start Game.</li>
-                  <audio id="audio" src="./audio/btn.wav"  ></audio>
-                  <!-- <audio id="beep-two"  preload="auto">
-                    <source src="./audio/beep.wav" ></source>
-                  </audio> -->
-                  <span class="border-bottom"></span>
-                </div>
-                <span class="copyright">©CAPCOM CO. LTD. 2021 ALL RIGHT RESERVED.</span>
-                <span class="credit">Credit to <a style="color: white; text-decoration: none;" href="https://github.com/kasim393/Resident-Evil-Village-UI-Clone">@kasim393</a> </span>
-              </div>
-            </div>
-          </div>
-        </section>
-    
-        <!-- menu -->
-        <section id="home" class="tabcontent" style="display: none;">
-          <div class="main-container" >
-            <div class="main-menu">
-              <div class="logo">
-                <img src="./images/re-logo.png" alt="" />
-              </div>
-              <div class="menu" id="nav-two">
-                <div class="a-link"  onclick="openTab(event, 'new_game')">
-                  <li>New Game</li>
-                  <audio id="audio" src="./audio/btn.wav"  ></audio>
-                  <audio id="beep-two"  preload="auto">
-                    <source src="./audio/beep.wav" ></source>
-                  </audio>
-                  <span class="border-bottom"></span>
-                  <span class="bottom-text">Start a new game.</span>
-                </div>
-                <div class="a-link" href="#" onclick="openTab(event, 'load'),playSound();">
-                  <li>Load Game</li>
-                  <span class="border-bottom"></span>
-                  <span class="bottom-text">Load saved game.</span>
-                </div>
-                <div class="a-link" href="#" id="btn" >
-                  <li onclick="playSound();">Continue</li>
-                  <span class="border-bottom"></span>
-                  <span class="bottom-text">Continue the game from your latest save.</span>
-                </div>
-                <div class="a-link" href="#" onclick="openTab(event, 'options'),playSound();">
-                  <li>Options</li>
-                  <span class="border-bottom"></span>
-                  <span class="bottom-text">Change game setting.</span>
-                </div>
-                <div class="a-link" href="#" onclick="openTab(event, 'bonuses'),playSound();">
-                  <li>Bonuses</li>
-                  <span class="border-bottom"></span>
-                  <span class="bottom-text">View bonus content</span>
-                </div>
-                <div class="a-link" href="#" onclick="revillagetoggle()">
-                  <li>Quit</li>
-                  <span class="border-bottom"></span>
-                  <span class="bottom-text">Quit Game</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-       
-    
-        <!-- new game  -->
-        <div class="tabcontent" id="new_game" style="display: none;">
-        <section class="new-game-container">
-          <div class="main-menu">
-          <div class="menu" id="nav-two">
-            <h2>Difficulty</h2>
-            <div class="a-link btn" href="#" id="but1">
-              <li>Casual</li>
-              <audio id="beep-two" src="./audio/beep.wav" preload="auto">
-              </audio>
-              <span class="border"></span>
-              <span class="bottom-text">We'll take it easy on you.</span>
-            </div>
-            <div class="a-link btn" href="#" id="but2">
-              <li>Standard</li>
-              <span class="border"></span>
-              <span class="bottom-text">Just your average difficulty.</span>
-            </div>
-            <div class="a-link btn" href="#" id="but3">
-              <li>Hardcore</li>
-              <span class="border"></span>
-              <span class="bottom-text">Only for experience player</span>
-            </div>
-            <div class="a-link btn" href="#" id="but4" >
-              <li>Village of Shadows</li>
-              <span class="border"></span>
-              <span class="bottom-text">Survive the unsurvivable</span>
-            </div>
-          </div>
-        </div>
-        <div class="two-col">
-          <div class="ok" onclick="playError();">
-            <img src="./images/a.png" alt="">
-            <h2>OK</h2>
-          </div>
-          <div class="back" onclick="openTab(event, 'home'), playSound();" >
-            <img src="./images/b.png" alt="">
-            <h2 >Back</h2>
-          </div>
-        </div>
-        </section>
-        <div class="continue-container" id="modal2" style="display: none;">
-          <div class="modal">
-            <p>This is just a Demo</p>
-            <div class="two-row">
-              <li id="close1" onclick="playSound();">Ok</li>
-            </div>
-          </div>
-        </div>
-        </div>
-    
-      <!-- continue game -->
-      <section class="continue">
-          <div class="continue-container" id="modal">
-            <div class="modal">
-              <p>Load most recent saved data?</p>
-              <div class="two-row">
-                <audio id="audio2" src="./audio/error.mp3"  ></audio>
-                <li onclick="playError();">Yes</li>
-                <li id="close" onclick="playSound();">No</li>
-              </div>
-            </div>
-          </div>
-      </section>
-    
-      <!-- bonuses -->
-      <section class="bonuses tabcontent" id="bonuses" style="display: none;" >
-        <div class="bonuses-container">
-          <div class="two-cols" >
-            <div class="left-col" id="nav-two">
-              <h1>Bonuses</h1>
-              <li id = "home1">Movies</li>
-              <li id = "home2">Extra Content Shop</li>
-              <li id = "home3">The Mercenaries</li>
-              <audio id="beep-two"  preload="auto">
-                 <source src="./audio/beep.wav" ></source>
-              </audio>
-            </div>
-            <div class="right-col">
-              <img src="./images/book.jpg" id="img" alt="">
-            </div>
-          </div>
-          <div class="two-col">
-            <div class="ok" onclick="playError();">
-              <img src="./images/a.png" alt="">
-              <h2>OK</h2>
-            </div>
-            <div class="back" onclick="openTab(event, 'home'), playSound();">
-              <img src="./images/b.png" alt="" >
-              <h2>Back</h2>
-            </div>
-          </div>
-        </div>
-       
-      </section>
-    
-      <!-- options -->
-      <section class="options tabcontent" id="options" style="display: none;">
-        <div class="option-container">
-          <div class="two-cols" >
-            <div class="left-col" id="nav-two">
-              <h1>Bonuses</h1>
-              <div href="#" class="a-link">
-                <li id="control">Controls</li>
-                <span class="bottom-text">Adjust control settings.</span>
-              </div>
-              <div href="#" class="a-link">
-                <li id="camera">Camera</li>
-                <span class="bottom-text">Adjust camera settings.</span>
-              </div>
-              <div href="#" class="a-link">
-               <li id = "game-setting">Game Settings</li>
-               <span class="bottom-text">Adjust gameplay and UI settings.</span>
-              </div>
-              <div href="#" class="a-link">
-                <li id = "display">Display</li>
-                <span class="bottom-text">Adjust display settings.</span>
-              </div>
-              <div href="#" class="a-link">
-                <li id = "audio1">Audio</li>
-                <span class="bottom-text">Adjust audio settings.</span>
-              </div>
-              <div href="#" class="a-link">
-               <li id = "language">Language</li>
-               <span class="bottom-text">Change language settings.</span>
-              </div>
-              <audio id="beep-two"  preload="auto">
-                 <source src="./audio/beep.wav" ></source>
-              </audio>
-            </div>
-            <div class="right-col">
-              <div class="control" id="con-table" style="display: block;">
-                <table>
-                  <tbody>
-                  <tr>
-                  <td width="500px">Controller Vibration Function</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On&nbsp;&nbsp;&nbsp;</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Control Type</td>
-                  <td width="50px"></td>
-                  <td class="mid-text" width="200px"></td>
-                  <td width="50px" style="text-align: right;"></td>
-                  </tr>
-                  </tbody>
-                  </table>
-              </div>
-              <div class="Camera" style="display: none;" id="cam-table">
-                <table>
-                  <tbody>
-                  <tr>
-                  <td width="500px">Movement Camera Invesion</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">Normal</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Aiming Camera Invesion</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">Normal</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Menu / Non-Movement Camera</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">Normal</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Movement Camera Speed</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">5</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Aiming Camera Speed</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">2</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Movement Camera Acceleration</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">Mid</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Aiming Camera Acceleration</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">Mid</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Camera Wobble</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">On</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  
-                  </tbody>
-                  </table>
-              </div>
-              <div  style="display: none;" id="game-table">
-                <table>
-                  <tbody>
-                  <tr>
-                  <td width="500px">Aim Assist</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">On</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Damage Display</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">Normal</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Display Tutorial</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">On</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">HUD</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">On</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Reticle</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">2</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Reticle Color</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">White</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  </tbody>
-                  </table>
-              </div>
-              <div  id="display-table" style="display: none;">
-                <table>
-                  <tbody>
-                  <tr>
-                  <td width="500px">Action / Visuals Priority</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">Prioritize Frame Rate</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Brightness</td>
-                  <td width="50px"></td>
-                  <td class="mid-text" width="200px"></td>
-                  <td width="50px" style="text-align: right;"></td>
-                  </tr>
-                  </tbody>
-                  </table>
-              </div>
-              <div  style="display: none;" id="audio-table">
-                <table>
-                  <tbody>
-                  <tr>
-                  <td width="500px">Voice Volume</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">10</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">BGM Volume</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">10</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Sound Effect Volume</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">10</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Menu Volume</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">10</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Dynamic Range</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">Small</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Audio Output Device</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">TV</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Virtual Surround</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">Off</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  </tbody>
-                  </table>
-              </div>
-              <div  style="display: none;" id="lan-table">
-                <table>
-                  <tbody>
-                  <tr>
-                  <td width="500px">Voice Language</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">Japanese</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Display Language</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">English</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  <tr>
-                  <td width="500px">Subtitles</td>
-                  <td width="50px">&lsaquo;</td>
-                  <td class="mid-text" width="200px">On</td>
-                  <td width="50px" style="text-align: right;">&rsaquo;</td>
-                  </tr>
-                  </tbody>
-                  </table>
-              </div>
-            </div>
-          </div>
-          <div class="two-col">
-            
-            <div class="ok" onclick="playError();">
-              <img src="./images/a.png">
-              <h2>OK</h2>
-            </div>
-            <div class="back" onclick="openTab(event, 'home'), playSound();"  >
-              <img src="./images/b.png" alt="">
-              <h2>Back</h2>
-            </div>
-          </div>
-        </div>
-      </section>
-    
-      <!-- load game -->
-      <section class="load-game tabcontent" id="load" style="display: none;">
-        <div class="load-container" id="nav-two">
-          <div class="load-header" >
-            <h1>Traveler Records</h1>
-            <p>Lumber from Otis and Pebbles, O, to Rumsford.</p>
-            <p style="font-style: italic; font-weight: 600; padding-top: 0.4rem;">Save Slots</p>
-            <audio id="beep-two"  preload="auto">
-              <source src="./audio/beep.wav" ></source>
-            </audio>
-          </div>
-          <div class="save-slot" id="save">
-            <p style="font-size: 1.5rem;">1</p>
-            <img src="./images/saveimg.png" alt="">
-            <div class="three-row">
-              <p>Village - Church</p>
-              <p>Find a way to open the castle gate</p>
-              <p>Difficulty: Standard</p>
-            </div>
-            <div class="two-rows">
-              <p>05/06/2021 14:33:19</p>
-              <p>0:59'57"</p>
-            </div>
-          </div>
-          <hr class="style-two">
-          <div class="save-slot" id="save">
-            <p style="font-size: 1.5rem;">2</p>
-            <img src="./images/factory.png" alt="">
-            <div class="three-row">
-              <p>Heisenberg's Factory - Scrapheap</p>
-              <p>Escape the Factory</p>
-              <p>Difficulty: Casual</p>
-            </div>
-            <div class="two-rows">
-              <p>05/11/2021 17:22:08</p>
-              <p>6:37'08"</p>
-            </div>
-          </div>
-          <hr class="style-two">
-          
-        </div>
-        <div class="two-col">
-          <div class="ok" onclick="playError();">
-            <img src="./images/a.png" alt="" >
-            <h2>OK</h2>
-          </div>
-          <div class="back"  onclick="openTab(event, 'home'), playSound();">
-            <img src="./images/b.png" alt="">
-            <h2>Back</h2>
-          </div>
-        </div>
-      </section>
-    </div>
 
-  </div>
-  <div class="phone">
-    <div class="restext">
-      <h2>This page is not responsive for mobile/tablet. Please open this website in Laptop/Desktop.</h2> 
+      <div id="edge">
+        <div class="actionbar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path d="M5 11h14v2H5z"></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path
+              d="M16 7H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zM4 19v-8h12V9l.002 10H4z"
+            ></path>
+            <path
+              d="M22 5c0-1.103-.897-2-2-2H7c-1.103 0-2 .897-2 2h13.001c1.101 0 1.996.895 1.999 1.994L20.002 15H20v2c1.103 0 2-.897 2-2V8.007L22.001 8V6L22 5.99V5z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            onclick="edgetoggle()"
+            width="24"
+            height="24"
+            class="ionicon"
+            viewBox="0 0 512 512"
+          >
+            <title>Close</title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+              d="M368 368L144 144M368 144L144 368"
+            />
+          </svg>
+        </div>
+        <iframe src="https://bing.com" frameborder="0"></iframe>
+      </div>
+      <div id="photoshop">
+        <div class="actionbar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path d="M5 11h14v2H5z"></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path
+              d="M16 7H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zM4 19v-8h12V9l.002 10H4z"
+            ></path>
+            <path
+              d="M22 5c0-1.103-.897-2-2-2H7c-1.103 0-2 .897-2 2h13.001c1.101 0 1.996.895 1.999 1.994L20.002 15H20v2c1.103 0 2-.897 2-2V8.007L22.001 8V6L22 5.99V5z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            onclick="photoshoptoggle()"
+            width="24"
+            height="24"
+            class="ionicon"
+            viewBox="0 0 512 512"
+          >
+            <title>Close</title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+              d="M368 368L144 144M368 144L144 368"
+            />
+          </svg>
+        </div>
+        <iframe src="https://photopea.com/" frameborder="0"></iframe>
+      </div>
+      <div id="ylight">
+        <div class="actionbar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path d="M5 11h14v2H5z"></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path
+              d="M16 7H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zM4 19v-8h12V9l.002 10H4z"
+            ></path>
+            <path
+              d="M22 5c0-1.103-.897-2-2-2H7c-1.103 0-2 .897-2 2h13.001c1.101 0 1.996.895 1.999 1.994L20.002 15H20v2c1.103 0 2-.897 2-2V8.007L22.001 8V6L22 5.99V5z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            onclick="ylighttoggle()"
+            width="24"
+            height="24"
+            class="ionicon"
+            viewBox="0 0 512 512"
+          >
+            <title>Close</title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+              d="M368 368L144 144M368 144L144 368"
+            />
+          </svg>
+        </div>
+        <iframe src="https://ylight.xyz" frameborder="0"></iframe>
+      </div>
+      <div id="revillage">
+        <div class="actionbar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path d="M5 11h14v2H5z"></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path
+              d="M16 7H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zM4 19v-8h12V9l.002 10H4z"
+            ></path>
+            <path
+              d="M22 5c0-1.103-.897-2-2-2H7c-1.103 0-2 .897-2 2h13.001c1.101 0 1.996.895 1.999 1.994L20.002 15H20v2c1.103 0 2-.897 2-2V8.007L22.001 8V6L22 5.99V5z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            onclick="revillagetoggle()"
+            width="24"
+            height="24"
+            class="ionicon"
+            viewBox="0 0 512 512"
+          >
+            <title>Close</title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+              d="M368 368L144 144M368 144L144 368"
+            />
+          </svg>
+        </div>
+        <iframe id="revillageframe" src="" frameborder="0"></iframe>
+      </div>
+      <div id="settings">
+        <div class="actionbar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path d="M5 11h14v2H5z"></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path
+              d="M16 7H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zM4 19v-8h12V9l.002 10H4z"
+            ></path>
+            <path
+              d="M22 5c0-1.103-.897-2-2-2H7c-1.103 0-2 .897-2 2h13.001c1.101 0 1.996.895 1.999 1.994L20.002 15H20v2c1.103 0 2-.897 2-2V8.007L22.001 8V6L22 5.99V5z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            onclick="settingstoggle()"
+            width="24"
+            height="24"
+            class="ionicon"
+            viewBox="0 0 512 512"
+          >
+            <title>Close</title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+              d="M368 368L144 144M368 144L144 368"
+            />
+          </svg>
+        </div>
+        <div class="soon">Coming Soon...</div>
+      </div>
+      <div id="explorer">
+        <div class="actionbar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path d="M5 11h14v2H5z"></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(0, 0, 0, 1)"
+          >
+            <path
+              d="M16 7H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zM4 19v-8h12V9l.002 10H4z"
+            ></path>
+            <path
+              d="M22 5c0-1.103-.897-2-2-2H7c-1.103 0-2 .897-2 2h13.001c1.101 0 1.996.895 1.999 1.994L20.002 15H20v2c1.103 0 2-.897 2-2V8.007L22.001 8V6L22 5.99V5z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            onclick="explorertoggle()"
+            width="24"
+            height="24"
+            class="ionicon"
+            viewBox="0 0 512 512"
+          >
+            <title>Close</title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+              d="M368 368L144 144M368 144L144 368"
+            />
+          </svg>
+        </div>
+        <div class="soon">Coming Soon...</div>
+      </div>
     </div>
-  </div>
-</body>
-<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinPriceBlock.js"></script>
-<script src="./js/script.js"></script>
+    <div id="phone">
+      <p>
+        Windows 12 is unable to open in phone. Even Microsoft Can't make it
+        responsive for phone so how can I make it responsive.
+      </p>
+      <br />
+      <button id="anyway" onclick="phonedesktoptoggle()">Open Anyway</button>
+    </div>
+  </body>
+  <script src="./js/script.js"></script>
 </html>

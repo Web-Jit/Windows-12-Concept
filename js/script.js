@@ -1,342 +1,148 @@
 function startmenutoggle() {
-    const startmenu = document.getElementById('startmenu');
-    startmenu.classList.toggle('taskshow');
+    const start = document.getElementById('startmenu');
+    start.classList.toggle('startshow');
 }
-
-
-function volumehubtoggle() {
-    const volume = document.getElementById('volumehud');
-    volume.classList.toggle('volumeshow');
-}
-
 function edgetoggle() {
     const edge = document.getElementById('edge');
     edge.classList.toggle('windowshow');
 }
-
-function pshoptoggle() {
-    const shop = document.getElementById('photoshop');
-    shop.classList.toggle('windowshow');
+function explorertoggle() {
+    const explorer = document.getElementById('explorer');
+    explorer.classList.toggle('windowshow');
 }
-function vscodetoggle() {
-    const code = document.getElementById('vscode');
-    code.classList.toggle('windowshow');
+function settingstoggle() {
+    const settings = document.getElementById('settings');
+    settings.classList.toggle('windowshow');
 }
-function pctoggle() {
-    const pc = document.getElementById('pc');
-    pc.classList.toggle('windowshow');
+function photoshoptoggle() {
+    const photoshop = document.getElementById('photoshop');
+    photoshop.classList.toggle('windowshow');
 }
-function bbenchtoggle() {
-    const bench = document.getElementById('bbench');
-    bench.classList.toggle('windowshow');
-}
-function patataptoggle() {
-    const patatap = document.getElementById('patatap');
-    patatap.classList.toggle('windowshow');
-}
-function searchmenutoogle() {
-    const searchmenu = document.getElementById('searchmenu');
-    searchmenu.classList.toggle('taskshow');
+function ylighttoggle() {
+    const ylight = document.getElementById('ylight');
+    ylight.classList.toggle('windowshow');
 }
 function revillagetoggle() {
     const village = document.getElementById('revillage');
     village.classList.toggle('windowshow');
+	document.getElementById('revillageframe').src = "https://kasim393.github.io/Resident-Evil-Village-UI-Clone/";
+	
 }
-function revillagemainscreentoggle() {
-    const game = document.getElementById('gamescreen');
-    game.classList.toggle('windowshow');
-}
-function thispcminimize() {
-    const thispc = document.getElementById('pc')  ;
-    thispc.classList.toggle('minimize');
-}
-function patatapminimize() {
-    const thispc = document.getElementById('patatap')  ;
-    thispc.classList.toggle('minimize');
-}
-function filesminimize() {
-    const files = document.getElementById('files');
-    files.classList.toggle('filesminimize');
-    const filess = document.getElementById('fils');
-    filess.classList.toggle('filessmini');
-}
-function filexplorer() {
-    const file = document.getElementById('files')  ;
-    file.classList.toggle('windowshow');
-}
-function minecrafttoggle() {
-    const mine = document.getElementById('minecraft')  ;
-    mine.classList.toggle('windowshow');
-}
-function musictoggle() {
-    const music = document.getElementById('ylight')  ;
-    music.classList.toggle('windowshow');
+function phonedesktoptoggle() {
+    const desktop = document.getElementById('desktop');
+    const phone = document.getElementById('phone');
+	desktop.style.display = "block";
+	phone.style.display = "none";
 }
 
-// 
 
-              (function(d, s, id) {
-                  if (d.getElementById(id)) {
-                      if (window.__TOMORROW__) {
-                          window.__TOMORROW__.renderWidget();
-                      }
-                      return;
-                  }
-                  const fjs = d.getElementsByTagName(s)[0];
-                  const js = d.createElement(s);
-                  js.id = id;
-                  js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-      
-                  fjs.parentNode.insertBefore(js, fjs);
-              })(document, 'script', 'tomorrow-sdk');
+batStatus();
 
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+const cs = document.getElementById("charge-status");
+const csa = document.getElementById("charge-status-ani");
+const cp = document.getElementById('charge-path');
 
-// Music Player 
+function batStatus(){
 
-const title = document.querySelector('.name');
-const prev = document.querySelector('#prev');
-const play = document.querySelector('#play');
-const next = document.querySelector('#next');
-const audio = document.querySelector('audio');
+	navigator.getBattery()
+		.then(function(battery){
 
-// List 
-const songList = [
-    {
-        path: "/music/M-1.mp3",
-        songName: "Imagine Dragons - Believer"
-    }
-]
- let song_Playing = false;
+		const status = document.getElementById("status-info");
+		const chargePath = document.getElementById('charge-path');
 
- function playSong(){
-    song_Playing = true;
-    audio.play();
-    play.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Pause</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M176 96h16v320h-16zM320 96h16v320h-16z"/></svg>';
- }
+		let batLevel = battery.level * 100,
 
- function pauseSong(){
-    song_Playing = false;
-    audio.pause();
-    play.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Play</title><path d="M112 111v290c0 17.44 17 28.52 31 20.16l247.9-148.37c12.12-7.25 12.12-26.33 0-33.58L143 90.84c-14-8.36-31 2.72-31 20.16z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>';
- }
+			// something to do with the height of the battery? i think?
+			batPercent = battery.level * 281;
 
- play.addEventListener("click", () => (song_Playing ? pauseSong() : playSong()));
+		//set battery status color
+		batColors();
+
+		// full charge width = 281
+		cs.setAttribute('data-full', batPercent );
+		csa.setAttribute('to', batPercent);
+		cs.setAttribute('width', batPercent);
 
 
-    function loadSong(songList){
-        title.textContent = songList.songName;
-        audio.src = songList.path;
-    }
+		battery.charging ? chargePath.classList.toggle('hidden') : '';
 
-    let i = 0;
-    loadSong(songList[i])
+		// show hide the charging indicator
+		updateCharge();
+
+		function updateCharge(){
+
+			battery.charging ? cp.classList.remove('hidden') : cp.classList.add('hidden');
+
+		}
+
+		function levelChange(){
+
+			cs.setAttribute('width', batPercent);
+
+			cs.classList.add('bat-change');
+
+			setTimeout(function(){
+				cs.classList.remove('bat-change');
+			},300);
+
+		}
+
+		function batColors() {
+
+			switch( true ) {
+				case (batPercent <= 56):
+					cs.setAttribute('fill', '#c0392b');
+					break;
+
+				case (batPercent  >= 56 && batPercent <= 125):
+					cs.setAttribute('fill', '#f39c12');
+					break;
+
+				case (batPercent > 125):
+					cs.setAttribute('fill', '#2ecc71');
+			}
+		}
+
+		battery.addEventListener('chargingchange', updateCharge);
+		//battery.addEventListener('levelchange', levelChange);
 
 
-    $(document).ready(function(){
-        $(document).bind('contextmenu', function(event){
-            $("#contextmenu").css({"top": event.pageY + "px", "left": event.pageX + "px"}).show();
-            event.preventDefault();
-        });
-        $(document).bind('click', function(){
-            $("#contextmenu").hide();
-        })
-    });
+	}
+);
+}
 
+
+
+function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session = "AM";
     
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + " " + session;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+}
 
-//tabbed
-function openTab(evt, tabname) {
-    var i, tabcontent, tablinks;
-  
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-  
-    document.getElementById(tabname).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-  function playSound() {
-    var sound = document.getElementById("audio");
-    sound.play();
-  }
-  function playError() {
-    var sound = document.getElementById("audio2");
-    sound.play();
-  }
-  document.getElementById("status1").play();
-  // preloader
-  $(window).on("load", function () {
-    $("#status1").fadeIn().delay(5000).fadeOut();
-    $("#status2").delay(5500).fadeIn().delay(1800).fadeOut();
-    $("#img_logo").delay(8000).slideDown(2000); //8000
-    $("#menu").delay(8400).fadeIn(2000); //11400
-  
-    $("#preloader").delay(8200).fadeOut("slow");
-  });
-  
-  // continue
-  // Get the modal
-  var modal = document.getElementById("modal");
-  var modal2 = document.getElementById("modal2");
-  
-  // Get the button that opens the modal
-  var btn = document.getElementById("btn");
-  
-  // Get the <span> element that closes the modal
-  var close = document.getElementById("close");
-  var close1 = document.getElementById("close1");
-  
-  // When the user clicks the button, open the modal
-  btn.onclick = function () {
-    modal.style.display = "flex";
-  };
-  $(document).ready(function () {
-    $(".btn").on("click", function () {
-      modal2.style.display = "flex";
-    });
-  });
-  // When the user clicks on <span> (x), close the modal
-  close.onclick = function () {
-    modal.style.display = "none";
-    var sound = document.getElementById("audio");
-    sound.play();
-  };
-  close1.onclick = function () {
-    modal2.style.display = "none";
-    var sound = document.getElementById("audio");
-    sound.play();
-  };
-  
-  // bonuses
-  $(function () {
-    $("#home1").on({
-      mouseenter: function () {
-        $("#img").attr("src", "./images/book.jpg");
-      },
-      mouseleave: function () {
-        $("#img").attr("src", "./images/book.jpg");
-      },
-    });
-    $("#home2").on({
-      mouseenter: function () {
-        $("#img").attr("src", "./images/extra.png");
-      },
-      mouseleave: function () {
-        $("#img").attr("src", "./images/extra.png");
-      },
-    });
-    $("#home3").on({
-      mouseenter: function () {
-        $("#img").attr("src", "./images/mv.jpg");
-      },
-      mouseleave: function () {
-        $("#img").attr("src", "./images/mv.jpg");
-      },
-    });
-  });
-  
-  // hover sound effect
-  $("#nav-two li,#save")
-    .each(function (i) {
-      if (i != 0) {
-        $("#beep-two")
-          .clone()
-          .attr("id", "beep-two" + i)
-          .appendTo($(this).parent());
-      }
-      $(this).data("beeper", i);
-    })
-    .mouseenter(function () {
-      $("#beep-two" + $(this).data("beeper"))[0].play();
-    });
-  
-  $("#beep-two").attr("id", "beep-two0");
-  
-  // option
-  $(function () {
-    $("#control").on({
-      mouseenter: function () {
-        $("#con-table").show();
-        $("#cam-table").hide();
-        $("#game-table").hide();
-        $("#display-table").hide();
-        $("#audio-table").hide();
-        $("#lan-table").hide();
-      },
-      mouseleave: function () {
-        $("#con-table").show();
-      },
-    });
-    $("#camera").on({
-      mouseenter: function () {
-        $("#cam-table").show();
-        $("#con-table").hide();
-        $("#game-table").hide();
-        $("#display-table").hide();
-        $("#audio-table").hide();
-        $("#lan-table").hide();
-      },
-      mouseleave: function () {
-        $("#cam-table").show();
-      },
-    });
-    $("#game-setting").on({
-      mouseenter: function () {
-        $("#game-table").show();
-        $("#con-table").hide();
-        $("#cam-table").hide();
-        $("#display-table").hide();
-        $("#audio-table").hide();
-        $("#lan-table").hide();
-      },
-      mouseleave: function () {
-        $("#game-table").show();
-      },
-    });
-    $("#display").on({
-      mouseenter: function () {
-        $("#display-table").show();
-        $("#con-table").hide();
-        $("#cam-table").hide();
-        $("#game-table").hide();
-        $("#audio-table").hide();
-        $("#lan-table").hide();
-      },
-      mouseleave: function () {
-        $("#display-table").show();
-      },
-    });
-    $("#audio1").on({
-      mouseenter: function () {
-        $("#audio-table").show();
-        $("#con-table").hide();
-        $("#cam-table").hide();
-        $("#game-table").hide();
-        $("#display-table").hide();
-        $("#lan-table").hide();
-      },
-      mouseleave: function () {
-        $("#audio-table").show();
-      },
-    });
-    $("#language").on({
-      mouseenter: function () {
-        $("#lan-table").show();
-        $("#con-table").hide();
-        $("#cam-table").hide();
-        $("#game-table").hide();
-        $("#display-table").hide();
-        $("#audio-table").hide();
-      },
-      mouseleave: function () {
-        $("#lan-table").show();
-      },
-    });
-  });
-  
+showTime();
+
+
+
+var d=new Date,month=new Array;month[0]="January",month[1]="February",month[2]="March",month[3]="April",month[4]="May",month[5]="June",month[6]="July",month[7]="August",month[8]="September",month[9]="October",month[10]="November",month[11]="December";var month_name=month[d.getMonth()],day_of_month=d.getDate(),current_year=d.getFullYear(),dayOfMonthElement=document.getElementById("current_day"),currentMonthElement=document.getElementById("current_month"),currentYearElement=document.getElementById("current_year");!function(){currentMonthElement.innerHTML=month_name,dayOfMonthElement.innerHTML=day_of_month,currentYearElement.innerHTML=current_year}();
