@@ -2,6 +2,10 @@ function startmenutoggle() {
     const start = document.getElementById('startmenu');
     start.classList.toggle('startshow');
 }
+function quicksettingstoggle() {
+    const quick = document.getElementById('quicksettings');
+    quick.classList.toggle('quicksettingsshow');
+}
 function edgetoggle() {
     const edge = document.getElementById('edge');
     edge.classList.toggle('windowshow');
@@ -34,7 +38,20 @@ function phonedesktoptoggle() {
 	desktop.style.display = "block";
 	phone.style.display = "none";
 }
+function controlbtntoggle() {
+	const btn1 = document.getElementById('cbtn1');
+	btn1.classList.toggle('controlbtnclk');
+}
+function controlbtn2toggle() {
+	const btn2 = document.getElementById('cbtn2');
+	btn2.classList.toggle('controlbtnclk');
 
+}
+function controlbtn3toggle() {
+	const btn3 = document.getElementById('cbtn3');
+	btn3.classList.toggle('controlbtnclk');
+
+}
 
 batStatus();
 

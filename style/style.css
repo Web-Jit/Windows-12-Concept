@@ -36,6 +36,20 @@ box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 2px );
 -webkit-backdrop-filter: blur( 2px );
 }
+.wifibat{
+    height: 33px;
+    border-radius: 12px;
+}
+.wifibat:hover{
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+}
+.ionicon3{
+    padding: 10px;
+    width: 22px !important;
+}
 #startmenu{
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -490,4 +504,203 @@ iframe{
         font-weight: bolder;
         cursor: pointer;
     }
+}
+    /* Quick Settings */
+#quicksettings{
+    height: 34rem;
+    width: 33rem;
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    position: fixed;
+    bottom: 74px;
+    right: -600px;
+    transition: 0.4s ease-in;
+}
+.quicksettingsshow{
+    right: 18px !important;
+}
+.quicksettingsheader{
+    height: 2rem;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.middletoolbar{
+    padding: 12px;
+    gap: 10px;
+}
+.brightnesscontrol, .volumecontrol{
+    width: 16rem;
+    height: 1rem;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+.ionicon1{
+    width: 25px;
+}
+#brightness, #volume{
+    -webkit-appearance: none;
+    border-radius: 10px; 
+    background: grey;
+    height: 3px;   
+    width: 16rem;
+}
+#brightness::-webkit-slider-thumb{
+    -webkit-appearance: none;
+  border-radius: 3rem;
+  background-color: white;
+  border: 3px solid rgb(69, 69, 226);
+  height: 18px;
+  width: 18px;
+}
+#volume::-webkit-slider-thumb{
+    -webkit-appearance: none;
+  border-radius: 3rem;
+  background-color: white;
+  border: 3px solid rgb(69, 69, 226);
+  height: 18px;
+  width: 18px;
+}
+.controlcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18.5rem;
+    gap: 10px;
+    padding-top: 10px;
+}
+.controlbtn{
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    gap: 15px;
+    border-radius: 9px;
+    padding: 0px 10px;
+    height: 86px;
+}
+.controlbtnclk{
+    background-color: #667ef8 !important;
+    color: white;
+}
+.midbor{
+    border-left: 1px solid rgb(211, 211, 211);
+    height: 5.2rem;
+}
+.ionicon2{
+    width: 20px !important;
+}
+.pcstatus{
+    height: 13rem;
+    width: 17.5rem;
+    background: rgba( 255, 255, 255, 0.7 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+}
+.leftmiddletoolbar{
+    float: left;
+}
+.rightmiddletoolbar{
+    float: left;
+    margin-left: 20px;
+}
+.mdp{
+    background-image: url(../images/mbg.jpg);
+    height: 6rem;
+    width: 6rem;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+}
+.currentmusic{
+    text-align: center;
+    height: 13rem;
+    width: 10.5rem;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba( 255, 255, 255, 0.7 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    
+}
+.umdp{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.mname{
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mname h5{
+    text-align: left;
+    color: rgb(173, 173, 173);
+    font-weight: 500;
+}
+.mcontrol{
+    width: 100%;
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 13px;
+}
+.ionicon44{
+    width: 30px;
+}
+.ionicon4{
+    width: 20px;
+}
+.connectionmanager{
+    height: 14rem;
+    width: 11.5rem;
+    background: rgba( 255, 255, 255, 0.7 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    margin-top: 15px;
+    border-radius: 8px;
+
+}
+.connectionmanager h4{
+    padding: 13px;
+    font-size: 13px;
+    text-align: center;
+}
+.connection{
+    padding: 11px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    cursor: pointer;
+}
+.connected{
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+}
+.connected h5{
+    font-size: 14px;
+    color: black;
+}
+.connected{
+    color: rgb(173, 173, 173);
 }
