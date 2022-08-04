@@ -15,11 +15,11 @@
 ## Features
 
 + [x]  Start Menu with Search & Widgets
-+ [ ]  Volume Controller
++ [x]  Volume Controller
 + [x]  Edge
 + [x]  Adobe Photoshop
-+ [ ]  Minecraft
 + [x]  Resident Evil Village
++ [ ]  Minecraft
 + [ ]  File Explorer
 
 ## Screenshots 
