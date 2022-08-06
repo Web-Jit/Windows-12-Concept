@@ -663,8 +663,8 @@ iframe{
     justify-content: center; 
     gap: 13px;
 }
-.ionicon44{
-    width: 30px;
+.ionicon5{
+    width: 30px !important;
 }
 .ionicon4{
     width: 20px;
@@ -704,3 +704,188 @@ iframe{
 .connected{
     color: rgb(173, 173, 173);
 }
+#winatglance{
+    height: 21.3rem;
+    width: 25rem;
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    position: fixed;
+    bottom: 74px;
+    right: -500px;
+    transition: 0.4s ease-in;
+}
+.servicesrunning{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.justplaying{
+    width: 21rem;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: rgba( 255, 255, 255, 0.85 );
+    box-shadow: 0 8px 32px 0 rgba(238, 238, 241, 0.37);
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 15px );
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+.songcontrols{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 35px;
+}
+.songcontrols svg{
+    background-color: #e7e8ec;
+    width: 20px;
+    display: flex;
+    cursor: pointer;
+    padding: 7px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background: #efeff1;
+    -webkit-box-shadow: 6px 4px 15px #c2c9db, -5px -5px 15px #e0e7fd;
+    box-shadow: 5px 5px 15px #c2c9db, -5px -5px 15px #e0e7fd;
+}
+.logoborder{
+    height: 4rem;
+    width: 4rem;
+    background: rgba(252, 252, 252, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(155, 155, 155, 0.37);
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.songlogo{
+    background-image: url(../images/mbg.jpg);
+    height: 3rem;
+    width: 3rem;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.backsoft{
+    width: 21rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 20px;
+}
+.lobacksoft{
+    padding: 19px;
+    background: rgba( 255, 255, 255, 0.85 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 17px );
+    -webkit-backdrop-filter: blur( 17px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+
+#wrapper {
+    margin: 15px auto;
+    max-width: 1100px;
+    position: fixed;
+    right: -500px;
+    bottom: 60px;
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    transition: 0.4s ease-in;
+    height: 20rem;
+}
+
+.container-calendar {
+    padding: 15px;
+    max-width: 475px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.button-container-calendar button {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #00a2b7;
+    color: #fff;
+    border: 1px solid #0aa2b5;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-calendar td, .table-calendar th {
+    padding: 5px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.date-picker.selected {
+    font-weight: bold;
+    background-color: #00BCD4;
+}
+
+.date-picker.selected span {
+    border-bottom: 2px solid currentColor;
+}
+
+
+
+#monthAndYear {
+    text-align: center;
+    margin-top: 0;
+}
+
+.button-container-calendar {
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+    clear: both;
+}
+
+#previous {
+    float: left;
+}
+
+#next {
+    float: right;
+}
+
+.footer-container-calendar {
+    margin-top: 1em;
+    border-top: 1px solid #dadada;
+    padding: 10px 0;
+    display: none;
+}
+
+.footer-container-calendar select {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #ffffff;
+    color: #585858;
+    border: 1px solid #bfc5c5;
+    border-radius: 3px;
+    padding: 5px 1em;
+}
+
