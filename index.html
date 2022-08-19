@@ -23,6 +23,11 @@
   </head>
   <body>
     <div id="desktop">
+      <div class="video-container">
+        <video autoplay muted loop id="mainwallpaper">
+            <source src="" type="video/mp4"  />
+        </video>
+    </div>
       <div class="taskbar">
         <img
           src="https://img.icons8.com/color/27/000000/windows-11.png"
@@ -159,6 +164,11 @@
           <img src="https://img.icons8.com/fluency/30/000000/microsoft-store.png"/>
           <br />
           Store
+        </div>
+        <div class="sideapps" onclick="livewallpapertoggle()">
+          <img src="https://img.icons8.com/color/30/000000/lively-wallpaper.png"/>
+          <br />
+          Lively Wallpaper
         </div>
       </div>
       <div id="startmenu">
@@ -678,6 +688,60 @@
         <div class="soon">Coming Soon...</div>
       </div>
 
+      <!-- Lively Wallpaper -->
+      
+      <div id="livewallpaper">
+        <div class="actionbar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgb(255, 255, 255)"
+          >
+            <path d="M5 11h14v2H5z"></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            onclick="livewallpapertoggle()"
+            width="24"
+            height="24"
+            class="ionicon"
+            viewBox="0 0 512 512"
+            style="color: rgb(255, 255, 255); border-top-right-radius: 14px;"
+          >
+            <title>Close</title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+              d="M368 368L144 144M368 144L144 368"
+            />
+          </svg>
+        </div>
+        <div class="wallcontent">
+          <h3>Lively Wallpaper</h3>
+          <div style="background-image: url(./images/paper-1.png);" class="wallpapers"><button class="setwall" onclick="wallpaper1()">Set as Wallpaper</button></div>
+          <div style="background-image: url(./images/paper-2.png);" class="wallpapers"><button class="setwall" onclick="wallpaper2()">Set as Wallpaper</button></div>
+          <div style="background-image: url(./images/paper-3.png);" class="wallpapers"><button class="setwall" onclick="wallpaper3()">Set as Wallpaper</button></div>
+          <div style="background-image: url(./images/paper-4.png);" class="wallpapers"><button class="setwall" onclick="wallpaper4()">Set as Wallpaper</button></div>
+          <div style="background-image: url(./images/paper-5.png);" class="wallpapers"><button class="setwall" onclick="wallpaper5()">Set as Wallpaper</button></div>
+          <div style="background-image: url(./images/paper-6.png);" class="wallpapers"><button class="setwall" onclick="wallpaper6()">Set as Wallpaper</button></div>
+          <div style="background-image: url(./images/paper-7.png);" class="wallpapers"><button class="setwall" onclick="wallpaper7()">Set as Wallpaper</button></div>
+        </div>
+      </div>
+
+      
+      <!-- Right Click -->
+      <div id="context-menu">
+        <div class="rclickopt">View <svg xmlns="http://www.w3.org/2000/svg" class="ionicon4" viewBox="0 0 512 512"><title>Chevron Forward</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></div>
+        <div class="rclickopt">Group <svg xmlns="http://www.w3.org/2000/svg" class="ionicon4" viewBox="0 0 512 512"><title>Chevron Forward</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></div>
+        <div class="rclickopt">Refresh</div>
+        <div class="rclickopt">New <svg xmlns="http://www.w3.org/2000/svg" class="ionicon4" viewBox="0 0 512 512"><title>Chevron Forward</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg></div>
+        <div class="rclickopt">Display Settings</div>
+        <div class="rclickopt">Personalize</div>
+      </div>
       <!-- Quick Settings  -->
 
     <div id="quicksettings">
@@ -1060,6 +1124,7 @@
         
 
     <!--  -->
+    </div>
     </div>
     <div id="phone">
       <p>

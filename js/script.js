@@ -38,6 +38,10 @@ function storetoggle() {
     const ylight = document.getElementById('microsoftstore');
     ylight.classList.toggle('windowshow');
 }
+function livewallpapertoggle() {
+    const ylight = document.getElementById('livewallpaper');
+    ylight.classList.toggle('windowshow');
+}
 function revillagetoggle() {
     const village = document.getElementById('revillage');
     village.classList.toggle('windowshow');
@@ -310,3 +314,93 @@ function daysInMonth(iMonth, iYear) {
     return 32 - new Date(iYear, iMonth, 32).getDate();
 }
 
+
+const contextMenu = document.getElementById("context-menu");
+const scope = document.querySelector("body");
+
+const normalizePozition = (mouseX, mouseY) => {
+  // ? compute what is the mouse position relative to the container element (scope)
+  let {
+    left: scopeOffsetX,
+    top: scopeOffsetY,
+  } = scope.getBoundingClientRect();
+  
+  scopeOffsetX = scopeOffsetX < 0 ? 0 : scopeOffsetX;
+  scopeOffsetY = scopeOffsetY < 0 ? 0 : scopeOffsetY;
+ 
+  const scopeX = mouseX - scopeOffsetX;
+  const scopeY = mouseY - scopeOffsetY;
+
+  // ? check if the element will go out of bounds
+  const outOfBoundsOnX =
+    scopeX + contextMenu.clientWidth > scope.clientWidth;
+
+  const outOfBoundsOnY =
+    scopeY + contextMenu.clientHeight > scope.clientHeight;
+
+  let normalizedX = mouseX;
+  let normalizedY = mouseY;
+
+  // ? normalize on X
+  if (outOfBoundsOnX) {
+    normalizedX =
+      scopeOffsetX + scope.clientWidth - contextMenu.clientWidth;
+  }
+
+  // ? normalize on Y
+  if (outOfBoundsOnY) {
+    normalizedY =
+      scopeOffsetY + scope.clientHeight - contextMenu.clientHeight;
+  }
+
+  return { normalizedX, normalizedY };
+};
+
+scope.addEventListener("contextmenu", (event) => {
+  event.preventDefault();
+
+  const { clientX: mouseX, clientY: mouseY } = event;
+
+  const { normalizedX, normalizedY } = normalizePozition(mouseX, mouseY);
+
+  contextMenu.classList.remove("visible");
+
+  contextMenu.style.top = `${normalizedY}px`;
+  contextMenu.style.left = `${normalizedX}px`;
+
+  setTimeout(() => {
+    contextMenu.classList.add("visible");
+  });
+});
+
+scope.addEventListener("click", (e) => {
+  // ? close the menu if the user clicks outside of it
+  if (e.target.offsetParent != contextMenu) {
+    contextMenu.classList.remove("visible");
+  }
+});
+
+
+// Lively Wallpaper Engine 
+
+function wallpaper1() {
+    document.getElementById("mainwallpaper").src = './bg-vid/Boat-Water-Lilies.mp4';
+}
+function wallpaper2() {
+    document.getElementById("mainwallpaper").src = './bg-vid/Comfy Rain.mp4';
+}
+function wallpaper3() {
+    document.getElementById("mainwallpaper").src = './bg-vid/Cyberpunk-Apartment.mp4';
+}
+function wallpaper4() {
+    document.getElementById("mainwallpaper").src = './bg-vid/King Wash.mp4';
+}
+function wallpaper5() {
+    document.getElementById("mainwallpaper").src = './bg-vid/Lofi-Vending-Machines.mp4';
+}
+function wallpaper6() {
+    document.getElementById("mainwallpaper").src = './bg-vid/Snowfall in Forest.mp4';
+}
+function wallpaper7() {
+    document.getElementById("mainwallpaper").src = './bg-vid/Townscaper.mp4';
+}

@@ -1009,3 +1009,116 @@ iframe{
     text-align: left;
     margin-top: 15px;
 }
+
+#livewallpaper{
+    visibility: hidden;
+    width: 50rem;
+    height: 30rem;
+    background: rgba( 0, 0, 0, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    transition: 0.2s all ease-in;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: 2px auto;
+    border-radius: 14px;
+    color: white;
+}
+.wallcontent{
+    padding: 15px;
+    overflow-y: scroll;
+    height: 25rem;
+}
+.wallcontent::-webkit-scrollbar{
+    width: 0px;
+    background-color: transparent;
+}
+.wallpapers{
+    width: 14rem;
+    height: 10rem;
+    float: left;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    border: 1px solid transparent;
+}
+.wallpapers:hover{
+    border: 1px solid lightcoral;
+}
+
+.wallcontrol svg{
+    margin-right: 10px;
+}
+.setwall{
+    background-color: #667ef8;
+    border: 0px solid transparent;
+    outline: none;
+    padding: 4px;
+    height: 2rem;
+    width: 100%;
+    position: relative;
+    bottom: -128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.video-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#context-menu {
+    position: fixed;
+    z-index: 10000;
+    width: 200px;
+    border-radius: 5px;
+    transform: scale(0);
+    transform-origin: top left;
+    border-radius: 10px;
+    background: #D1D8EC;
+  }
+
+  #context-menu.visible {
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+  }
+
+  #context-menu .rclickopt {
+    padding: 10px;
+    font-size: 15px;
+    cursor: default;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  .rclickopt:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .rclickopt:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .rclickopt:nth-child(4){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .rclickopt:hover{
+    background-color: rgba( 255, 255, 255, 0.4 );
+  }

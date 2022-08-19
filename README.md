@@ -19,6 +19,7 @@
 + [x]  Edge
 + [x]  Adobe Photoshop
 + [x]  Resident Evil Village
++ [x]  Lively Wallpaper
 + [ ]  Minecraft
 + [ ]  File Explorer
 
