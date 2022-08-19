@@ -34,6 +34,10 @@ function ylighttoggle() {
     const ylight = document.getElementById('ylight');
     ylight.classList.toggle('windowshow');
 }
+function storetoggle() {
+    const ylight = document.getElementById('microsoftstore');
+    ylight.classList.toggle('windowshow');
+}
 function revillagetoggle() {
     const village = document.getElementById('revillage');
     village.classList.toggle('windowshow');
