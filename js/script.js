@@ -384,23 +384,118 @@ scope.addEventListener("click", (e) => {
 // Lively Wallpaper Engine 
 
 function wallpaper1() {
-    document.getElementById("mainwallpaper").src = './bg-vid/Boat-Water-Lilies.mp4';
+    const wallpaper = document.getElementById("mainwallpaper1");
+    const wlpaper1 = document.getElementById("mainwallpaper2");
+    const wlpaper2 = document.getElementById("mainwallpaper3");
+    const wlpaper3 = document.getElementById("mainwallpaper4");
+    const wlpaper4 = document.getElementById("mainwallpaper5");
+    const wlpaper5 = document.getElementById("mainwallpaper6");
+    const wlpaper6 = document.getElementById("mainwallpaper7");
+    wallpaper.classList.add('papershow');
+    wlpaper1.classList.remove('papershow');
+    wlpaper2.classList.remove('papershow');
+    wlpaper3.classList.remove('papershow');
+    wlpaper4.classList.remove('papershow');
+    wlpaper5.classList.remove('papershow');
+    wlpaper6.classList.remove('papershow');
 }
 function wallpaper2() {
-    document.getElementById("mainwallpaper").src = './bg-vid/Comfy Rain.mp4';
+    const wallpaper = document.getElementById("mainwallpaper2");
+    const wlpaper1 = document.getElementById("mainwallpaper1");
+    const wlpaper2 = document.getElementById("mainwallpaper3");
+    const wlpaper3 = document.getElementById("mainwallpaper4");
+    const wlpaper4 = document.getElementById("mainwallpaper5");
+    const wlpaper5 = document.getElementById("mainwallpaper6");
+    const wlpaper6 = document.getElementById("mainwallpaper7");
+    wallpaper.classList.add('papershow');
+    wlpaper1.classList.remove('papershow');
+    wlpaper2.classList.remove('papershow');
+    wlpaper3.classList.remove('papershow');
+    wlpaper4.classList.remove('papershow');
+    wlpaper5.classList.remove('papershow');
+    wlpaper6.classList.remove('papershow');
 }
 function wallpaper3() {
-    document.getElementById("mainwallpaper").src = './bg-vid/Cyberpunk-Apartment.mp4';
+    const wallpaper = document.getElementById("mainwallpaper3");
+    const wlpaper1 = document.getElementById("mainwallpaper2");
+    const wlpaper2 = document.getElementById("mainwallpaper1");
+    const wlpaper3 = document.getElementById("mainwallpaper4");
+    const wlpaper4 = document.getElementById("mainwallpaper5");
+    const wlpaper5 = document.getElementById("mainwallpaper6");
+    const wlpaper6 = document.getElementById("mainwallpaper7");
+    wallpaper.classList.add('papershow');
+    wlpaper1.classList.remove('papershow');
+    wlpaper2.classList.remove('papershow');
+    wlpaper3.classList.remove('papershow');
+    wlpaper4.classList.remove('papershow');
+    wlpaper5.classList.remove('papershow');
+    wlpaper6.classList.remove('papershow');
+
 }
 function wallpaper4() {
-    document.getElementById("mainwallpaper").src = './bg-vid/King Wash.mp4';
+    const wallpaper = document.getElementById("mainwallpaper4");
+    const wlpaper1 = document.getElementById("mainwallpaper2");
+    const wlpaper2 = document.getElementById("mainwallpaper3");
+    const wlpaper3 = document.getElementById("mainwallpaper1");
+    const wlpaper4 = document.getElementById("mainwallpaper5");
+    const wlpaper5 = document.getElementById("mainwallpaper6");
+    const wlpaper6 = document.getElementById("mainwallpaper7");
+    wallpaper.classList.add('papershow');
+    wlpaper1.classList.remove('papershow');
+    wlpaper2.classList.remove('papershow');
+    wlpaper3.classList.remove('papershow');
+    wlpaper4.classList.remove('papershow');
+    wlpaper5.classList.remove('papershow');
+    wlpaper6.classList.remove('papershow');
+
 }
 function wallpaper5() {
-    document.getElementById("mainwallpaper").src = './bg-vid/Lofi-Vending-Machines.mp4';
+    const wallpaper = document.getElementById("mainwallpaper5");
+    const wlpaper1 = document.getElementById("mainwallpaper2");
+    const wlpaper2 = document.getElementById("mainwallpaper3");
+    const wlpaper3 = document.getElementById("mainwallpaper4");
+    const wlpaper4 = document.getElementById("mainwallpaper1");
+    const wlpaper5 = document.getElementById("mainwallpaper6");
+    const wlpaper6 = document.getElementById("mainwallpaper7");
+    wallpaper.classList.add('papershow');
+    wlpaper1.classList.remove('papershow');
+    wlpaper2.classList.remove('papershow');
+    wlpaper3.classList.remove('papershow');
+    wlpaper4.classList.remove('papershow');
+    wlpaper5.classList.remove('papershow');
+    wlpaper6.classList.remove('papershow');
+
 }
 function wallpaper6() {
-    document.getElementById("mainwallpaper").src = './bg-vid/Snowfall in Forest.mp4';
+    const wallpaper = document.getElementById("mainwallpaper6");
+    const wlpaper1 = document.getElementById("mainwallpaper2");
+    const wlpaper2 = document.getElementById("mainwallpaper3");
+    const wlpaper3 = document.getElementById("mainwallpaper4");
+    const wlpaper4 = document.getElementById("mainwallpaper5");
+    const wlpaper5 = document.getElementById("mainwallpaper1");
+    const wlpaper6 = document.getElementById("mainwallpaper7");
+    wallpaper.classList.add('papershow');
+    wlpaper1.classList.remove('papershow');
+    wlpaper2.classList.remove('papershow');
+    wlpaper3.classList.remove('papershow');
+    wlpaper4.classList.remove('papershow');
+    wlpaper5.classList.remove('papershow');
+    wlpaper6.classList.remove('papershow');
+
 }
 function wallpaper7() {
-    document.getElementById("mainwallpaper").src = './bg-vid/Townscaper.mp4';
+    const wallpaper = document.getElementById("mainwallpaper7");
+    const wlpaper1 = document.getElementById("mainwallpaper2");
+    const wlpaper2 = document.getElementById("mainwallpaper3");
+    const wlpaper3 = document.getElementById("mainwallpaper4");
+    const wlpaper4 = document.getElementById("mainwallpaper5");
+    const wlpaper5 = document.getElementById("mainwallpaper6");
+    const wlpaper6 = document.getElementById("mainwallpaper1");
+    wallpaper.classList.add('papershow');
+    wlpaper1.classList.remove('papershow');
+    wlpaper2.classList.remove('papershow');
+    wlpaper3.classList.remove('papershow');
+    wlpaper4.classList.remove('papershow');
+    wlpaper5.classList.remove('papershow');
+    wlpaper6.classList.remove('papershow');
 }

@@ -1122,3 +1122,10 @@ iframe{
   .rclickopt:hover{
     background-color: rgba( 255, 255, 255, 0.4 );
   }
+
+#mainwallpaper1,#mainwallpaper2,#mainwallpaper3,#mainwallpaper4,#mainwallpaper5,#mainwallpaper6,#mainwallpaper7{
+    display: none;
+}
+.papershow{
+    display: block !important;
+}
