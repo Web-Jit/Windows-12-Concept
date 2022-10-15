@@ -22,30 +22,21 @@
     />
   </head>
   <body>
+
+    <div id="overlay">
+      <img src="https://img.icons8.com/nolan/150/windows-11.png"/>
+      <div style="display: flex; align-items: center;justify-content: center;">
+        <img src="./images/loader.gif" alt="loader" width="80px">
+      </div>
+      </div>
+      
+
     <div id="desktop">
-      <div class="video-container">
-        <video autoplay muted loop id="mainwallpaper1">
-            <source src="./bg-vid/Boat-Water-Lilies.mp4" type="video/mp4"  />
-        </video>
-        <video autoplay muted loop id="mainwallpaper2">
-            <source src="./bg-vid/Comfy Rain.mp4" type="video/mp4"  />
-        </video>
-        <video autoplay muted loop id="mainwallpaper3">
-            <source src="./bg-vid/Cyberpunk-Apartment.mp4" type="video/mp4"  />
-        </video>
-        <video autoplay muted loop id="mainwallpaper4">
-            <source src="./bg-vid/King Wash.mp4" type="video/mp4"  />
-        </video>
-        <video autoplay muted loop id="mainwallpaper5">
-            <source src="./bg-vid/Lofi-Vending-Machines.mp4" type="video/mp4"  />
-        </video>
-        <video autoplay muted loop id="mainwallpaper6">
-            <source src="./bg-vid/Snowfall in Forest.mp4" type="video/mp4"  />
-        </video>
-        <video autoplay muted loop id="mainwallpaper7">
-            <source src="./bg-vid/Townscaper.mp4" type="video/mp4"  />
-        </video>
-    </div>
+        <div class="video-container">
+      <video autoplay muted loop id="mainwallpaper">
+          <source src="" type="video/mp4"  />
+      </video>
+  </div>
       <div class="taskbar">
         <img
           src="https://img.icons8.com/color/27/000000/windows-11.png"
@@ -662,48 +653,99 @@
         <div class="soon">Coming Soon...</div>
       </div>
       <div id="explorer">
-        <div class="actionbar">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            style="fill: rgba(0, 0, 0, 1)"
-          >
-            <path d="M5 11h14v2H5z"></path>
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            style="fill: rgba(0, 0, 0, 1)"
-          >
-            <path
-              d="M16 7H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zM4 19v-8h12V9l.002 10H4z"
-            ></path>
-            <path
-              d="M22 5c0-1.103-.897-2-2-2H7c-1.103 0-2 .897-2 2h13.001c1.101 0 1.996.895 1.999 1.994L20.002 15H20v2c1.103 0 2-.897 2-2V8.007L22.001 8V6L22 5.99V5z"
-            ></path>
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            onclick="explorertoggle()"
-            width="24"
-            height="24"
-            class="ionicon"
-            viewBox="0 0 512 512"
-          >
-            <title>Close</title>
-            <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="32"
-              d="M368 368L144 144M368 144L144 368"
-            />
-          </svg>
+        <div class="explorerupbar">
+          <div class="leftexplorerupbar">
+            <span><svg xmlns="http://www.w3.org/2000/svg" class="explorerionicon" viewBox="0 0 512 512"><title>Add Circle</title><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 176v160M336 256H176"/></svg> New</span>
+            <p>|</p>
+            <span><svg xmlns="http://www.w3.org/2000/svg" class="explorerionicon" viewBox="0 0 512 512"><title>Create</title><path d="M384 224v184a40 40 0 01-40 40H104a40 40 0 01-40-40V168a40 40 0 0140-40h167.48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M459.94 53.25a16.06 16.06 0 00-23.22-.56L424.35 65a8 8 0 000 11.31l11.34 11.32a8 8 0 0011.34 0l12.06-12c6.1-6.09 6.67-16.01.85-22.38zM399.34 90L218.82 270.2a9 9 0 00-2.31 3.93L208.16 299a3.91 3.91 0 004.86 4.86l24.85-8.35a9 9 0 003.93-2.31L422 112.66a9 9 0 000-12.66l-9.95-10a9 9 0 00-12.71 0z"/></svg></span>
+            <p>|</p>
+            <span><svg xmlns="http://www.w3.org/2000/svg" class="explorerionicon" viewBox="0 0 512 512"><title>Grid</title><rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg></span>
+            <p>|</p>
+            <span><svg xmlns="http://www.w3.org/2000/svg" class="explorerionicon" viewBox="0 0 512 512"><title>Share</title><path d="M336 192h40a40 40 0 0140 40v192a40 40 0 01-40 40H136a40 40 0 01-40-40V232a40 40 0 0140-40h40M336 128l-80-80-80 80M256 321V48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg></span>
+          </div>
+          
+          <div class="midexplorerupbar">
+            <input type="text" placeholder="Enter path or location">
+          </div>
+
+          <div class="actionbar" style="width:min-content ;">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              style="fill: rgba(0, 0, 0, 1)"
+              onclick="explorerclosetoggle()"
+            >
+              <path d="M5 11h14v2H5z"></path>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              style="fill: rgba(0, 0, 0, 1)"
+              onclick="explorerminimizetoggle()"
+            >
+              <path
+                d="M16 7H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zM4 19v-8h12V9l.002 10H4z"
+              ></path>
+              <path
+                d="M22 5c0-1.103-.897-2-2-2H7c-1.103 0-2 .897-2 2h13.001c1.101 0 1.996.895 1.999 1.994L20.002 15H20v2c1.103 0 2-.897 2-2V8.007L22.001 8V6L22 5.99V5z"
+              ></path>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              onclick="explorertoggle()"
+              width="24"
+              height="24"
+              class="ionicon"
+              viewBox="0 0 512 512"
+            >
+              <title>Close</title>
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M368 368L144 144M368 144L144 368"
+              />
+            </svg>
+          </div>
+
         </div>
-        <div class="soon">Coming Soon...</div>
+        
+        <div class="explorerdownside">
+          
+          <div class="explorersidebar">
+            <ul>
+              <li onclick="shohidefolderlist()"><svg id="rightsidelisticons" style="display: none"  xmlns="http://www.w3.org/2000/svg" class="explorerionicon" viewBox="0 0 512 512"><title>Chevron Forward</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg> <svg id="downsidelisticons" xmlns="http://www.w3.org/2000/svg" class="explorerionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg><img src="https://img.icons8.com/fluency/42/000000/star.png"/> Quick Access</li>
+              <li id="folderslist1"><p style="background-color:transparent;"></p><img src="https://img.icons8.com/fluency/42/000000/desktop.png"/> Desktop</li>
+              <li id="folderslist2"><p style="background-color:transparent;"></p><img src="https://img.icons8.com/fluency/42/000000/downloads-folder--v2.png"/> Downloads</li>
+              <li id="folderslist3"><p style="background-color:transparent;"></p><img src="https://img.icons8.com/fluency/42/000000/documents-folder--v2.png"/> Documents</li>
+              <li id="folderslist4"><p style="background-color:blue;"></p><img src="https://img.icons8.com/fluency/42/000000/pictures-folder--v1.png"/> Pictures</li>
+              <li id="folderslist5"><p style="background-color:transparent;"></p><img src="https://img.icons8.com/fluency/42/000000/movies-folder--v2.png"/> Videos</li>
+              <li id="folderslist6"><p style="background-color:transparent;"></p><img src="https://img.icons8.com/fluency/42/000000/photos-folder--v2.png"/> Music</li>
+              <li id="folderslist7"><p style="background-color:transparent;"></p><img src="https://img.icons8.com/fluency/42/000000/cloud-folder--v2.png"/> OneDrive</li>
+            </ul>
+          </div>
+          <div id="explorermaincontent" class="explorermaincontent">
+            <div class="explorersortby">Sort By: &nbsp; <svg xmlns="http://www.w3.org/2000/svg" class="explorerionicon" viewBox="0 0 512 512"><title>Chevron Down</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg> <strong>&nbsp;Most Recent</strong></div>
+            <div class="explorercontent">
+              <div class="imgcontent">
+                <img src="./images/foods.jpg" alt="Foods"> <p>Foods.jpg</p>
+              </div>
+              <div class="imgcontent">
+                <img src="./images/journey.jpg" alt="Journey"> <p>Journey.jpg</p>
+              </div>
+              <div class="imgcontent">
+                <img src="./images/surface-laptop.jpg" alt="Surface Laptop"> <p>Surface Laptop.jpg</p>
+              </div>
+              <div class="imgcontent">
+                <img src="./images/room.jpg" alt="Room"> <p>Rooms.jpg</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Lively Wallpaper -->
@@ -740,13 +782,13 @@
         </div>
         <div class="wallcontent">
           <h3>Lively Wallpaper</h3>
-          <div style="background-image: url(./images/paper-1.png);" class="wallpapers"><button class="setwall" onclick="wallpaper1()">Set as Wallpaper</button></div>
-          <div style="background-image: url(./images/paper-2.png);" class="wallpapers"><button class="setwall" onclick="wallpaper2()">Set as Wallpaper</button></div>
-          <div style="background-image: url(./images/paper-3.png);" class="wallpapers"><button class="setwall" onclick="wallpaper3()">Set as Wallpaper</button></div>
-          <div style="background-image: url(./images/paper-4.png);" class="wallpapers"><button class="setwall" onclick="wallpaper4()">Set as Wallpaper</button></div>
-          <div style="background-image: url(./images/paper-5.png);" class="wallpapers"><button class="setwall" onclick="wallpaper5()">Set as Wallpaper</button></div>
-          <div style="background-image: url(./images/paper-6.png);" class="wallpapers"><button class="setwall" onclick="wallpaper6()">Set as Wallpaper</button></div>
-          <div style="background-image: url(./images/paper-7.png);" class="wallpapers"><button class="setwall" onclick="wallpaper7()">Set as Wallpaper</button></div>
+          <div style="background-image: url(./images/paper-1.png);" onmouseover="showbtn1()" onmouseout="hidebtn1()" class="wallpapers"><button class="setwall" id="wallbtn1" onclick="wallpaper1()">Set as Wallpaper</button></div>
+          <div style="background-image: url(./images/paper-2.png);" onmouseover="showbtn2()" onmouseout="hidebtn2()" class="wallpapers"><button class="setwall" id="wallbtn2" onclick="wallpaper2()">Set as Wallpaper</button></div>
+          <div style="background-image: url(./images/paper-3.png);" onmouseover="showbtn3()" onmouseout="hidebtn3()" class="wallpapers"><button class="setwall" id="wallbtn3" onclick="wallpaper3()">Set as Wallpaper</button></div>
+          <div style="background-image: url(./images/paper-4.png);" onmouseover="showbtn4()" onmouseout="hidebtn4()" class="wallpapers"><button class="setwall" id="wallbtn4" onclick="wallpaper4()">Set as Wallpaper</button></div>
+          <div style="background-image: url(./images/paper-5.png);" onmouseover="showbtn5()" onmouseout="hidebtn5()" class="wallpapers"><button class="setwall" id="wallbtn5" onclick="wallpaper5()">Set as Wallpaper</button></div>
+          <div style="background-image: url(./images/paper-6.png);" onmouseover="showbtn6()" onmouseout="hidebtn6()" class="wallpapers"><button class="setwall" id="wallbtn6" onclick="wallpaper6()">Set as Wallpaper</button></div>
+          <div style="background-image: url(./images/paper-7.png);" onmouseover="showbtn7()" onmouseout="hidebtn7()" class="wallpapers"><button class="setwall" id="wallbtn7" onclick="wallpaper7()">Set as Wallpaper</button></div>
         </div>
       </div>
 

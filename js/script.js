@@ -22,6 +22,22 @@ function explorertoggle() {
     const explorer = document.getElementById('explorer');
     explorer.classList.toggle('windowshow');
 }
+function shohidefolderlist(){
+    document.getElementById('folderslist1').classList.toggle('hidefolder');
+    document.getElementById('folderslist2').classList.toggle('hidefolder');
+    document.getElementById('folderslist3').classList.toggle('hidefolder');
+    document.getElementById('folderslist4').classList.toggle('hidefolder');
+    document.getElementById('folderslist5').classList.toggle('hidefolder');
+    document.getElementById('folderslist6').classList.toggle('hidefolder');
+    document.getElementById('folderslist7').classList.toggle('hidefolder');
+    document.getElementById('downsidelisticons').classList.toggle('hidefolder');
+    document.getElementById('rightsidelisticons').classList.toggle('rightsidelisticonshow');
+    
+}
+// function explorerminimizetoggle(){
+//     document.getElementById('explorer').style.height = '50vh';
+//     document.getElementById('explorermaincont').style.height = '50vh'
+// }
 function settingstoggle() {
     const settings = document.getElementById('settings');
     settings.classList.toggle('windowshow');
@@ -380,122 +396,83 @@ scope.addEventListener("click", (e) => {
   }
 });
 
-
 // Lively Wallpaper Engine 
 
 function wallpaper1() {
-    const wallpaper = document.getElementById("mainwallpaper1");
-    const wlpaper1 = document.getElementById("mainwallpaper2");
-    const wlpaper2 = document.getElementById("mainwallpaper3");
-    const wlpaper3 = document.getElementById("mainwallpaper4");
-    const wlpaper4 = document.getElementById("mainwallpaper5");
-    const wlpaper5 = document.getElementById("mainwallpaper6");
-    const wlpaper6 = document.getElementById("mainwallpaper7");
-    wallpaper.classList.add('papershow');
-    wlpaper1.classList.remove('papershow');
-    wlpaper2.classList.remove('papershow');
-    wlpaper3.classList.remove('papershow');
-    wlpaper4.classList.remove('papershow');
-    wlpaper5.classList.remove('papershow');
-    wlpaper6.classList.remove('papershow');
+    document.getElementById("mainwallpaper").src = 'https://ik.imagekit.io/fth7wfgzc/Boat-Water-Lilies_pE7cDOtX8.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1662909319591';
 }
 function wallpaper2() {
-    const wallpaper = document.getElementById("mainwallpaper2");
-    const wlpaper1 = document.getElementById("mainwallpaper1");
-    const wlpaper2 = document.getElementById("mainwallpaper3");
-    const wlpaper3 = document.getElementById("mainwallpaper4");
-    const wlpaper4 = document.getElementById("mainwallpaper5");
-    const wlpaper5 = document.getElementById("mainwallpaper6");
-    const wlpaper6 = document.getElementById("mainwallpaper7");
-    wallpaper.classList.add('papershow');
-    wlpaper1.classList.remove('papershow');
-    wlpaper2.classList.remove('papershow');
-    wlpaper3.classList.remove('papershow');
-    wlpaper4.classList.remove('papershow');
-    wlpaper5.classList.remove('papershow');
-    wlpaper6.classList.remove('papershow');
+    document.getElementById("mainwallpaper").src = 'https://ik.imagekit.io/fth7wfgzc/Comfy-Rain__J4Linnfm.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1662909201162';
 }
 function wallpaper3() {
-    const wallpaper = document.getElementById("mainwallpaper3");
-    const wlpaper1 = document.getElementById("mainwallpaper2");
-    const wlpaper2 = document.getElementById("mainwallpaper1");
-    const wlpaper3 = document.getElementById("mainwallpaper4");
-    const wlpaper4 = document.getElementById("mainwallpaper5");
-    const wlpaper5 = document.getElementById("mainwallpaper6");
-    const wlpaper6 = document.getElementById("mainwallpaper7");
-    wallpaper.classList.add('papershow');
-    wlpaper1.classList.remove('papershow');
-    wlpaper2.classList.remove('papershow');
-    wlpaper3.classList.remove('papershow');
-    wlpaper4.classList.remove('papershow');
-    wlpaper5.classList.remove('papershow');
-    wlpaper6.classList.remove('papershow');
-
+    document.getElementById("mainwallpaper").src = 'https://ik.imagekit.io/fth7wfgzc/Cyberpunk-Apartment_5fdTjJplH.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1662909344997';
 }
 function wallpaper4() {
-    const wallpaper = document.getElementById("mainwallpaper4");
-    const wlpaper1 = document.getElementById("mainwallpaper2");
-    const wlpaper2 = document.getElementById("mainwallpaper3");
-    const wlpaper3 = document.getElementById("mainwallpaper1");
-    const wlpaper4 = document.getElementById("mainwallpaper5");
-    const wlpaper5 = document.getElementById("mainwallpaper6");
-    const wlpaper6 = document.getElementById("mainwallpaper7");
-    wallpaper.classList.add('papershow');
-    wlpaper1.classList.remove('papershow');
-    wlpaper2.classList.remove('papershow');
-    wlpaper3.classList.remove('papershow');
-    wlpaper4.classList.remove('papershow');
-    wlpaper5.classList.remove('papershow');
-    wlpaper6.classList.remove('papershow');
-
+    document.getElementById("mainwallpaper").src = 'https://ik.imagekit.io/fth7wfgzc/King-Wash_zjBLHuGt-.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1662909240938';
 }
 function wallpaper5() {
-    const wallpaper = document.getElementById("mainwallpaper5");
-    const wlpaper1 = document.getElementById("mainwallpaper2");
-    const wlpaper2 = document.getElementById("mainwallpaper3");
-    const wlpaper3 = document.getElementById("mainwallpaper4");
-    const wlpaper4 = document.getElementById("mainwallpaper1");
-    const wlpaper5 = document.getElementById("mainwallpaper6");
-    const wlpaper6 = document.getElementById("mainwallpaper7");
-    wallpaper.classList.add('papershow');
-    wlpaper1.classList.remove('papershow');
-    wlpaper2.classList.remove('papershow');
-    wlpaper3.classList.remove('papershow');
-    wlpaper4.classList.remove('papershow');
-    wlpaper5.classList.remove('papershow');
-    wlpaper6.classList.remove('papershow');
-
+    document.getElementById("mainwallpaper").src = 'https://ik.imagekit.io/fth7wfgzc/Lofi-Vending-Machines_5G2nuwKB1.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1662909338361';
 }
 function wallpaper6() {
-    const wallpaper = document.getElementById("mainwallpaper6");
-    const wlpaper1 = document.getElementById("mainwallpaper2");
-    const wlpaper2 = document.getElementById("mainwallpaper3");
-    const wlpaper3 = document.getElementById("mainwallpaper4");
-    const wlpaper4 = document.getElementById("mainwallpaper5");
-    const wlpaper5 = document.getElementById("mainwallpaper1");
-    const wlpaper6 = document.getElementById("mainwallpaper7");
-    wallpaper.classList.add('papershow');
-    wlpaper1.classList.remove('papershow');
-    wlpaper2.classList.remove('papershow');
-    wlpaper3.classList.remove('papershow');
-    wlpaper4.classList.remove('papershow');
-    wlpaper5.classList.remove('papershow');
-    wlpaper6.classList.remove('papershow');
-
+    document.getElementById("mainwallpaper").src = 'https://ik.imagekit.io/fth7wfgzc/Snowfall-in-Forest_cXTxA9NVM.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1662908766139';
 }
 function wallpaper7() {
-    const wallpaper = document.getElementById("mainwallpaper7");
-    const wlpaper1 = document.getElementById("mainwallpaper2");
-    const wlpaper2 = document.getElementById("mainwallpaper3");
-    const wlpaper3 = document.getElementById("mainwallpaper4");
-    const wlpaper4 = document.getElementById("mainwallpaper5");
-    const wlpaper5 = document.getElementById("mainwallpaper6");
-    const wlpaper6 = document.getElementById("mainwallpaper1");
-    wallpaper.classList.add('papershow');
-    wlpaper1.classList.remove('papershow');
-    wlpaper2.classList.remove('papershow');
-    wlpaper3.classList.remove('papershow');
-    wlpaper4.classList.remove('papershow');
-    wlpaper5.classList.remove('papershow');
-    wlpaper6.classList.remove('papershow');
+    document.getElementById("mainwallpaper").src = 'https://ik.imagekit.io/fth7wfgzc/Townscaper_eiXCmb4MJ.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1662909343174';
 }
+
+
+
+// mouse over state - Wallpaper engine 
+
+function showbtn1() {
+    document.getElementById("wallbtn1").style.display = "block";
+}
+function hidebtn1() {
+    document.getElementById("wallbtn1").style.display = "none";
+}
+function showbtn2() {
+    document.getElementById("wallbtn2").style.display = "block";
+}
+function hidebtn2() {
+    document.getElementById("wallbtn2").style.display = "none";
+}
+function showbtn3() {
+    document.getElementById("wallbtn3").style.display = "block";
+}
+function hidebtn3() {
+    document.getElementById("wallbtn3").style.display = "none";
+}
+function showbtn4() {
+    document.getElementById("wallbtn4").style.display = "block";
+}
+function hidebtn4() {
+    document.getElementById("wallbtn4").style.display = "none";
+}
+function showbtn5() {
+    document.getElementById("wallbtn5").style.display = "block";
+}
+function hidebtn5() {
+    document.getElementById("wallbtn5").style.display = "none";
+}
+function showbtn6() {
+    document.getElementById("wallbtn6").style.display = "block";
+}
+function hidebtn6() {
+    document.getElementById("wallbtn6").style.display = "none";
+}
+function showbtn7() {
+    document.getElementById("wallbtn7").style.display = "block";
+}
+function hidebtn7() {
+    document.getElementById("wallbtn7").style.display = "none";
+}
+
+
+
+// preloader
+
+var overlay = document.getElementById("overlay");
+
+window.addEventListener('load', function(){
+  overlay.style.display = 'none';
+})
