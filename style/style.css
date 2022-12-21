@@ -972,7 +972,7 @@ iframe{
 .slide3{
     background-image: url(../images/store3.png);   
 }
-#entertenmentapps,#proapps{
+#entertenmentapps,#proapps,#gameapps{
     padding: 20px 30px;
     display: flex;
     align-items: center;
