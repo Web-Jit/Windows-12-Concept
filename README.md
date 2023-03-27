@@ -1,9 +1,9 @@
 
 # Windows 12 Concept
-![picture alt](https://img.shields.io/badge/HTML-red)
-![picture alt](https://img.shields.io/badge/CSS-red)
-![picture alt](https://img.shields.io/badge/JAVASCRIPT-red)
-![picture alt](https://img.shields.io/badge/Status-Online-green)
+![picture alt](https://img.shields.io/badge/HTML-brightgreen?style=for-the-badge)
+![picture alt](https://img.shields.io/badge/CSS-brightgreen?style=for-the-badge)
+![picture alt](https://img.shields.io/badge/JAVASCRIPT-brightgreen?style=for-the-badge)
+![picture alt](https://img.shields.io/badge/Status-Online-green?style=for-the-badge)
 
 
 
@@ -20,13 +20,14 @@
 + [x]  Adobe Photoshop
 + [x]  Resident Evil Village
 + [x]  Lively Wallpaper
-+ [ ]  Minecraft
++ [x]  Minecraft
 + [ ]  File Explorer
 
 ## Screenshots 
 ![picture alt](./images/ss-1.png "Screenshot-1")
 - - - -
 ![picture alt](./images/ss-2.png "Screenshot-2")
+
 ## Support Here
 
 <a href="https://www.buymeacoffee.com/webjeet" target="_blank"><img src="https://skinmc.net/en/achievement/31/Buy+me+a+Cofffee/Support+Me" alt="Minecraft Achievement" /></a>
