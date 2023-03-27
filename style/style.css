@@ -33,9 +33,9 @@ body{
 }
 .taskbar img:hover{
     background: rgba( 255, 255, 255, 0.2 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 2px );
--webkit-backdrop-filter: blur( 2px );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
 }
 .wifibat{
     height: 33px;
@@ -47,7 +47,7 @@ backdrop-filter: blur( 2px );
     backdrop-filter: blur( 2px );
     -webkit-backdrop-filter: blur( 2px );
 }
-.ionicon3{
+.feather-wifi{
     padding: 10px;
     width: 22px !important;
 }
@@ -108,7 +108,7 @@ backdrop-filter: blur( 2px );
 .upwheather{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 .upwheather div{
     display: flex;
@@ -402,6 +402,14 @@ a {
 .rtaskiconp{
     padding: 6px 12px;
     cursor: default !important;
+    border-radius: 12px;
+
+}
+.rtaskiconp:hover{
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
 }
 
 
@@ -419,6 +427,7 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
+    margin: auto;
 }
 .quit{
     position: absolute;
@@ -447,7 +456,7 @@ iframe{
 .actionbar svg:hover{
     background-color: rgba(209, 202, 202, 0.4);
 }
-.ionicon:hover{
+.feather-x:hover{
     background-color: rgb(255, 29, 29) !important;
 }
 .soon{
@@ -592,7 +601,7 @@ iframe{
     gap: 10px;
     padding-top: 10px;
 }
-.controlbtn{
+.controlbtn-off{
     width: 110px;
     display: flex;
     align-items: center;
@@ -603,9 +612,25 @@ iframe{
     padding: 0px 10px;
     height: 86px;
 }
+.controlbtn-on{
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #667ef8;
+    color: white;
+    gap: 15px;
+    border-radius: 9px;
+    padding: 0px 10px;
+    height: 86px;
+}
 .controlbtnclk{
     background-color: #667ef8 !important;
     color: white;
+}
+.controlbtnclk-off{
+    background-color: whitesmoke !important;
+    color: black;
 }
 .midbor{
     border-left: 1px solid rgb(211, 211, 211);
@@ -703,19 +728,19 @@ iframe{
     justify-content: space-between;
     font-size: 13px;
     cursor: pointer;
+    height: 35px;
 }
 .connected{
     display: grid;
     align-items: center;
     justify-content: flex-start;
+    color: rgb(173, 173, 173);
 }
 .connected h5{
     font-size: 14px;
     color: black;
 }
-.connected{
-    color: rgb(173, 173, 173);
-}
+
 #winatglance{
     height: 21.3rem;
     width: 25rem;
@@ -854,12 +879,10 @@ iframe{
 
 .date-picker.selected {
     font-weight: bold;
-    background-color: #00BCD4;
+    background-color: rgb(0, 159, 212);
+    border-radius: 3px;
 }
 
-.date-picker.selected span {
-    border-bottom: 2px solid currentColor;
-}
 
 
 
@@ -931,6 +954,7 @@ iframe{
     background-color: transparent;
     height: inherit;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 .storecontent::-webkit-scrollbar{
     width: 8px;
@@ -961,7 +985,6 @@ iframe{
 .swiper-slide div{
     padding: 0px 10px;
     font-size: 1.5rem;
-    backdrop-filter: blur( 30px );
 }
 .slide1{
     background-image: url(../images/store1.jpg);
@@ -1308,4 +1331,51 @@ iframe{
 }
 .rightsidelisticonshow{
     display: block !important;
+}
+
+.minimize{
+    width: 60% !important;
+    height: 60% !important;
+    border-radius: 10px;
+}
+.closebtn-minimize{
+    border-top-right-radius: 10px;
+}
+
+.container{
+    display: flex;
+    border-radius: 8px;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.circular-progress{
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #7d2ae8;
+}
+.text{
+    font-size: 10px;
+    font-weight: 500;
+    color: #606060;
 }

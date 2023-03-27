@@ -18,10 +18,26 @@ function edgetoggle() {
     const edge = document.getElementById('edge');
     edge.classList.toggle('windowshow');
 }
-function explorertoggle() {
-    const explorer = document.getElementById('explorer');
-    explorer.classList.toggle('windowshow');
+function edgeminimizetoggle() {
+    const edge = document.getElementById('edge');
+    const close = document.getElementById('edgeclose')
+    edge.classList.toggle('minimize');
+    close.classList.add('closebtn-minimize');
+    document.getElementById('edgemini').style.display = 'block';
+    document.getElementById('edgemaxi').style.display = 'none';
 }
+function edgemaximizetoggle() {
+    const edge = document.getElementById('edge');
+    const close = document.getElementById('edgeclose')
+    edge.classList.toggle('minimize');
+    close.classList.remove('closebtn-minimize');
+    document.getElementById('edgemini').style.display = 'none';
+    document.getElementById('edgemaxi').style.display = 'block';
+}
+// function explorertoggle() {
+//     const explorer = document.getElementById('explorer');
+//     explorer.classList.toggle('windowshow');
+// }
 function shohidefolderlist(){
     document.getElementById('folderslist1').classList.toggle('hidefolder');
     document.getElementById('folderslist2').classList.toggle('hidefolder');
@@ -46,9 +62,42 @@ function photoshoptoggle() {
     const photoshop = document.getElementById('photoshop');
     photoshop.classList.toggle('windowshow');
 }
+function photoshopminimizetoggle() {
+    const photoshop = document.getElementById('photoshop');
+    const close = document.getElementById('photoshopclose');
+    photoshop.classList.toggle('minimize');
+    close.classList.add('closebtn-minimize');
+    document.getElementById('photoshopmini').style.display = 'block';
+    document.getElementById('photoshopmaxi').style.display = 'none';
+}
+function photoshopmaximizetoggle() {
+    const photoshop = document.getElementById('photoshop');
+    const close = document.getElementById('photoshopclose');
+    photoshop.classList.toggle('minimize');
+    close.classList.remove('closebtn-minimize');
+    document.getElementById('photoshopmini').style.display = 'none';
+    document.getElementById('photoshopmaxi').style.display = 'block';
+}
 function ylighttoggle() {
     const ylight = document.getElementById('ylight');
     ylight.classList.toggle('windowshow');
+}
+function ylightminimizetoggle() {
+    const ylight = document.getElementById('ylight');
+    const close = document.getElementById('ylightclose');
+    ylight.classList.toggle('minimize');
+    close.classList.add('closebtn-minimize');
+    document.getElementById('ylightmini').style.display = 'block';
+    document.getElementById('ylightmaxi').style.display = 'none';
+        
+}
+function ylightmaximizetoggle() {
+    const ylight = document.getElementById('ylight');
+    const close = document.getElementById('ylightclose');
+    ylight.classList.toggle('minimize');
+    close.classList.remove('closebtn-minimize');
+    document.getElementById('ylightmini').style.display = 'none';
+    document.getElementById('ylightmaxi').style.display = 'block';
 }
 function storetoggle() {
     const ylight = document.getElementById('microsoftstore');
@@ -72,12 +121,32 @@ function phonedesktoptoggle() {
 }
 function controlbtntoggle() {
 	const btn1 = document.getElementById('cbtn1');
-	btn1.classList.toggle('controlbtnclk');
+	btn1.classList.toggle('controlbtnclk-off');
+    // Wifi Status
+    const WifiStatus = document.getElementById('wifistatus')
+    if (WifiStatus.innerHTML === 'Connected') {
+        WifiStatus.innerHTML = "Wifi is Off";
+    } else {
+        WifiStatus.innerHTML = "Connected";
+    }
+    // Wifi SSID 
+    const Wifissid = document.getElementById('wifissid')
+    if (Wifissid.innerHTML === 'Xstream Fiber') {
+        Wifissid.innerHTML = "Not Connected";
+    } else {
+        Wifissid.innerHTML = "Xstream Fiber";
+    }
 }
 function controlbtn2toggle() {
 	const btn2 = document.getElementById('cbtn2');
 	btn2.classList.toggle('controlbtnclk');
-
+    // Bluetooth Status 
+    const Bluestatus = document.getElementById('bluestatus')
+    if (Bluestatus.innerHTML === 'Turned Off') {
+        Bluestatus.innerHTML = "Turned On"
+    } else {
+        Bluestatus.innerHTML = "Turned Off"
+    }
 }
 function controlbtn3toggle() {
 	const btn3 = document.getElementById('cbtn3');
@@ -476,3 +545,35 @@ var overlay = document.getElementById("overlay");
 window.addEventListener('load', function(){
   overlay.style.display = 'none';
 })
+
+// Align Taskbar Left side 
+// function Leftsidetaskbar() {
+//     document.getElementById('taskbar').style.justifyContent = 'Left';
+//     document.getElementById('startmenu').style.marginLeft = '17px';
+// }
+
+// Align Taskbar Center 
+// function Centertaskbar() {
+//     document.getElementById('taskbar').style.justifyContent = 'center';
+//     document.getElementById('startmenu').style.marginLeft = 'auto';
+// }
+
+
+
+let circularProgress = document.querySelector(".circular-progress"),
+    progressValue = document.querySelector(".progress-value");
+
+let progressStartValue = 0,    
+    progressEndValue = 90,    
+    speed = 30;
+    
+let progress = setInterval(() => {
+    progressStartValue++;
+
+    progressValue.textContent = `${progressStartValue}%`
+    circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
+
+    if(progressStartValue == progressEndValue){
+        clearInterval(progress);
+    }    
+}, speed);
